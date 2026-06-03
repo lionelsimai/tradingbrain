@@ -62,7 +62,9 @@ class OrderManager:
 
     def __init__(self, adapter: Optional[BrokerAdapter] = None,
                  mode: Optional[str] = None):
-        self.mode = mode or config_guard.mode()
+        # FIX-8 (P1-3): default to PAPER explicitly — never silently inherit
+        # "live" from the TB_MODE env var. Callers that want another mode pass it.
+        self.mode = mode if mode is not None else "paper"
         # In paper/backtest/research we never use a live adapter.
         self.adapter = adapter or NullBrokerAdapter()
         self._seen: set[str] = set()
