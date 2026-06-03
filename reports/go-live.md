@@ -1,5 +1,5 @@
 # GO-LIVE GATE — Section 14 verdict
-_2026-06-03T13:13:40.608613+00:00 · system mode: **read_only**_
+_2026-06-03T13:27:22.586372+00:00 · system mode: **read_only**_
 
 ## VERDICT: 🔴 **BLOCKED**
 
@@ -29,7 +29,7 @@ Real capital must NOT be risked. Observation/paper mode only until every gate is
 - **6. Risk controls + kill switch + data health — ❌ FAIL**  
   risk_policy_valid=ok, data_quality_pass=ok, live_data_health_pass=FAIL, circuit_breakers_present=ok, kill_switch_present=ok
 - **7. Human approval — ❌ FAIL**  
-  approved is not true; approved_by is empty (need a named human); date is empty; cannot approve a system with no real paper track record (gate 5 not passing); reviewed_pack_sha is empty — set it to the current pack hash (036c058dc161) to bind approval to the reports you reviewed
+  approved is not true; approved_by is empty (need a named human); date is empty; cannot approve a system with no real paper track record (gate 5 not passing); reviewed_pack_sha is empty — set it to the current pack hash (cad74a2162a6) to bind approval to the reports you reviewed
 
 ## Hard blockers (must fix)
 - 4. Overfitting checks

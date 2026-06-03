@@ -1,5 +1,5 @@
-# Self-Improvement Cycle — cyc_20260602
-_mode: **read_only** · 2026-06-02T13:55:42.838528+00:00_
+# Self-Improvement Cycle — cyc_20260603
+_mode: **read_only** · 2026-06-03T13:27:22.521910+00:00_
 
 **Objective:** Earn a positive, risk-controlled edge while capping drawdown — survive every regime.
 
