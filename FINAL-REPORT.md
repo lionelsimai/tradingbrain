@@ -1,5 +1,5 @@
 # TradingBrain — Final Report
-_generated 2026-06-03T12:18:58.547199+00:00_
+_generated 2026-06-03T12:44:05.159019+00:00_
 
 ## What this is
 A swing-trading decision-support engine with an unusually honest validation
