@@ -1,0 +1,68 @@
+{
+  "alpaca_account": {
+    "buying_power": "4616.14",
+    "cash": "2308.07",
+    "equity": "96610.26",
+    "status": "ACTIVE",
+    "trading_blocked": false
+  },
+  "asof": "2026-06-03T00:41:53.395243+00:00",
+  "clock": {
+    "is_open": false,
+    "next_close": "2026-06-03T16:00:00-04:00",
+    "next_open": "2026-06-03T09:30:00-04:00",
+    "timestamp": "2026-06-02T20:43:43.569710179-04:00"
+  },
+  "execute": false,
+  "methodology_caveat": "Paper trading only. This is not live trading and not financial advice. Orders are limit bracket orders with stop-loss and take-profit.",
+  "mode": "paper",
+  "open_orders_before": [
+    {
+      "client_order_id": "2e764c84-0389-4389-96e8-f1d8217096a0",
+      "id": "ad2f7a9d-dd35-4f87-9cb2-df98ef12bf78",
+      "status": "new",
+      "symbol": "SOL/USD"
+    }
+  ],
+  "orders_submitted": 0,
+  "paper_only": true,
+  "positions_before": [
+    {
+      "entry": 74.571441733,
+      "last": 74.7521,
+      "qty": 1261.532299521,
+      "risk_pct": 0.0,
+      "symbol": "SOLUSD",
+      "value": 94302.18860702374
+    }
+  ],
+  "preflight_blockers": [
+    "1 open broker order(s) exist; reconcile/cancel before new entries",
+    "market is not open"
+  ],
+  "results": [
+    {
+      "reason": "1 open broker order(s) exist; reconcile/cancel before new entries; market is not open",
+      "status": "blocked_preflight",
+      "submitted": false,
+      "symbol": "DELL"
+    },
+    {
+      "reason": "1 open broker order(s) exist; reconcile/cancel before new entries; market is not open",
+      "status": "blocked_preflight",
+      "submitted": false,
+      "symbol": "AAOI"
+    },
+    {
+      "reason": "1 open broker order(s) exist; reconcile/cancel before new entries; market is not open",
+      "status": "blocked_preflight",
+      "submitted": false,
+      "symbol": "LITE"
+    }
+  ],
+  "symbols": [
+    "DELL",
+    "AAOI",
+    "LITE"
+  ]
+}

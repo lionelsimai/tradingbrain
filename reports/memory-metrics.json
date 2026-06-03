@@ -1,0 +1,67 @@
+{
+  "asof": "2026-05-30T22:12:24.733212+00:00",
+  "store": "/home/claude/tb/TradingBrain/data/knowledge.duckdb",
+  "old_retrieve": {
+    "experience_coverage": {
+      "setups_total": 5,
+      "setups_with_experience": 0,
+      "resolved_trades_total": 1919,
+      "resolved_trades_reachable": 0,
+      "coverage_pct": 0.0
+    },
+    "recall_precision": {
+      "per_setup": {
+        "TREND_LEADER": 0.2,
+        "MEAN_REVERSION": 0.2,
+        "VCP": 0.17,
+        "PULLBACK": 0.2,
+        "BREAKOUT": 0.0
+      },
+      "precision_at_k": 0.129,
+      "k": 5
+    },
+    "honesty_rate": {
+      "quantitative_facts": 5,
+      "with_n_and_source": 0,
+      "honesty_pct": 0.0
+    }
+  },
+  "new_recall_available": true,
+  "lesson_health": {
+    "count": 14,
+    "single_event_share_pct": 35.7,
+    "median_age_days": 0,
+    "contradicting_setups": 1
+  },
+  "not_yet_measurable": {
+    "reason": "0 rows in decisions/forecasts \u2014 these need live/paper decisions logged with their recall citations.",
+    "decision_lift": null,
+    "forecast_accuracy": null,
+    "repeated_failure_rate": null
+  },
+  "new_recall": {
+    "experience_coverage": {
+      "setups_total": 5,
+      "setups_with_experience": 5,
+      "resolved_trades_total": 1919,
+      "resolved_trades_reachable": 1919,
+      "coverage_pct": 100.0
+    },
+    "recall_precision": {
+      "per_setup": {
+        "TREND_LEADER": 1.0,
+        "MEAN_REVERSION": 1.0,
+        "VCP": 0.67,
+        "PULLBACK": 1.0,
+        "BREAKOUT": 0.5
+      },
+      "precision_at_k": 0.684,
+      "k": 5
+    },
+    "honesty_rate": {
+      "quantitative_facts": 10,
+      "with_n_and_source": 10,
+      "honesty_pct": 100.0
+    }
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "asof": "2026-06-02T15:40:14.434958+00:00",
+  "engine": "smart_recommender (adaptive intelligence overlay)",
+  "equity": 100000.0,
+  "live_trades_on_record": 0,
+  "conviction_cap_active": true,
+  "regime": {
+    "label": "Bull",
+    "stability": "STABLE",
+    "target_exposure": 0.9
+  },
+  "calibration": {
+    "evidence": "replay",
+    "live_trades": 0,
+    "replay_trades": 1919,
+    "base_rate": 0.684,
+    "reliability_curve_active": false
+  },
+  "picks": [],
+  "watch_list": [
+    {
+      "ticker": "ARM",
+      "setup": "MOMO_CONT",
+      "why_not": "smart conviction 41.3 (weak)",
+      "notes": [
+        "regime tilt (Bull): trend +3.8",
+        "uncertainty -9.5 (pillars partly conflict \u2014 conviction discounted, agreement 0.667)",
+        "calibrated on 1717 replay trades (p_win 71%, exp +0.23R)",
+        "capped at 60 (no live track record yet)",
+        "size throttled x0.27 (Bull regime)"
+      ]
+    },
+    {
+      "ticker": "AAPL",
+      "setup": "BREAKOUT",
+      "why_not": "BREAKOUT marked BROKEN by research \u2014 excluded."
+    },
+    {
+      "ticker": "MU",
+      "setup": "MOMO_CONT",
+      "why_not": "smart conviction 60.0 (moderate)",
+      "notes": [
+        "regime tilt (Bull): trend +3.8, momentum +2.0",
+        "uncertainty -4.8 (pillars broadly agree, agreement 1.0)",
+        "calibrated on 1717 replay trades (p_win 71%, exp +0.23R)",
+        "capped at 60 (no live track record yet)",
+        "size throttled x0.27 (Bull regime)"
+      ]
+    },
+    {
+      "ticker": "INTC",
+      "setup": "TREND_LEADER",
+      "why_not": "reward:risk 1.50 below minimum 2.0"
+    },
+    {
+      "ticker": "AMD",
+      "setup": "TREND_LEADER",
+      "why_not": "reward:risk 1.50 below minimum 2.0"
+    },
+    {
+      "ticker": "STX",
+      "setup": "TREND_LEADER",
+      "why_not": "reward:risk 1.50 below minimum 2.0"
+    },
+    {
+      "ticker": "WDC",
+      "setup": "TREND_LEADER",
+      "why_not": "reward:risk 1.50 below minimum 2.0"
+    },
+    {
+      "ticker": "ALAB",
+      "setup": "TREND_LEADER",
+      "why_not": "reward:risk 1.50 below minimum 2.0"
+    },
+    {
+      "ticker": "DDOG",
+      "setup": "TREND_LEADER",
+      "why_not": "reward:risk 1.50 below minimum 2.0"
+    },
+    {
+      "ticker": "COHR",
+      "setup": "TREND_LEADER",
+      "why_not": "reward:risk 1.50 below minimum 2.0"
+    },
+    {
+      "ticker": "QCOM",
+      "setup": "TREND_LEADER",
+      "why_not": "reward:risk 1.50 below minimum 2.0"
+    },
+    {
+      "ticker": "GEV",
+      "setup": "MEAN_REVERSION",
+      "why_not": "reward:risk 1.21 below minimum 2.0"
+    }
+  ],
+  "open_heat_pct": 0.0,
+  "max_heat_pct": 4.0,
+  "survivorship": {
+    "universe_size": null,
+    "delisted_included_pct": 0,
+    "warning": "0% of the universe is delisted/dead \u2014 survivorship bias is maximal. Treat every replay expectancy as an optimistic ceiling; a prudent working assumption is that real edge is materially lower (often roughly half), and only live fills resolve the true number. The real fix is adding point-in-time delisted names."
+  },
+  "disclaimer": "Research-only decision support, not financial advice or an instruction to trade. Adaptive intelligence refines the honest base engine; it never executes, never sizes up, and keeps conviction capped at moderate until a live track record exists."
+}

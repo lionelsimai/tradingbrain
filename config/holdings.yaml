@@ -1,0 +1,30 @@
+# Your current positions. Maintained by you, read by TradingBrain.
+# Add/remove rows as you trade. Cost basis is for unrealized P&L only.
+#
+# Schema per position:
+#   ticker:      Yahoo Finance symbol
+#   shares:      number of shares (positive = long, negative = short)
+#   cost_basis:  avg entry price in USD
+#   opened:      ISO date you opened the position
+#   thesis:      one-line why you bought (used in sell-decision context)
+#   stop:        (optional) your hard stop; defaults to ATR-derived
+#   target:      (optional) your take-profit; defaults to ATR-derived
+
+positions:
+  # Example positions — replace with your real book.
+  # - ticker: NVDA
+  #   shares: 50
+  #   cost_basis: 142.50
+  #   opened: 2026-01-15
+  #   thesis: AI infra leader, Blackwell ramp
+  #
+  # - ticker: PLTR
+  #   shares: 200
+  #   cost_basis: 88.00
+  #   opened: 2026-03-04
+  #   thesis: enterprise AI tailwind, gov contracts
+
+# Defaults applied when a position is missing fields
+defaults:
+  stop_atr_mult: 2.0      # stop = entry - 2*ATR by default
+  target_atr_mult: 4.0    # target = entry + 4*ATR by default

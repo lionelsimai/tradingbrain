@@ -1,0 +1,35 @@
+{
+  "asof": "2026-05-29",
+  "tickers": 81,
+  "tickers_with_issues": 6,
+  "hard_failures": [],
+  "warnings": [
+    "AAOI: 1 daily moves > 60% (possible unadjusted split/bad print)",
+    "COHR: 2 daily moves > 60% (possible unadjusted split/bad print)",
+    "LEU: 4 daily moves > 60% (possible unadjusted split/bad print)",
+    "PCG: 1 daily moves > 60% (possible unadjusted split/bad print)",
+    "PWR: 1 daily moves > 60% (possible unadjusted split/bad print)",
+    "TT: 1 OHLC-inversion rows (benign, worst 0.033%)"
+  ],
+  "per_ticker": {
+    "AAOI": [
+      "1 daily moves > 60% (possible unadjusted split/bad print)"
+    ],
+    "COHR": [
+      "2 daily moves > 60% (possible unadjusted split/bad print)"
+    ],
+    "LEU": [
+      "4 daily moves > 60% (possible unadjusted split/bad print)"
+    ],
+    "PCG": [
+      "1 daily moves > 60% (possible unadjusted split/bad print)"
+    ],
+    "PWR": [
+      "1 daily moves > 60% (possible unadjusted split/bad print)"
+    ],
+    "TT": [
+      "1 OHLC-inversion rows (benign, worst 0.033%)"
+    ]
+  },
+  "pass": true
+}

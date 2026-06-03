@@ -1,0 +1,138 @@
+{
+  "asof": "2026-06-02T15:11:00.583585+00:00",
+  "source_verdict": "LIVE_BLOCKED",
+  "source_final_decision": "RESEARCH_ONLY",
+  "item_count": 4,
+  "automatic_patch_candidates": 0,
+  "manual_or_evidence_items": 4,
+  "process_principle": "Build -> Review -> Test -> Fix specific failures. Use targeted refinement prompts and test-driven gates; avoid open-ended self-refinement.",
+  "forbidden_actions": [
+    "enable live trading",
+    "weaken risk thresholds",
+    "count replay/backtest as paper evidence",
+    "bypass human approval",
+    "ignore failed data health"
+  ],
+  "items": [
+    {
+      "item_id": "HB-001",
+      "severity": "critical",
+      "priority": 1,
+      "source_blocker_id": "go_live_blocked",
+      "patch_class": "evidence_gate",
+      "automatic_patch_allowed": false,
+      "title": "Clear go-live evidence gates without bypassing safety",
+      "rationale": "Clear every go-live gate with real evidence.",
+      "required_evidence": [
+        "reports/go-live.json shows all gates PASS",
+        "human signoff bound to current pack hash"
+      ],
+      "safe_next_action": "Resolve each named go-live gate with real artifacts; do not edit signoff until evidence exists.",
+      "validation_command": "python3 -m lab.go_live --json",
+      "forbidden_actions": [
+        "enable live trading",
+        "weaken risk thresholds",
+        "count replay/backtest as paper evidence",
+        "bypass human approval",
+        "ignore failed data health"
+      ],
+      "status": "open"
+    },
+    {
+      "item_id": "HB-002",
+      "severity": "critical",
+      "priority": 2,
+      "source_blocker_id": "paper_evidence_thin",
+      "patch_class": "evidence_collection",
+      "automatic_patch_allowed": false,
+      "title": "Collect real forward paper evidence",
+      "rationale": "Collect at least 50 resolved forward paper trades with fresh approved live-like quotes.",
+      "required_evidence": [
+        "reports/scorecard-paper.json with live_like_resolved_trades >= 50",
+        "forward-paper JSONL files with paper-only fills and fresh moomoo decision quotes"
+      ],
+      "safe_next_action": "Run paper mode with live-like quotes until at least 50 resolved forward paper observations exist.",
+      "validation_command": "python3 -m loops.forward_paper_runner --once --require-live-data",
+      "forbidden_actions": [
+        "enable live trading",
+        "weaken risk thresholds",
+        "count replay/backtest as paper evidence",
+        "bypass human approval",
+        "ignore failed data health"
+      ],
+      "status": "open"
+    },
+    {
+      "item_id": "HB-003",
+      "severity": "high",
+      "priority": 3,
+      "source_blocker_id": "health_check_failed",
+      "patch_class": "observability_or_dependency",
+      "automatic_patch_allowed": false,
+      "title": "Fix failed operational health components",
+      "rationale": "Fix failed health components.",
+      "required_evidence": [
+        "monitoring health components all ok=true",
+        "evidence={'risk_policy': {'ok': True, 'detail': '[]'}, 'kill_switch': {'ok': True, 'detail': 'clear'}, 'db_schema': {'ok': True, 'detail': '[]'}, 'mode': {'ok': True, 'detail': 'paper'}, 'live_data': {'ok': False, 'detail': 'moomoo OpenD is not reachable at 127.0.0.1:11111; reports/moomoo-live-quotes.json is missing; intraday quote age 1551s exceeds 900s freshness limit'}}"
+      ],
+      "safe_next_action": "Inspect failed health components and fix the underlying report, data, or service.",
+      "validation_command": "python3 -m safety.operator health",
+      "forbidden_actions": [
+        "enable live trading",
+        "weaken risk thresholds",
+        "count replay/backtest as paper evidence",
+        "bypass human approval",
+        "ignore failed data health"
+      ],
+      "status": "open"
+    },
+    {
+      "item_id": "HB-004",
+      "severity": "high",
+      "priority": 4,
+      "source_blocker_id": "live_data_health_failed",
+      "patch_class": "operational_dependency",
+      "automatic_patch_allowed": false,
+      "title": "Restore moomoo real-time market-data health",
+      "rationale": "Start OpenD, refresh moomoo quotes, and re-run live-data health.",
+      "required_evidence": [
+        "reports/live-data-health.json ok=true",
+        "reports/moomoo-live-quotes.json from moomoo"
+      ],
+      "safe_next_action": "Start moomoo OpenD, refresh quotes, and verify reports/live-data-health.json is PASS.",
+      "validation_command": "python3 -m monitoring.live_data_health --write-report",
+      "forbidden_actions": [
+        "enable live trading",
+        "weaken risk thresholds",
+        "count replay/backtest as paper evidence",
+        "bypass human approval",
+        "ignore failed data health"
+      ],
+      "status": "open"
+    }
+  ],
+  "top_item": {
+    "item_id": "HB-001",
+    "severity": "critical",
+    "priority": 1,
+    "source_blocker_id": "go_live_blocked",
+    "patch_class": "evidence_gate",
+    "automatic_patch_allowed": false,
+    "title": "Clear go-live evidence gates without bypassing safety",
+    "rationale": "Clear every go-live gate with real evidence.",
+    "required_evidence": [
+      "reports/go-live.json shows all gates PASS",
+      "human signoff bound to current pack hash"
+    ],
+    "safe_next_action": "Resolve each named go-live gate with real artifacts; do not edit signoff until evidence exists.",
+    "validation_command": "python3 -m lab.go_live --json",
+    "forbidden_actions": [
+      "enable live trading",
+      "weaken risk thresholds",
+      "count replay/backtest as paper evidence",
+      "bypass human approval",
+      "ignore failed data health"
+    ],
+    "status": "open"
+  }
+}

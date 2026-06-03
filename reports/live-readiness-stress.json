@@ -1,0 +1,922 @@
+{
+  "asof": "2026-06-02T15:37:26.365532+00:00",
+  "verdict": "LIVE_BLOCKED",
+  "overall_score": 0,
+  "safety_score": 100,
+  "data_score": 100,
+  "backtest_realism_score": 70,
+  "paper_evidence_score": 0,
+  "execution_score": 100,
+  "reconciliation_score": 80,
+  "broker_chaos_score": 100,
+  "incident_response_score": 90,
+  "observability_score": 60,
+  "ai_safety_score": 70,
+  "biggest_blocker": {
+    "id": "go_live_blocked",
+    "severity": "critical",
+    "evidence": [
+      "4. Overfitting checks",
+      "5. Paper matches backtest",
+      "6. Risk controls + kill switch + data health",
+      "7. Human approval",
+      "2. Monte Carlo worst-case drawdown",
+      "3. Stress scenarios survived"
+    ],
+    "required_action": "Clear every go-live gate with real evidence."
+  },
+  "fastest_next_step": "Run live-like paper mode and collect forward paper evidence.",
+  "readiness": {
+    "asof": "2026-06-02T15:37:16.925994+00:00",
+    "status": "LIVE_BLOCKED",
+    "verdict": "LIVE_BLOCKED",
+    "mode": "paper",
+    "live_trading_enabled": false,
+    "go_live_status": "BLOCKED",
+    "go_live_blockers": [
+      "4. Overfitting checks",
+      "5. Paper matches backtest",
+      "6. Risk controls + kill switch + data health",
+      "7. Human approval"
+    ],
+    "go_live_needs_human": [
+      "2. Monte Carlo worst-case drawdown",
+      "3. Stress scenarios survived"
+    ],
+    "risk_policy_valid": true,
+    "health": {
+      "ok": false,
+      "components": {
+        "risk_policy": {
+          "ok": true,
+          "detail": "[]"
+        },
+        "kill_switch": {
+          "ok": true,
+          "detail": "clear"
+        },
+        "db_schema": {
+          "ok": true,
+          "detail": "[]"
+        },
+        "mode": {
+          "ok": true,
+          "detail": "paper"
+        },
+        "live_data": {
+          "ok": false,
+          "detail": "moomoo OpenD is not reachable at 127.0.0.1:11111; reports/moomoo-live-quotes.json is missing; intraday quote age 3303s exceeds 900s freshness limit"
+        }
+      }
+    },
+    "live_data": {
+      "asof": "2026-06-02T15:37:16.851205+00:00",
+      "ok": false,
+      "status": "FAIL",
+      "hard_failures": [
+        "moomoo OpenD is not reachable at 127.0.0.1:11111",
+        "reports/moomoo-live-quotes.json is missing",
+        "intraday quote age 3303s exceeds 900s freshness limit"
+      ],
+      "warnings": [
+        "intraday snapshot is not currently sourced from moomoo"
+      ],
+      "require_realtime": true,
+      "max_quote_age_seconds": 900,
+      "providers": {
+        "moomoo": {
+          "name": "moomoo",
+          "market": "US equities",
+          "market_data_only": true,
+          "host": "127.0.0.1",
+          "port": 11111,
+          "package_installed": true,
+          "module": "moomoo",
+          "opend_reachable": false,
+          "quote_report_exists": false,
+          "quote_report_asof": null,
+          "quote_report_returned": null
+        }
+      },
+      "intraday_snapshot": {
+        "exists": true,
+        "path": "/Users/lionel/Documents/New project/TradingBrain/data/intraday_snap.parquet",
+        "rows": 3,
+        "sources": [
+          "yfinance:1m"
+        ],
+        "latest_quote_ts": "2026-06-02T14:43:00+00:00",
+        "latest_fetch_ts": "2026-06-02T14:42:13.300300+00:00",
+        "quote_age_seconds": 3303
+      },
+      "safety": {
+        "market_data_only": true,
+        "tb_mode": "paper",
+        "tb_allow_live": "0",
+        "live_trading_enabled": false
+      }
+    },
+    "missing_reports": [],
+    "paper_evidence": {
+      "paper_resolved": 0,
+      "paper_live_like_resolved": 0,
+      "paper_live_like_signals": 0,
+      "paper_synthetic_quote_signals": 0,
+      "paper_open": 3,
+      "live_resolved": 0,
+      "live_open": 0,
+      "replay_resolved": 1919,
+      "paper_verdict": "INSUFFICIENT PAPER EVIDENCE (0 paper trades). No paper gating.",
+      "live_verdict": "INSUFFICIENT LIVE EVIDENCE (0 live trades). No live gating.",
+      "replay_verdict": "REPLAY-BASED, NOT FORWARD (+0.314R over 1919 replay trades)."
+    },
+    "open_incidents": [],
+    "blocking_incidents": [],
+    "blockers": [
+      {
+        "id": "go_live_blocked",
+        "severity": "critical",
+        "evidence": [
+          "4. Overfitting checks",
+          "5. Paper matches backtest",
+          "6. Risk controls + kill switch + data health",
+          "7. Human approval",
+          "2. Monte Carlo worst-case drawdown",
+          "3. Stress scenarios survived"
+        ],
+        "required_action": "Clear every go-live gate with real evidence."
+      },
+      {
+        "id": "paper_evidence_thin",
+        "severity": "critical",
+        "evidence": {
+          "live_like_resolved": 0,
+          "total_resolved": 0
+        },
+        "required_action": "Collect at least 50 resolved forward paper trades with fresh approved live-like quotes."
+      },
+      {
+        "id": "health_check_failed",
+        "severity": "high",
+        "evidence": {
+          "risk_policy": {
+            "ok": true,
+            "detail": "[]"
+          },
+          "kill_switch": {
+            "ok": true,
+            "detail": "clear"
+          },
+          "db_schema": {
+            "ok": true,
+            "detail": "[]"
+          },
+          "mode": {
+            "ok": true,
+            "detail": "paper"
+          },
+          "live_data": {
+            "ok": false,
+            "detail": "moomoo OpenD is not reachable at 127.0.0.1:11111; reports/moomoo-live-quotes.json is missing; intraday quote age 3303s exceeds 900s freshness limit"
+          }
+        },
+        "required_action": "Fix failed health components."
+      },
+      {
+        "id": "live_data_health_failed",
+        "severity": "high",
+        "evidence": [
+          "moomoo OpenD is not reachable at 127.0.0.1:11111",
+          "reports/moomoo-live-quotes.json is missing",
+          "intraday quote age 3303s exceeds 900s freshness limit"
+        ],
+        "required_action": "Start OpenD, refresh moomoo quotes, and re-run live-data health."
+      }
+    ],
+    "risk_policy_hash": "rp_c1b79487863d",
+    "report_pack_hash": "329478663253",
+    "code_hash": "5f80abf58e92",
+    "approval_status": [
+      {
+        "gate": "7. Human approval",
+        "status": "FAIL",
+        "detail": "approved is not true; approved_by is empty (need a named human); date is empty; cannot approve a system with no real paper track record (gate 5 not passing); reviewed_pack_sha is empty \u2014 set it to the current pack hash (c17e5c6a8025) to bind approval to the reports you reviewed"
+      }
+    ],
+    "safe_next_action": "Run live-like paper mode and collect forward paper evidence.",
+    "forbidden_next_action": "Do not enable live trading or bypass go-live gates."
+  },
+  "categories": {
+    "commands": {
+      "pass": 3,
+      "fail": 0,
+      "inventory": 0,
+      "cases": [
+        {
+          "category": "commands",
+          "scenario": "risk_policy",
+          "status": "pass",
+          "severity": "high",
+          "expected_behavior": "command exits in [0]",
+          "actual_behavior": "exit 0",
+          "blocks_live": false,
+          "evidence": {
+            "stdout": "{\n  \"policy_file\": \"/Users/lionel/Documents/New project/TradingBrain/config/risk_policy.yaml\",\n  \"version\": \"rp_c1b79487863d\",\n  \"valid\": true,\n  \"conflicts\": [],\n  \"error\": null\n}\n",
+            "stderr": ""
+          }
+        },
+        {
+          "category": "commands",
+          "scenario": "config_guard",
+          "status": "pass",
+          "severity": "high",
+          "expected_behavior": "command exits in [0]",
+          "actual_behavior": "exit 0",
+          "blocks_live": false,
+          "evidence": {
+            "stdout": "{\n  \"mode\": \"paper\",\n  \"default_mode\": \"paper\",\n  \"safe_to_trade\": true,\n  \"blocking_reasons\": [],\n  \"broker_keys\": \"absent\",\n  \"allow_live_flag\": \"0\",\n  \"broker_key_id_masked\": \"<unset>\"\n}\n",
+            "stderr": ""
+          }
+        },
+        {
+          "category": "commands",
+          "scenario": "go_live",
+          "status": "pass",
+          "severity": "high",
+          "expected_behavior": "command exits in [0, 2]",
+          "actual_behavior": "exit 2",
+          "blocks_live": false,
+          "evidence": {
+            "stdout": "m this gate. Need >= 50. Replay/backtest evidence is excluded from this gate. Collect real forward paper fills.\"\n    },\n    {\n      \"gate\": \"6. Risk controls + kill switch + data health\",\n      \"status\": \"FAIL\",\n      \"detail\": \"risk_policy_valid=ok, data_quality_pass=ok, live_data_health_pass=FAIL, circuit_breakers_present=ok, kill_switch_present=ok\"\n    },\n    {\n      \"gate\": \"7. Human approval\",\n      \"status\": \"FAIL\",\n      \"detail\": \"approved is not true; approved_by is empty (need a named human); date is empty; cannot approve a system with no real paper track record (gate 5 not passing); reviewed_pack_sha is empty \\u2014 set it to the current pack hash (8404f4964e95) to bind approval to the reports you reviewed\"\n    }\n  ],\n  \"blockers\": [\n    \"4. Overfitting checks\",\n    \"5. Paper matches backtest\",\n    \"6. Risk controls + kill switch + data health\",\n    \"7. Human approval\"\n  ],\n  \"needs_human\": [\n    \"2. Monte Carlo worst-case drawdown\",\n    \"3. Stress scenarios survived\"\n  ]\n}\n",
+            "stderr": ""
+          }
+        }
+      ]
+    },
+    "data": {
+      "pass": 1,
+      "fail": 0,
+      "inventory": 18,
+      "cases": [
+        {
+          "category": "data",
+          "scenario": "missing_price_bars",
+          "status": "inventory",
+          "severity": "high",
+          "expected_behavior": "critical invalid data blocks trade; non-critical gaps degrade report",
+          "actual_behavior": "scenario registered for future synthetic mutation",
+          "blocks_live": false,
+          "evidence": {
+            "category": "data",
+            "name": "missing_price_bars",
+            "expected_behavior": "critical invalid data blocks trade; non-critical gaps degrade report",
+            "severity": "high"
+          }
+        },
+        {
+          "category": "data",
+          "scenario": "duplicate_price_bars",
+          "status": "inventory",
+          "severity": "high",
+          "expected_behavior": "critical invalid data blocks trade; non-critical gaps degrade report",
+          "actual_behavior": "scenario registered for future synthetic mutation",
+          "blocks_live": false,
+          "evidence": {
+            "category": "data",
+            "name": "duplicate_price_bars",
+            "expected_behavior": "critical invalid data blocks trade; non-critical gaps degrade report",
+            "severity": "high"
+          }
+        },
+        {
+          "category": "data",
+          "scenario": "out_of_order_bars",
+          "status": "inventory",
+          "severity": "high",
+          "expected_behavior": "critical invalid data blocks trade; non-critical gaps degrade report",
+          "actual_behavior": "scenario registered for future synthetic mutation",
+          "blocks_live": false,
+          "evidence": {
+            "category": "data",
+            "name": "out_of_order_bars",
+            "expected_behavior": "critical invalid data blocks trade; non-critical gaps degrade report",
+            "severity": "high"
+          }
+        },
+        {
+          "category": "data",
+          "scenario": "split_adjustment_error",
+          "status": "inventory",
+          "severity": "high",
+          "expected_behavior": "critical invalid data blocks trade; non-critical gaps degrade report",
+          "actual_behavior": "scenario registered for future synthetic mutation",
+          "blocks_live": false,
+          "evidence": {
+            "category": "data",
+            "name": "split_adjustment_error",
+            "expected_behavior": "critical invalid data blocks trade; non-critical gaps degrade report",
+            "severity": "high"
+          }
+        },
+        {
+          "category": "data",
+          "scenario": "stale_eod_data",
+          "status": "inventory",
+          "severity": "high",
+          "expected_behavior": "critical invalid data blocks trade; non-critical gaps degrade report",
+          "actual_behavior": "scenario registered for future synthetic mutation",
+          "blocks_live": false,
+          "evidence": {
+            "category": "data",
+            "name": "stale_eod_data",
+            "expected_behavior": "critical invalid data blocks trade; non-critical gaps degrade report",
+            "severity": "high"
+          }
+        },
+        {
+          "category": "data",
+          "scenario": "stale_intraday_data",
+          "status": "inventory",
+          "severity": "high",
+          "expected_behavior": "critical invalid data blocks trade; non-critical gaps degrade report",
+          "actual_behavior": "scenario registered for future synthetic mutation",
+          "blocks_live": false,
+          "evidence": {
+            "category": "data",
+            "name": "stale_intraday_data",
+            "expected_behavior": "critical invalid data blocks trade; non-critical gaps degrade report",
+            "severity": "high"
+          }
+        },
+        {
+          "category": "data",
+          "scenario": "bad_quote",
+          "status": "inventory",
+          "severity": "high",
+          "expected_behavior": "critical invalid data blocks trade; non-critical gaps degrade report",
+          "actual_behavior": "scenario registered for future synthetic mutation",
+          "blocks_live": false,
+          "evidence": {
+            "category": "data",
+            "name": "bad_quote",
+            "expected_behavior": "critical invalid data blocks trade; non-critical gaps degrade report",
+            "severity": "high"
+          }
+        },
+        {
+          "category": "data",
+          "scenario": "zero_volume",
+          "status": "inventory",
+          "severity": "high",
+          "expected_behavior": "critical invalid data blocks trade; non-critical gaps degrade report",
+          "actual_behavior": "scenario registered for future synthetic mutation",
+          "blocks_live": false,
+          "evidence": {
+            "category": "data",
+            "name": "zero_volume",
+            "expected_behavior": "critical invalid data blocks trade; non-critical gaps degrade report",
+            "severity": "high"
+          }
+        },
+        {
+          "category": "data",
+          "scenario": "negative_price",
+          "status": "inventory",
+          "severity": "high",
+          "expected_behavior": "critical invalid data blocks trade; non-critical gaps degrade report",
+          "actual_behavior": "scenario registered for future synthetic mutation",
+          "blocks_live": false,
+          "evidence": {
+            "category": "data",
+            "name": "negative_price",
+            "expected_behavior": "critical invalid data blocks trade; non-critical gaps degrade report",
+            "severity": "high"
+          }
+        },
+        {
+          "category": "data",
+          "scenario": "extreme_gap",
+          "status": "inventory",
+          "severity": "high",
+          "expected_behavior": "critical invalid data blocks trade; non-critical gaps degrade report",
+          "actual_behavior": "scenario registered for future synthetic mutation",
+          "blocks_live": false,
+          "evidence": {
+            "category": "data",
+            "name": "extreme_gap",
+            "expected_behavior": "critical invalid data blocks trade; non-critical gaps degrade report",
+            "severity": "high"
+          }
+        },
+        {
+          "category": "data",
+          "scenario": "missing_bid",
+          "status": "inventory",
+          "severity": "high",
+          "expected_behavior": "critical invalid data blocks trade; non-critical gaps degrade report",
+          "actual_behavior": "scenario registered for future synthetic mutation",
+          "blocks_live": false,
+          "evidence": {
+            "category": "data",
+            "name": "missing_bid",
+            "expected_behavior": "critical invalid data blocks trade; non-critical gaps degrade report",
+            "severity": "high"
+          }
+        },
+        {
+          "category": "data",
+          "scenario": "missing_ask",
+          "status": "inventory",
+          "severity": "high",
+          "expected_behavior": "critical invalid data blocks trade; non-critical gaps degrade report",
+          "actual_behavior": "scenario registered for future synthetic mutation",
+          "blocks_live": false,
+          "evidence": {
+            "category": "data",
+            "name": "missing_ask",
+            "expected_behavior": "critical invalid data blocks trade; non-critical gaps degrade report",
+            "severity": "high"
+          }
+        },
+        {
+          "category": "data",
+          "scenario": "bid_higher_than_ask",
+          "status": "inventory",
+          "severity": "high",
+          "expected_behavior": "critical invalid data blocks trade; non-critical gaps degrade report",
+          "actual_behavior": "scenario registered for future synthetic mutation",
+          "blocks_live": false,
+          "evidence": {
+            "category": "data",
+            "name": "bid_higher_than_ask",
+            "expected_behavior": "critical invalid data blocks trade; non-critical gaps degrade report",
+            "severity": "high"
+          }
+        },
+        {
+          "category": "data",
+          "scenario": "spread_too_wide",
+          "status": "inventory",
+          "severity": "high",
+          "expected_behavior": "critical invalid data blocks trade; non-critical gaps degrade report",
+          "actual_behavior": "scenario registered for future synthetic mutation",
+          "blocks_live": false,
+          "evidence": {
+            "category": "data",
+            "name": "spread_too_wide",
+            "expected_behavior": "critical invalid data blocks trade; non-critical gaps degrade report",
+            "severity": "high"
+          }
+        },
+        {
+          "category": "data",
+          "scenario": "market_calendar_closed",
+          "status": "pass",
+          "severity": "high",
+          "expected_behavior": "critical invalid data blocks trade; non-critical gaps degrade report",
+          "actual_behavior": "data-quality report present",
+          "blocks_live": false,
+          "evidence": {
+            "category": "data",
+            "name": "market_calendar_closed",
+            "expected_behavior": "critical invalid data blocks trade; non-critical gaps degrade report",
+            "severity": "high"
+          }
+        },
+        {
+          "category": "data",
+          "scenario": "timezone_mismatch",
+          "status": "inventory",
+          "severity": "high",
+          "expected_behavior": "critical invalid data blocks trade; non-critical gaps degrade report",
+          "actual_behavior": "scenario registered for future synthetic mutation",
+          "blocks_live": false,
+          "evidence": {
+            "category": "data",
+            "name": "timezone_mismatch",
+            "expected_behavior": "critical invalid data blocks trade; non-critical gaps degrade report",
+            "severity": "high"
+          }
+        },
+        {
+          "category": "data",
+          "scenario": "api_timeout",
+          "status": "inventory",
+          "severity": "high",
+          "expected_behavior": "critical invalid data blocks trade; non-critical gaps degrade report",
+          "actual_behavior": "scenario registered for future synthetic mutation",
+          "blocks_live": false,
+          "evidence": {
+            "category": "data",
+            "name": "api_timeout",
+            "expected_behavior": "critical invalid data blocks trade; non-critical gaps degrade report",
+            "severity": "high"
+          }
+        },
+        {
+          "category": "data",
+          "scenario": "api_rate_limit",
+          "status": "inventory",
+          "severity": "high",
+          "expected_behavior": "critical invalid data blocks trade; non-critical gaps degrade report",
+          "actual_behavior": "scenario registered for future synthetic mutation",
+          "blocks_live": false,
+          "evidence": {
+            "category": "data",
+            "name": "api_rate_limit",
+            "expected_behavior": "critical invalid data blocks trade; non-critical gaps degrade report",
+            "severity": "high"
+          }
+        },
+        {
+          "category": "data",
+          "scenario": "vendor_disagreement",
+          "status": "inventory",
+          "severity": "high",
+          "expected_behavior": "critical invalid data blocks trade; non-critical gaps degrade report",
+          "actual_behavior": "scenario registered for future synthetic mutation",
+          "blocks_live": false,
+          "evidence": {
+            "category": "data",
+            "name": "vendor_disagreement",
+            "expected_behavior": "critical invalid data blocks trade; non-critical gaps degrade report",
+            "severity": "high"
+          }
+        }
+      ]
+    },
+    "signal": {
+      "pass": 2,
+      "fail": 0,
+      "inventory": 0,
+      "cases": [
+        {
+          "category": "signal",
+          "scenario": "no_stop",
+          "status": "pass",
+          "severity": "high",
+          "expected_behavior": "risk gate rejects no stop",
+          "actual_behavior": "invalid entry/stop price",
+          "blocks_live": false,
+          "evidence": {
+            "approved": false,
+            "rejected_reason": "invalid entry/stop price",
+            "checks": {
+              "mode_and_config": "ok",
+              "kill_switch": "clear"
+            },
+            "max_position_size": 0,
+            "suggested_position_size": 0,
+            "stop_loss_level": null,
+            "take_profit_level": null,
+            "max_loss_amount": 0.0,
+            "exposure_after_trade_pct": null,
+            "drawdown_status": null,
+            "daily_loss_status": null,
+            "human_review_required": false,
+            "timestamp": "2026-06-02T15:37:21.786560+00:00",
+            "policy_version": "rp_c1b79487863d"
+          }
+        },
+        {
+          "category": "signal",
+          "scenario": "weak_confidence",
+          "status": "pass",
+          "severity": "high",
+          "expected_behavior": "risk gate rejects weak confidence",
+          "actual_behavior": "confidence 0.10 < floor 0.60",
+          "blocks_live": false,
+          "evidence": {
+            "approved": false,
+            "rejected_reason": "confidence 0.10 < floor 0.60",
+            "checks": {
+              "mode_and_config": "ok",
+              "kill_switch": "clear",
+              "price_sanity": "ok",
+              "reward_to_risk": 4.0,
+              "data_freshness": "unchecked"
+            },
+            "max_position_size": 0,
+            "suggested_position_size": 0,
+            "stop_loss_level": null,
+            "take_profit_level": null,
+            "max_loss_amount": 0.0,
+            "exposure_after_trade_pct": null,
+            "drawdown_status": null,
+            "daily_loss_status": null,
+            "human_review_required": false,
+            "timestamp": "2026-06-02T15:37:21.805822+00:00",
+            "policy_version": "rp_c1b79487863d"
+          }
+        }
+      ]
+    },
+    "kill_switch": {
+      "pass": 1,
+      "fail": 0,
+      "inventory": 0,
+      "cases": [
+        {
+          "category": "kill_switch",
+          "scenario": "master_kill_engaged",
+          "status": "pass",
+          "severity": "critical",
+          "expected_behavior": "kill switch blocks new entry",
+          "actual_behavior": "kill switch ENGAGED: stress_probe",
+          "blocks_live": false,
+          "evidence": {
+            "approved": false,
+            "rejected_reason": "kill switch ENGAGED: stress_probe",
+            "checks": {
+              "mode_and_config": [
+                "kill switch ENGAGED: stress_probe"
+              ]
+            },
+            "max_position_size": 0,
+            "suggested_position_size": 0,
+            "stop_loss_level": null,
+            "take_profit_level": null,
+            "max_loss_amount": 0.0,
+            "exposure_after_trade_pct": null,
+            "drawdown_status": null,
+            "daily_loss_status": null,
+            "human_review_required": false,
+            "timestamp": "2026-06-02T15:37:21.823827+00:00",
+            "policy_version": "rp_c1b79487863d"
+          }
+        }
+      ]
+    },
+    "execution": {
+      "pass": 7,
+      "fail": 0,
+      "inventory": 0,
+      "cases": [
+        {
+          "category": "execution",
+          "scenario": "duplicate_fill",
+          "status": "pass",
+          "severity": "high",
+          "expected_behavior": "chaos response is explicit; unprotected fills block",
+          "actual_behavior": "filled",
+          "blocks_live": false,
+          "evidence": {
+            "scenario": "duplicate_fill",
+            "status": "filled",
+            "blocks_new_entries": false,
+            "incident_id": null
+          }
+        },
+        {
+          "category": "execution",
+          "scenario": "market_closed",
+          "status": "pass",
+          "severity": "high",
+          "expected_behavior": "chaos response is explicit; unprotected fills block",
+          "actual_behavior": "rejected",
+          "blocks_live": false,
+          "evidence": {
+            "scenario": "market_closed",
+            "status": "rejected",
+            "blocks_new_entries": false,
+            "incident_id": null
+          }
+        },
+        {
+          "category": "execution",
+          "scenario": "order_status_unknown",
+          "status": "pass",
+          "severity": "high",
+          "expected_behavior": "chaos response is explicit; unprotected fills block",
+          "actual_behavior": "unknown",
+          "blocks_live": false,
+          "evidence": {
+            "scenario": "order_status_unknown",
+            "status": "unknown",
+            "blocks_new_entries": false,
+            "incident_id": null
+          }
+        },
+        {
+          "category": "execution",
+          "scenario": "partial_fill",
+          "status": "pass",
+          "severity": "high",
+          "expected_behavior": "chaos response is explicit; unprotected fills block",
+          "actual_behavior": "partially_filled",
+          "blocks_live": false,
+          "evidence": {
+            "scenario": "partial_fill",
+            "status": "partially_filled",
+            "blocks_new_entries": false,
+            "incident_id": null
+          }
+        },
+        {
+          "category": "execution",
+          "scenario": "reject_order",
+          "status": "pass",
+          "severity": "high",
+          "expected_behavior": "chaos response is explicit; unprotected fills block",
+          "actual_behavior": "rejected",
+          "blocks_live": false,
+          "evidence": {
+            "scenario": "reject_order",
+            "status": "rejected",
+            "blocks_new_entries": false,
+            "incident_id": null
+          }
+        },
+        {
+          "category": "execution",
+          "scenario": "stop_attach_failed",
+          "status": "pass",
+          "severity": "high",
+          "expected_behavior": "chaos response is explicit; unprotected fills block",
+          "actual_behavior": "filled",
+          "blocks_live": true,
+          "evidence": {
+            "scenario": "stop_attach_failed",
+            "status": "filled",
+            "blocks_new_entries": true,
+            "incident_id": "INC-b303f3ee9f28"
+          }
+        },
+        {
+          "category": "execution",
+          "scenario": "symbol_not_tradable",
+          "status": "pass",
+          "severity": "high",
+          "expected_behavior": "chaos response is explicit; unprotected fills block",
+          "actual_behavior": "rejected",
+          "blocks_live": false,
+          "evidence": {
+            "scenario": "symbol_not_tradable",
+            "status": "rejected",
+            "blocks_new_entries": false,
+            "incident_id": null
+          }
+        }
+      ]
+    },
+    "approval": {
+      "pass": 6,
+      "fail": 0,
+      "inventory": 0,
+      "cases": [
+        {
+          "category": "approval",
+          "scenario": "missing_approval",
+          "status": "pass",
+          "severity": "critical",
+          "expected_behavior": "go-live remains blocked with exact missing requirement",
+          "actual_behavior": "go-live=BLOCKED",
+          "blocks_live": false,
+          "evidence": {
+            "category": "approval",
+            "name": "missing_approval",
+            "expected_behavior": "go-live remains blocked with exact missing requirement",
+            "severity": "critical"
+          }
+        },
+        {
+          "category": "approval",
+          "scenario": "approval_hash_mismatch",
+          "status": "pass",
+          "severity": "critical",
+          "expected_behavior": "go-live remains blocked with exact missing requirement",
+          "actual_behavior": "go-live=BLOCKED",
+          "blocks_live": false,
+          "evidence": {
+            "category": "approval",
+            "name": "approval_hash_mismatch",
+            "expected_behavior": "go-live remains blocked with exact missing requirement",
+            "severity": "critical"
+          }
+        },
+        {
+          "category": "approval",
+          "scenario": "unnamed_human",
+          "status": "pass",
+          "severity": "critical",
+          "expected_behavior": "go-live remains blocked with exact missing requirement",
+          "actual_behavior": "go-live=BLOCKED",
+          "blocks_live": false,
+          "evidence": {
+            "category": "approval",
+            "name": "unnamed_human",
+            "expected_behavior": "go-live remains blocked with exact missing requirement",
+            "severity": "critical"
+          }
+        },
+        {
+          "category": "approval",
+          "scenario": "approval_before_reports",
+          "status": "pass",
+          "severity": "critical",
+          "expected_behavior": "go-live remains blocked with exact missing requirement",
+          "actual_behavior": "go-live=BLOCKED",
+          "blocks_live": false,
+          "evidence": {
+            "category": "approval",
+            "name": "approval_before_reports",
+            "expected_behavior": "go-live remains blocked with exact missing requirement",
+            "severity": "critical"
+          }
+        },
+        {
+          "category": "approval",
+          "scenario": "approval_with_paper_gate_failing",
+          "status": "pass",
+          "severity": "critical",
+          "expected_behavior": "go-live remains blocked with exact missing requirement",
+          "actual_behavior": "go-live=BLOCKED",
+          "blocks_live": false,
+          "evidence": {
+            "category": "approval",
+            "name": "approval_with_paper_gate_failing",
+            "expected_behavior": "go-live remains blocked with exact missing requirement",
+            "severity": "critical"
+          }
+        },
+        {
+          "category": "approval",
+          "scenario": "approval_replay_attack",
+          "status": "pass",
+          "severity": "critical",
+          "expected_behavior": "go-live remains blocked with exact missing requirement",
+          "actual_behavior": "go-live=BLOCKED",
+          "blocks_live": false,
+          "evidence": {
+            "category": "approval",
+            "name": "approval_replay_attack",
+            "expected_behavior": "go-live remains blocked with exact missing requirement",
+            "severity": "critical"
+          }
+        }
+      ]
+    }
+  },
+  "blockers": [
+    {
+      "id": "go_live_blocked",
+      "severity": "critical",
+      "evidence": [
+        "4. Overfitting checks",
+        "5. Paper matches backtest",
+        "6. Risk controls + kill switch + data health",
+        "7. Human approval",
+        "2. Monte Carlo worst-case drawdown",
+        "3. Stress scenarios survived"
+      ],
+      "required_action": "Clear every go-live gate with real evidence."
+    },
+    {
+      "id": "paper_evidence_thin",
+      "severity": "critical",
+      "evidence": {
+        "live_like_resolved": 0,
+        "total_resolved": 0
+      },
+      "required_action": "Collect at least 50 resolved forward paper trades with fresh approved live-like quotes."
+    },
+    {
+      "id": "health_check_failed",
+      "severity": "high",
+      "evidence": {
+        "risk_policy": {
+          "ok": true,
+          "detail": "[]"
+        },
+        "kill_switch": {
+          "ok": true,
+          "detail": "clear"
+        },
+        "db_schema": {
+          "ok": true,
+          "detail": "[]"
+        },
+        "mode": {
+          "ok": true,
+          "detail": "paper"
+        },
+        "live_data": {
+          "ok": false,
+          "detail": "moomoo OpenD is not reachable at 127.0.0.1:11111; reports/moomoo-live-quotes.json is missing; intraday quote age 3303s exceeds 900s freshness limit"
+        }
+      },
+      "required_action": "Fix failed health components."
+    },
+    {
+      "id": "live_data_health_failed",
+      "severity": "high",
+      "evidence": [
+        "moomoo OpenD is not reachable at 127.0.0.1:11111",
+        "reports/moomoo-live-quotes.json is missing",
+        "intraday quote age 3303s exceeds 900s freshness limit"
+      ],
+      "required_action": "Start OpenD, refresh moomoo quotes, and re-run live-data health."
+    }
+  ],
+  "final_decision": "RESEARCH_ONLY"
+}

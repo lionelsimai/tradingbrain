@@ -1,0 +1,15 @@
+{
+  "asof": "2026-06-03",
+  "acted_label": "Bull",
+  "raw_label": "Bull",
+  "stability": "STABLE",
+  "volatile_warning": false,
+  "target_exposure": 0.9,
+  "regime_scalar": 0.9,
+  "circuit_scalar": 1.0,
+  "final_sizing_scalar": 0.9,
+  "mode": "AGGRESSIVE",
+  "open_risk_pct": 0.0,
+  "open_count": 0,
+  "circuit_trips": []
+}

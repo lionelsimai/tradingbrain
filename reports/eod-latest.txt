@@ -1,0 +1,10 @@
+📊 EOD · 04:37 SGT (16:37 ET)
+Equity $102,000  ·  Open 3  ·  Risk 3.00%
+Today: realized +2.00R  ·  unrealized -0.16R  ·  closed 1
+📍 Closed today:
+  🎯 DELL  exit $399.39  +2.00R (+22.60%)
+📌 Open:
+  ARM  entry $345.45 → stop $300.25 / target $435.86
+  AMD  entry $519.98 → stop $460.47 / target $639.01
+  ALAB  entry $349.17 → stop $300.00 / target $447.51
+🔗 https://lionelsim.zo.space/portfolio

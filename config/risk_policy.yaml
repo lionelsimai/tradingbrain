@@ -1,0 +1,74 @@
+# TradingBrain — CANONICAL risk policy. This is the ONLY active risk source.
+# risk_gate, order_manager, paper adapter, and calibration read ONLY this file.
+# Values in session.yaml / sources.yaml are legacy/passive (see risk_policy.py).
+environment:
+  default_mode: paper
+  allowed_modes: [research, backtest, replay, paper, live]
+  live_trading_enabled: false
+  require_explicit_live_flag: true
+  require_human_approval_for_live: true
+  fail_closed_on_unknown: true
+
+account:
+  equity_source: config
+  default_equity_usd: 50000
+  currency: USD
+
+trade_risk:
+  risk_per_trade_pct: 0.50
+  max_risk_per_trade_pct: 1.00
+  max_position_pct: 10.00
+  max_new_position_pct: 10.00
+  min_reward_to_risk: 1.50
+  min_confidence: 0.60
+  allow_pyramiding: false
+  allow_short: false
+
+portfolio_risk:
+  max_portfolio_heat_pct: 4.00
+  max_concurrent_positions: 6
+  max_sector_exposure_pct: 30.00
+  max_factor_cluster_pct: 40.00
+  max_correlated_exposure_pct: 35.00
+  max_daily_loss_pct: 1.50
+  max_weekly_loss_pct: 4.00
+  max_total_drawdown_pct: 8.00
+  stop_after_loss_streak: 3
+
+execution_risk:
+  allow_market_orders: false
+  allow_limit_orders: true
+  require_stop_loss: true
+  require_target_or_trailing_policy: true
+  max_spread_bps: 50
+  min_avg_dollar_volume: 20000000
+  max_data_age_seconds_intraday: 300
+  max_data_age_seconds_eod: 93600
+  max_order_retries: 3
+  block_after_hours: true
+  require_market_open_for_entry: true
+  require_symbol_tradable: true
+  require_quote_bid_ask: true
+
+scorecard_policy:
+  live_min_trades: 30
+  paper_min_trades: 50
+  replay_min_effective_trades: 100
+  unknown_setup_policy: probation
+  unknown_setup_size_cap: 0.25
+  replay_not_allowed_for_live_gate: true
+  paper_not_allowed_for_live_gate: true
+  combined_scorecard_display_only: true
+
+human_review:
+  require_above_position_pct: 5.00
+  require_above_risk_pct: 0.50
+  require_for_live: true
+  require_for_unknown_setup: true
+  require_for_market_order: true
+  require_for_wide_spread: true
+
+kill_switch:
+  enabled: true
+  fail_closed_if_missing: true
+  fail_closed_if_unreadable: true

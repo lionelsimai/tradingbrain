@@ -1,0 +1,49 @@
+{
+  "generated_at": "2026-05-30T12:13:51.518619+00:00",
+  "realism": {
+    "survivorship_bias_free": false,
+    "point_in_time_universe": false,
+    "total_return_adjusted": false,
+    "split_adjusted": true,
+    "dividend_adjusted": false,
+    "delisted_included": false,
+    "fee_model": "per-trade bps (commission)",
+    "slippage_model": "fixed bps per side",
+    "spread_model": "fixed bps",
+    "liquidity_model": "none (assumes fill at modelled price)",
+    "trade_delay_model": "signal-bar close entry (next-open variant tested)",
+    "same_bar_policy": "stop checked before target (conservative)",
+    "stop_execution_policy": "structural stop, scale-out 50% at T1",
+    "target_execution_policy": "T1 then breakeven runner to T2",
+    "gap_policy": "intrabar low<=stop fills at stop (no worse-fill on gaps)",
+    "benchmark_SPY": true,
+    "benchmark_QQQ": true,
+    "benchmark_SMH": false,
+    "benchmark_equal_weight_universe": true,
+    "benchmark_buy_hold_universe": true,
+    "opportunity_cost": "reported vs equal-weight basket (lab/benchmark)",
+    "trust_level": "INDICATIVE \u2014 survivorship + non-point-in-time; not proof of live edge"
+  },
+  "stress": {
+    "cost_stress_expectancy_R": {
+      "base_9bps": 0.0017,
+      "2x_18bps": -0.0283,
+      "4x_36bps": -0.0883
+    },
+    "remove_top_5_trades_expectancy_R": 0.0139,
+    "remove_top_1pct_expectancy_R": 0.0052,
+    "worst_decile_mean_R": -1.7065,
+    "effective_sample": {
+      "raw_n": 800,
+      "effective_n_formula": 300.0,
+      "effective_n_autocorr": 800.0,
+      "overlap_ratio": 2.67,
+      "warnings": [
+        "step 3b < hold 8b: trades overlap",
+        "effective_n far below raw_n \u2014 significance overstated",
+        "top 1% of trades drive >50% of expectancy"
+      ],
+      "top_trade_contribution_pct": 83.7
+    }
+  }
+}

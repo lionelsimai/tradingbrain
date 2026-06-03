@@ -1,0 +1,12 @@
+{
+  "date": "2026-06-03",
+  "connected": true,
+  "write_enabled": false,
+  "base_url": "https://paper-api.alpaca.markets/v2",
+  "single_order_path": "execution.order_manager.OrderManager.submit",
+  "account_status": "ACTIVE",
+  "equity": "99950.43",
+  "alpaca_positions": 3,
+  "local_open": 0,
+  "actions": []
+}

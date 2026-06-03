@@ -1,0 +1,15 @@
+id,ts,cycle_id,lesson,category,evidence,confidence,times_reinforced
+1,2026-05-29 23:19:37.502531,cyc_20260529_230259,Universe is survivorship-biased; treat all backtest edges as INDICATIVE and discount live expectations until point-in-time delisted data is sourced.,data_integrity,,0.9500000000000001,2
+2,2026-05-29 23:19:37.580624,cyc_20260529_230259,BREAKOUT: Survivorship bias: universe excludes delisted names — live edge likely lower.,red_team,WOUNDED,0.75,2
+3,2026-05-29 23:19:37.742248,cyc_20260529_230259,BREAKOUT: Walk-forward efficiency -20.69: OOS is a poor fraction of IS — overfit risk.,red_team,WOUNDED,0.75,2
+4,2026-05-29 23:19:37.898358,cyc_20260529_230259,BREAKOUT: Negative expectancy in regimes: ['bear'] — gate these off.,red_team,WOUNDED,0.75,2
+5,2026-05-29 23:19:38.072729,cyc_20260529_230259,BREAKOUT has non-positive expectancy in regimes ['bear']; gate it off there.,regime,{'bear': -0.043},0.8,2
+6,2026-05-30 00:41:46.05358,reconcile_20260530,BREAKOUT: live edge is NEGATIVE (-0.101R over 28 trades) despite backtest +0.028R. Auto-demoted to Broken; live gate suppresses it. Backtest overstated this setup in the current regime.,live-reconciliation,scorecard n=28,0.514,1
+7,2026-05-30 00:41:46.280714,reconcile_20260530,MEAN_REVERSION: live edge +0.465R confirms backtest (+0.378R) over 84 trades. Validated.,live-reconciliation,scorecard n=84,0.542,1
+8,2026-05-30 00:41:46.504993,reconcile_20260530,PULLBACK: live edge +0.516R confirms backtest (+0.205R) over 57 trades. Validated.,live-reconciliation,scorecard n=57,0.5285,1
+9,2026-05-30 00:41:46.719965,reconcile_20260530,TREND_LEADER: live edge +0.292R confirms backtest (+0.071R) over 2458 trades. Validated.,live-reconciliation,scorecard n=2458,0.9,1
+10,2026-05-30 00:41:47.037872,reconcile_20260530,VCP: live edge is NEGATIVE (-0.427R over 88 trades) despite backtest +0.147R. Auto-demoted to Broken; live gate suppresses it. Backtest overstated this setup in the current regime.,live-reconciliation,scorecard n=88,0.544,1
+11,2026-05-30 03:09:38.860993,reconcile_20260530,MEAN_REVERSION: live edge +1.896R confirms backtest (+0.608R) over 72 trades. Validated.,live-reconciliation,scorecard n=72,0.5860000000000001,2
+12,2026-05-30 03:09:38.934817,reconcile_20260530,PULLBACK: live edge +1.049R confirms backtest (+0.404R) over 45 trades. Validated.,live-reconciliation,scorecard n=45,0.5725,2
+13,2026-05-30 03:09:39.002497,reconcile_20260530,TREND_LEADER: live edge +0.232R confirms backtest (+0.088R) over 1717 trades. Validated.,live-reconciliation,scorecard n=1717,0.9500000000000001,2
+14,2026-05-30 03:09:39.060735,reconcile_20260530,VCP: live edge +0.321R confirms backtest (+0.164R) over 62 trades. Validated.,live-reconciliation,scorecard n=62,0.5810000000000001,2

@@ -1,0 +1,95 @@
+{
+  "asof": "2026-06-03T02:48:35.631883+00:00",
+  "benchmark_adjusted_by_horizon": [
+    {
+      "avg_excess_return_R": null,
+      "avg_excess_return_pct": null,
+      "excess_hit_rate_pct": null,
+      "horizon_days": 1,
+      "n": 0
+    },
+    {
+      "avg_excess_return_R": null,
+      "avg_excess_return_pct": null,
+      "excess_hit_rate_pct": null,
+      "horizon_days": 5,
+      "n": 0
+    },
+    {
+      "avg_excess_return_R": null,
+      "avg_excess_return_pct": null,
+      "excess_hit_rate_pct": null,
+      "horizon_days": 20,
+      "n": 0
+    }
+  ],
+  "benchmark_adjusted_evidence_present": false,
+  "by_horizon": [
+    {
+      "avg_max_drawdown_pct": null,
+      "avg_return_R": null,
+      "avg_return_pct": null,
+      "hit_rate_pct": null,
+      "horizon_days": 1,
+      "median_return_R": null,
+      "n": 0
+    },
+    {
+      "avg_max_drawdown_pct": null,
+      "avg_return_R": null,
+      "avg_return_pct": null,
+      "hit_rate_pct": null,
+      "horizon_days": 5,
+      "median_return_R": null,
+      "n": 0
+    },
+    {
+      "avg_max_drawdown_pct": null,
+      "avg_return_R": null,
+      "avg_return_pct": null,
+      "hit_rate_pct": null,
+      "horizon_days": 20,
+      "median_return_R": null,
+      "n": 0
+    }
+  ],
+  "decision_useful": false,
+  "methodology_caveat": "Research-only forward observation ledger. Rows are not broker fills, not live trades, and not authorization to trade.",
+  "outcomes_total": 0,
+  "regime_count": 0,
+  "required_next_evidence": [
+    "Keep logging daily forecast observations before market action.",
+    "Resolve after future bars exist; do not backfill today's recommendations with old data.",
+    "Require 200+ resolved outcomes and at least 50 per 1D/5D/20D horizon before proof-gate promotion."
+  ],
+  "resolution": {
+    "invalid_now": 0,
+    "resolved_now": 0,
+    "still_pending": 0
+  },
+  "slippage_adjusted_by_horizon": [
+    {
+      "avg_slippage_adjusted_return_R": null,
+      "avg_slippage_adjusted_return_pct": null,
+      "horizon_days": 1,
+      "n": 0,
+      "slippage_adjusted_hit_rate_pct": null
+    },
+    {
+      "avg_slippage_adjusted_return_R": null,
+      "avg_slippage_adjusted_return_pct": null,
+      "horizon_days": 5,
+      "n": 0,
+      "slippage_adjusted_hit_rate_pct": null
+    },
+    {
+      "avg_slippage_adjusted_return_R": null,
+      "avg_slippage_adjusted_return_pct": null,
+      "horizon_days": 20,
+      "n": 0,
+      "slippage_adjusted_hit_rate_pct": null
+    }
+  ],
+  "status": "INSUFFICIENT_FORWARD_EVIDENCE",
+  "weeks_covered": 0
+}

@@ -1,0 +1,23 @@
+{
+  "asof": "2026-05-30T22:56:07.230367+00:00",
+  "pass": true,
+  "checks": {
+    "no_lookahead": {
+      "checked": 48,
+      "failures": [],
+      "pass": true
+    },
+    "live_eq_backtest": {
+      "checked": 650,
+      "mismatches": 0,
+      "pass": true
+    },
+    "determinism": {
+      "pass": true,
+      "ci": [
+        -0.0344,
+        0.0809
+      ]
+    }
+  }
+}

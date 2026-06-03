@@ -1,0 +1,87 @@
+{
+  "asof": "2026-06-03",
+  "source": "stress-test.json",
+  "costs_R_per_trade": 0.03,
+  "calibration": {
+    "BREAKOUT": {
+      "enabled": true,
+      "expectancy_R": 0.052,
+      "oos_expectancy_R": 0.102,
+      "win_rate": 67.5,
+      "profit_factor": 1.16,
+      "max_consec_losses": 20,
+      "n": 3475,
+      "regime_multiplier": {
+        "bear": 1.44,
+        "bull_volatile": 1.5,
+        "chop": 1.5,
+        "euphoria": 0.83
+      },
+      "overfit_flag": false
+    },
+    "MEAN_REVERSION": {
+      "enabled": true,
+      "expectancy_R": 0.608,
+      "oos_expectancy_R": 0.888,
+      "win_rate": 22.4,
+      "profit_factor": 1.77,
+      "max_consec_losses": 20,
+      "n": 1815,
+      "regime_multiplier": {
+        "bear": 0.45,
+        "bull_volatile": 1.5,
+        "chop": 1.5,
+        "euphoria": 0.85
+      },
+      "overfit_flag": false
+    },
+    "PULLBACK": {
+      "enabled": true,
+      "expectancy_R": 0.404,
+      "oos_expectancy_R": 0.571,
+      "win_rate": 37.2,
+      "profit_factor": 1.64,
+      "max_consec_losses": 14,
+      "n": 1325,
+      "regime_multiplier": {
+        "bear": 0.43,
+        "bull_volatile": 1.23,
+        "chop": 0.89,
+        "euphoria": 1.12
+      },
+      "overfit_flag": false
+    },
+    "TREND_LEADER": {
+      "enabled": true,
+      "expectancy_R": 0.088,
+      "oos_expectancy_R": 0.116,
+      "win_rate": 65.5,
+      "profit_factor": 1.27,
+      "max_consec_losses": 17,
+      "n": 38041,
+      "regime_multiplier": {
+        "bear": 0.2,
+        "bull_volatile": 1.41,
+        "chop": 1.5,
+        "euphoria": 0.95
+      },
+      "overfit_flag": false
+    },
+    "VCP": {
+      "enabled": true,
+      "expectancy_R": 0.164,
+      "oos_expectancy_R": 0.16,
+      "win_rate": 55.1,
+      "profit_factor": 1.36,
+      "max_consec_losses": 18,
+      "n": 3306,
+      "regime_multiplier": {
+        "bear": 0.37,
+        "bull_volatile": 0.0,
+        "chop": 1.1,
+        "euphoria": 1.14
+      },
+      "overfit_flag": false
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "asof": "2026-06-02T13:55:45.673972+00:00",
+  "min_n": 25,
+  "actions": [
+    {
+      "setup": "MEAN_REVERSION",
+      "n": 72,
+      "live_exp_R": 1.896,
+      "backtest_exp_R": 0.608,
+      "drift": 1.288,
+      "status": "Validated",
+      "verdict": "Deploy",
+      "lesson_id": 11
+    },
+    {
+      "setup": "PULLBACK",
+      "n": 45,
+      "live_exp_R": 1.049,
+      "backtest_exp_R": 0.404,
+      "drift": 0.645,
+      "status": "Validated",
+      "verdict": "Deploy",
+      "lesson_id": 12
+    },
+    {
+      "setup": "TREND_LEADER",
+      "n": 1717,
+      "live_exp_R": 0.232,
+      "backtest_exp_R": 0.088,
+      "drift": 0.144,
+      "status": "Validated",
+      "verdict": "Deploy",
+      "lesson_id": 13
+    },
+    {
+      "setup": "VCP",
+      "n": 62,
+      "live_exp_R": 0.321,
+      "backtest_exp_R": 0.164,
+      "drift": 0.157,
+      "status": "Validated",
+      "verdict": "Deploy",
+      "lesson_id": 14
+    }
+  ],
+  "summary": {
+    "validated": [
+      "MEAN_REVERSION",
+      "PULLBACK",
+      "TREND_LEADER",
+      "VCP"
+    ],
+    "probation": [],
+    "broken": []
+  }
+}

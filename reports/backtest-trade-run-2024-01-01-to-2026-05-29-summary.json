@@ -1,0 +1,300 @@
+{
+  "mode": "backtest_replay_only",
+  "broker_order_path_touched": false,
+  "runs": [
+    {
+      "name": "recent_regime_top5_21d",
+      "mode": "backtest_replay_only",
+      "data": {
+        "price_db": "/Users/lionel/Documents/New project/TradingBrain/data/prices.duckdb",
+        "price_rows": 381073,
+        "tickers": 81,
+        "database_min_date": "1996-05-28",
+        "database_max_date": "2026-05-29"
+      },
+      "params": {
+        "start": "2024-01-01",
+        "end": "2026-05-29",
+        "top_n": 5,
+        "rebalance_days": 21,
+        "regime_filter": true
+      },
+      "metrics": {
+        "initial_equity": 100000.0,
+        "final_equity": 214762.16,
+        "return_pct": 114.76,
+        "cagr_pct": 37.38,
+        "sharpe": 1.74,
+        "max_drawdown_pct": 12.1,
+        "trades": 106,
+        "winners": 59,
+        "losers": 47,
+        "win_rate_pct": 55.7,
+        "benchmark_return_pct": 64.46,
+        "alpha_pct": 50.3,
+        "halted": false,
+        "exit_reasons": {
+          "STOP": 41,
+          "TAKE": 41,
+          "REBAL": 24
+        }
+      },
+      "artifacts": {
+        "equity_curve_csv": "/Users/lionel/Documents/New project/TradingBrain/reports/backtest-recent_regime_top5_21d-2024-01-01-to-2026-05-29-equity.csv",
+        "closed_trades_csv": "/Users/lionel/Documents/New project/TradingBrain/reports/backtest-recent_regime_top5_21d-2024-01-01-to-2026-05-29-trades.csv",
+        "summary_json": "/Users/lionel/Documents/New project/TradingBrain/reports/backtest-recent_regime_top5_21d-2024-01-01-to-2026-05-29-summary.json"
+      },
+      "top_winners": [
+        {
+          "entry_date": "2024-10-31",
+          "exit_date": "2024-11-08",
+          "ticker": "AAOI",
+          "entry_price": 15.619999885559082,
+          "exit_price": 27.760000228881836,
+          "shares": 682.6977669958524,
+          "pnl_pct": 77.72087344601303,
+          "reason": "TAKE"
+        },
+        {
+          "entry_date": "2024-10-31",
+          "exit_date": "2024-11-07",
+          "ticker": "APP",
+          "entry_price": 169.38999938964844,
+          "exit_price": 246.52999877929688,
+          "shares": 62.9537698847074,
+          "pnl_pct": 45.53987819092142,
+          "reason": "TAKE"
+        },
+        {
+          "entry_date": "2025-11-04",
+          "exit_date": "2026-01-06",
+          "ticker": "WDC",
+          "entry_price": 151.9849853515625,
+          "exit_price": 219.27505493164062,
+          "shares": 99.47045976251928,
+          "pnl_pct": 44.27415604536645,
+          "reason": "TAKE"
+        },
+        {
+          "entry_date": "2026-05-07",
+          "exit_date": "2026-05-13",
+          "ticker": "AAOI",
+          "entry_price": 157.5500030517578,
+          "exit_price": 223.10000610351562,
+          "shares": 129.50321233032767,
+          "pnl_pct": 41.605840547158564,
+          "reason": "TAKE"
+        },
+        {
+          "entry_date": "2024-12-02",
+          "exit_date": "2025-02-13",
+          "ticker": "APP",
+          "entry_price": 340.5899963378906,
+          "exit_price": 471.6700134277344,
+          "shares": 35.61336397905462,
+          "pnl_pct": 38.4861618072313,
+          "reason": "TAKE"
+        }
+      ],
+      "worst_losers": [
+        {
+          "entry_date": "2025-10-06",
+          "exit_date": "2025-10-14",
+          "ticker": "ALAB",
+          "entry_price": 220.80999755859375,
+          "exit_price": 161.5500030517578,
+          "shares": 67.59746663144271,
+          "pnl_pct": -26.837550456070637,
+          "reason": "STOP"
+        },
+        {
+          "entry_date": "2024-10-31",
+          "exit_date": "2024-11-04",
+          "ticker": "LEU",
+          "entry_price": 103.80999755859375,
+          "exit_price": 78.0,
+          "shares": 102.72362289891869,
+          "pnl_pct": -24.862728220396832,
+          "reason": "STOP"
+        },
+        {
+          "entry_date": "2025-08-06",
+          "exit_date": "2025-08-13",
+          "ticker": "LEU",
+          "entry_price": 232.38999938964844,
+          "exit_price": 187.44000244140625,
+          "shares": 55.99961574738874,
+          "pnl_pct": -19.342483353973638,
+          "reason": "STOP"
+        },
+        {
+          "entry_date": "2024-06-03",
+          "exit_date": "2024-07-17",
+          "ticker": "VST",
+          "entry_price": 92.0071792602539,
+          "exit_price": 75.37993621826172,
+          "shares": 112.90863330842419,
+          "pnl_pct": -18.071680031576594,
+          "reason": "STOP"
+        },
+        {
+          "entry_date": "2024-07-03",
+          "exit_date": "2024-07-25",
+          "ticker": "TER",
+          "entry_price": 150.6119842529297,
+          "exit_price": 123.4482192993164,
+          "shares": 69.70615889689621,
+          "pnl_pct": -18.035593308428837,
+          "reason": "STOP"
+        }
+      ]
+    },
+    {
+      "name": "recent_no_regime_top5_21d",
+      "mode": "backtest_replay_only",
+      "data": {
+        "price_db": "/Users/lionel/Documents/New project/TradingBrain/data/prices.duckdb",
+        "price_rows": 381073,
+        "tickers": 81,
+        "database_min_date": "1996-05-28",
+        "database_max_date": "2026-05-29"
+      },
+      "params": {
+        "start": "2024-01-01",
+        "end": "2026-05-29",
+        "top_n": 5,
+        "rebalance_days": 21,
+        "regime_filter": false
+      },
+      "metrics": {
+        "initial_equity": 100000.0,
+        "final_equity": 259497.1,
+        "return_pct": 159.5,
+        "cagr_pct": 48.62,
+        "sharpe": 2.06,
+        "max_drawdown_pct": 12.1,
+        "trades": 113,
+        "winners": 66,
+        "losers": 47,
+        "win_rate_pct": 58.4,
+        "benchmark_return_pct": 64.46,
+        "alpha_pct": 95.04,
+        "halted": false,
+        "exit_reasons": {
+          "TAKE": 48,
+          "STOP": 41,
+          "REBAL": 24
+        }
+      },
+      "artifacts": {
+        "equity_curve_csv": "/Users/lionel/Documents/New project/TradingBrain/reports/backtest-recent_no_regime_top5_21d-2024-01-01-to-2026-05-29-equity.csv",
+        "closed_trades_csv": "/Users/lionel/Documents/New project/TradingBrain/reports/backtest-recent_no_regime_top5_21d-2024-01-01-to-2026-05-29-trades.csv",
+        "summary_json": "/Users/lionel/Documents/New project/TradingBrain/reports/backtest-recent_no_regime_top5_21d-2024-01-01-to-2026-05-29-summary.json"
+      },
+      "top_winners": [
+        {
+          "entry_date": "2024-10-31",
+          "exit_date": "2024-11-08",
+          "ticker": "AAOI",
+          "entry_price": 15.619999885559082,
+          "exit_price": 27.760000228881836,
+          "shares": 682.6977669958524,
+          "pnl_pct": 77.72087344601303,
+          "reason": "TAKE"
+        },
+        {
+          "entry_date": "2024-10-31",
+          "exit_date": "2024-11-07",
+          "ticker": "APP",
+          "entry_price": 169.38999938964844,
+          "exit_price": 246.52999877929688,
+          "shares": 62.9537698847074,
+          "pnl_pct": 45.53987819092142,
+          "reason": "TAKE"
+        },
+        {
+          "entry_date": "2025-11-04",
+          "exit_date": "2026-01-06",
+          "ticker": "WDC",
+          "entry_price": 151.9849853515625,
+          "exit_price": 219.27505493164062,
+          "shares": 120.19014648964195,
+          "pnl_pct": 44.27415604536645,
+          "reason": "TAKE"
+        },
+        {
+          "entry_date": "2026-05-07",
+          "exit_date": "2026-05-13",
+          "ticker": "AAOI",
+          "entry_price": 157.5500030517578,
+          "exit_price": 223.10000610351562,
+          "shares": 156.47871838555852,
+          "pnl_pct": 41.605840547158564,
+          "reason": "TAKE"
+        },
+        {
+          "entry_date": "2024-12-02",
+          "exit_date": "2025-02-13",
+          "ticker": "APP",
+          "entry_price": 340.5899963378906,
+          "exit_price": 471.6700134277344,
+          "shares": 35.61336397905462,
+          "pnl_pct": 38.4861618072313,
+          "reason": "TAKE"
+        }
+      ],
+      "worst_losers": [
+        {
+          "entry_date": "2025-10-06",
+          "exit_date": "2025-10-14",
+          "ticker": "ALAB",
+          "entry_price": 220.80999755859375,
+          "exit_price": 161.5500030517578,
+          "shares": 81.67801210689822,
+          "pnl_pct": -26.837550456070637,
+          "reason": "STOP"
+        },
+        {
+          "entry_date": "2024-10-31",
+          "exit_date": "2024-11-04",
+          "ticker": "LEU",
+          "entry_price": 103.80999755859375,
+          "exit_price": 78.0,
+          "shares": 102.72362289891869,
+          "pnl_pct": -24.862728220396832,
+          "reason": "STOP"
+        },
+        {
+          "entry_date": "2025-08-06",
+          "exit_date": "2025-08-13",
+          "ticker": "LEU",
+          "entry_price": 232.38999938964844,
+          "exit_price": 187.44000244140625,
+          "shares": 67.66433005448337,
+          "pnl_pct": -19.342483353973638,
+          "reason": "STOP"
+        },
+        {
+          "entry_date": "2024-06-03",
+          "exit_date": "2024-07-17",
+          "ticker": "VST",
+          "entry_price": 92.0071792602539,
+          "exit_price": 75.37993621826172,
+          "shares": 112.90863330842419,
+          "pnl_pct": -18.071680031576594,
+          "reason": "STOP"
+        },
+        {
+          "entry_date": "2024-07-03",
+          "exit_date": "2024-07-25",
+          "ticker": "TER",
+          "entry_price": 150.6119842529297,
+          "exit_price": 123.4482192993164,
+          "shares": 69.70615889689621,
+          "pnl_pct": -18.035593308428837,
+          "reason": "STOP"
+        }
+      ]
+    }
+  ]
+}

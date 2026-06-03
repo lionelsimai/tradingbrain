@@ -1,0 +1,143 @@
+{
+  "asof": "2026-06-03T02:48:35.660100+00:00",
+  "status": "open",
+  "closed": false,
+  "has_prices": false,
+  "has_universe": false,
+  "universe_rows": 0,
+  "universe_columns": [],
+  "has_point_in_time_universe": false,
+  "has_vendor_pit_universe": false,
+  "delisted_rows": 0,
+  "delisted_included_pct": 0.0,
+  "polygon_inactive_reference_rows": 0,
+  "corporate_action_rows": 0,
+  "splits_rows": 0,
+  "dividends_rows": 0,
+  "candidate_count": 15,
+  "candidate_traceable": 0,
+  "candidate_traceable_pct": 0.0,
+  "candidate_coverage_status": "poor",
+  "candidate_rows": [
+    {
+      "ticker": "MU",
+      "price_rows": 0,
+      "universe_rows": 0,
+      "price_traceable": false,
+      "universe_traceable": false
+    },
+    {
+      "ticker": "ARM",
+      "price_rows": 0,
+      "universe_rows": 0,
+      "price_traceable": false,
+      "universe_traceable": false
+    },
+    {
+      "ticker": "AAPL",
+      "price_rows": 0,
+      "universe_rows": 0,
+      "price_traceable": false,
+      "universe_traceable": false
+    },
+    {
+      "ticker": "INTC",
+      "price_rows": 0,
+      "universe_rows": 0,
+      "price_traceable": false,
+      "universe_traceable": false
+    },
+    {
+      "ticker": "AMD",
+      "price_rows": 0,
+      "universe_rows": 0,
+      "price_traceable": false,
+      "universe_traceable": false
+    },
+    {
+      "ticker": "STX",
+      "price_rows": 0,
+      "universe_rows": 0,
+      "price_traceable": false,
+      "universe_traceable": false
+    },
+    {
+      "ticker": "WDC",
+      "price_rows": 0,
+      "universe_rows": 0,
+      "price_traceable": false,
+      "universe_traceable": false
+    },
+    {
+      "ticker": "ALAB",
+      "price_rows": 0,
+      "universe_rows": 0,
+      "price_traceable": false,
+      "universe_traceable": false
+    },
+    {
+      "ticker": "DDOG",
+      "price_rows": 0,
+      "universe_rows": 0,
+      "price_traceable": false,
+      "universe_traceable": false
+    },
+    {
+      "ticker": "COHR",
+      "price_rows": 0,
+      "universe_rows": 0,
+      "price_traceable": false,
+      "universe_traceable": false
+    },
+    {
+      "ticker": "QCOM",
+      "price_rows": 0,
+      "universe_rows": 0,
+      "price_traceable": false,
+      "universe_traceable": false
+    },
+    {
+      "ticker": "GEV",
+      "price_rows": 0,
+      "universe_rows": 0,
+      "price_traceable": false,
+      "universe_traceable": false
+    },
+    {
+      "ticker": "AAOI",
+      "price_rows": 0,
+      "universe_rows": 0,
+      "price_traceable": false,
+      "universe_traceable": false
+    },
+    {
+      "ticker": "MRVL",
+      "price_rows": 0,
+      "universe_rows": 0,
+      "price_traceable": false,
+      "universe_traceable": false
+    },
+    {
+      "ticker": "LITE",
+      "price_rows": 0,
+      "universe_rows": 0,
+      "price_traceable": false,
+      "universe_traceable": false
+    }
+  ],
+  "blockers": [
+    "price table missing or empty",
+    "universe table missing or empty",
+    "universe lacks PIT/delisting columns",
+    "no delisted/inactive rows in PIT universe",
+    "corporate-action reference missing",
+    "candidate local price/universe traceability below 95%"
+  ],
+  "required_next_actions": [
+    "Import or build a delisted-inclusive point-in-time universe with active/delisted timestamps.",
+    "Bind every price row to the universe state valid at that historical date.",
+    "Collect split/dividend/symbol-change corporate actions for every traded candidate.",
+    "Keep candidate traceability >=95% before any 9/10 research-quality claim."
+  ],
+  "methodology_caveat": "PIT coverage is an evidence audit only. Candidate price traceability does not close survivorship bias unless the universe is delisted-inclusive and point-in-time."
+}

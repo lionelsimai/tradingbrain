@@ -1,0 +1,101 @@
+{
+  "asof": "2026-06-03T01:45:47.455373+00:00",
+  "verdict": "RESEARCH_ONLY",
+  "overall_score": 61.1,
+  "rating_1_to_10": 6.1,
+  "hard_blockers": [
+    "survivorship_free_data",
+    "forward_paper_record"
+  ],
+  "counts": {
+    "prices_rows": 381073,
+    "universe_rows": 80,
+    "delisted_rows": 0,
+    "polygon_inactive_rows": 0,
+    "polygon_corporate_action_rows": 0,
+    "paper_fills": 0,
+    "paper_orders": 0,
+    "paper_positions": 0,
+    "signal_ledger_resolved": 1919,
+    "signal_ledger_replay": 1919,
+    "signal_ledger_live_or_paper": 3,
+    "forward_paper_observations": 3,
+    "forward_paper_resolved": 0,
+    "forward_paper_horizon_outcomes": 0,
+    "analyst_target_records": 0
+  },
+  "dimensions": [
+    {
+      "name": "Survivorship-free data",
+      "weight_pct": 18,
+      "score": 50,
+      "status": "partial",
+      "evidence": "prices_rows=381073, universe_rows=80, delisted_rows=0, polygon_inactive_rows=0, polygon_corporate_action_rows=0",
+      "action": "Polygon inactive/corporate-action reference is now being collected; next promote it into a delisted-inclusive, point-in-time universe/price store, or import a vendor PIT export (Sharadar/Norgate/Intrinio)."
+    },
+    {
+      "name": "Forward paper record",
+      "weight_pct": 22,
+      "score": 2,
+      "status": "partial",
+      "evidence": "forward_live_or_paper_signals=3, paper_fills=0, forward_observations=3, resolved_forward=0, horizon_outcomes=0, required_for_world_class=200+ resolved",
+      "action": "Run the paper engine every market day and log accepted/rejected signals, fills, exits, slippage, and thesis reviews until there are at least 200 resolved forward paper observations across regimes."
+    },
+    {
+      "name": "Benchmark-adjusted edge",
+      "weight_pct": 16,
+      "score": 93,
+      "status": "pass",
+      "evidence": "walk_forward_windows=6, beats_SPY=6/6, median_oos_sharpe=0.82, IS_OOS_gap=1.69, skill_vs_beta_pass=True",
+      "action": "Require durable OOS edge versus SPY/QQQ/SMH/XLK and simple momentum baselines after costs; reduce or reject setups with unstable OOS gaps."
+    },
+    {
+      "name": "Risk controls",
+      "weight_pct": 14,
+      "score": 100,
+      "status": "pass",
+      "evidence": "risk_policy_valid=True, circuit_breakers=True, data_quality_pass=True, safety_state=True",
+      "action": "Keep risk-first design: max loss/day/week, exposure caps, kill-switch drills, slippage/liquidity checks, and paper/live reconciliation."
+    },
+    {
+      "name": "Explainability and audit trail",
+      "weight_pct": 10,
+      "score": 80,
+      "status": "pass",
+      "evidence": "resolved_signals=1919, replay_signals=1919, journal_events=18142",
+      "action": "For every recommendation store thesis, bear case, invalidation, data timestamp, score breakdown, rejection reason, and post-trade review."
+    },
+    {
+      "name": "Automation reliability",
+      "weight_pct": 8,
+      "score": 100,
+      "status": "pass",
+      "evidence": "loop_scripts=4/4, operational_reports=3/3",
+      "action": "Schedule market-day premarket/EOD/weekly paper loops via Hermes cron, with Telegram summaries and quiet failure alerts."
+    },
+    {
+      "name": "Validation rigor",
+      "weight_pct": 8,
+      "score": 70,
+      "status": "partial",
+      "evidence": "gauntlet_score=60.5, gauntlet_verdict=REJECTED, no_lookahead_pass=True, monte_carlo_present=True",
+      "action": "Push gauntlet above 85 with walk-forward stability, DSR/PBO improvements, slippage stress, and benchmark comparisons after costs."
+    },
+    {
+      "name": "Live safety governance",
+      "weight_pct": 4,
+      "score": 30,
+      "status": "partial",
+      "evidence": "go_live_verdict=BLOCKED, gates_passing=1/7",
+      "action": "Keep live disabled until all gates are green, human signoff is bound to a report hash, and a tiny-size pilot is explicitly approved."
+    }
+  ],
+  "priority_actions": [
+    "Run the paper engine every market day and log accepted/rejected signals, fills, exits, slippage, and thesis reviews until there are at least 200 resolved forward paper observations across regimes.",
+    "Polygon inactive/corporate-action reference is now being collected; next promote it into a delisted-inclusive, point-in-time universe/price store, or import a vendor PIT export (Sharadar/Norgate/Intrinio).",
+    "Require durable OOS edge versus SPY/QQQ/SMH/XLK and simple momentum baselines after costs; reduce or reject setups with unstable OOS gaps.",
+    "Push gauntlet above 85 with walk-forward stability, DSR/PBO improvements, slippage stress, and benchmark comparisons after costs.",
+    "Schedule market-day premarket/EOD/weekly paper loops via Hermes cron, with Telegram summaries and quiet failure alerts."
+  ],
+  "disclaimer": "Informational engineering readiness audit, not financial advice. Markets risk loss of capital."
+}

@@ -1,0 +1,874 @@
+{
+  "asof": "2026-05-30T10:40:12.827773+00:00",
+  "data_quality": {
+    "source": "yfinance (split/div-adjusted close)",
+    "survivorship_bias_free": false,
+    "point_in_time_universe": false,
+    "total_return": false,
+    "note": "Results carry an INDICATIVE-ONLY caveat until a point-in-time, delisting-inclusive universe is sourced."
+  },
+  "cost_R_per_trade": 0.03,
+  "trial_sharpe_dispersion": 0.0354,
+  "portfolio_pbo": {
+    "pbo": 0.001,
+    "n_combos": 12870,
+    "logit_mean": 1.6067,
+    "interpretation": "LOW overfit risk",
+    "strategies": [
+      "PULLBACK",
+      "BREAKOUT",
+      "MEAN_REVERSION",
+      "TREND_LEADER",
+      "VCP"
+    ]
+  },
+  "strategies": {
+    "PULLBACK": {
+      "hypothesis": "Stocks in a strong uptrend that pull back to the rising 50-day MA tend to resume.",
+      "rationale": "Trend-following institutions add on dips; the uptrend is intact, the dip is noise. Counterparty: weak-handed retail selling the wobble.",
+      "fails_when": "Trend breaks (loses MA200) or a regime flip turns the dip into a top.",
+      "full": {
+        "n_trades": 3272,
+        "win_rate": 37.8,
+        "expectancy_R": 0.246,
+        "total_R": 805.5,
+        "profit_factor": 1.39,
+        "avg_win_R": 2.32,
+        "avg_loss_R": -1.01,
+        "max_drawdown_pct": -30.8,
+        "sharpe": 0.63,
+        "sortino": 12.2,
+        "equity_mult": 9.05,
+        "note": "additive (non-compounded); n inflated by overlapping signals"
+      },
+      "in_sample": {
+        "n_trades": 1963,
+        "win_rate": 36.6,
+        "expectancy_R": 0.156,
+        "total_R": 306.9,
+        "profit_factor": 1.24,
+        "avg_win_R": 2.17,
+        "avg_loss_R": -1.01,
+        "max_drawdown_pct": -30.8,
+        "sharpe": 0.42,
+        "sortino": 7.48,
+        "equity_mult": 4.07,
+        "note": "additive (non-compounded); n inflated by overlapping signals"
+      },
+      "out_of_sample": {
+        "n_trades": 1309,
+        "win_rate": 39.5,
+        "expectancy_R": 0.381,
+        "total_R": 498.5,
+        "profit_factor": 1.62,
+        "avg_win_R": 2.52,
+        "avg_loss_R": -1.01,
+        "max_drawdown_pct": -15.6,
+        "sharpe": 0.91,
+        "sortino": 20.07,
+        "equity_mult": 5.99,
+        "note": "additive (non-compounded); n inflated by overlapping signals"
+      },
+      "walk_forward_efficiency": 2.44,
+      "bootstrap_ci_expectancy_R": [
+        0.172,
+        0.319
+      ],
+      "stationary_bootstrap_ci_R": [
+        0.1375,
+        0.36
+      ],
+      "effective_sample_size": 1198.8,
+      "probabilistic_sharpe_ratio": 1.0,
+      "min_track_record_length": 160,
+      "deflated_sharpe": 0.51,
+      "monte_carlo_dd": {
+        "dd_median_pct": -31.5,
+        "dd_p95_pct": -43.1
+      },
+      "trade_removal": {
+        "expectancy_R_ex_top3": 0.231,
+        "top3_share_of_profit_pct": 1.8
+      },
+      "by_regime": {
+        "bear": {
+          "n_trades": 801,
+          "win_rate": 38.1,
+          "expectancy_R": 0.22,
+          "total_R": 176.3,
+          "profit_factor": 1.35,
+          "avg_win_R": 2.21,
+          "avg_loss_R": -1.0,
+          "max_drawdown_pct": -39.3,
+          "sharpe": 0.56,
+          "sortino": 9.02,
+          "equity_mult": 2.76,
+          "note": "additive (non-compounded); n inflated by overlapping signals"
+        },
+        "bull": {
+          "n_trades": 1094,
+          "win_rate": 37.8,
+          "expectancy_R": 0.227,
+          "total_R": 248.4,
+          "profit_factor": 1.36,
+          "avg_win_R": 2.27,
+          "avg_loss_R": -1.01,
+          "max_drawdown_pct": -20.8,
+          "sharpe": 0.59,
+          "sortino": 11.81,
+          "equity_mult": 3.48,
+          "note": "additive (non-compounded); n inflated by overlapping signals"
+        },
+        "bull_volatile": {
+          "n_trades": 217,
+          "win_rate": 47.0,
+          "expectancy_R": 0.335,
+          "total_R": 72.7,
+          "profit_factor": 1.65,
+          "avg_win_R": 1.82,
+          "avg_loss_R": -0.98,
+          "max_drawdown_pct": -17.4,
+          "sharpe": 0.99,
+          "sortino": 10.57,
+          "equity_mult": 1.73,
+          "note": "additive (non-compounded); n inflated by overlapping signals"
+        },
+        "chop": {
+          "n_trades": 1103,
+          "win_rate": 35.6,
+          "expectancy_R": 0.251,
+          "total_R": 276.5,
+          "profit_factor": 1.38,
+          "avg_win_R": 2.55,
+          "avg_loss_R": -1.02,
+          "max_drawdown_pct": -22.6,
+          "sharpe": 0.63,
+          "sortino": 16.64,
+          "equity_mult": 3.77,
+          "note": "additive (non-compounded); n inflated by overlapping signals"
+        },
+        "euphoria": {
+          "n_trades": 53,
+          "win_rate": 37.7,
+          "expectancy_R": 0.591,
+          "total_R": 31.3,
+          "profit_factor": 1.92,
+          "avg_win_R": 3.26,
+          "avg_loss_R": -1.03,
+          "max_drawdown_pct": -9.9,
+          "sharpe": 1.24,
+          "sortino": 0,
+          "equity_mult": 1.31,
+          "note": "additive (non-compounded); n inflated by overlapping signals"
+        }
+      },
+      "by_asset": {
+        "stock": {
+          "n_trades": 3272,
+          "win_rate": 37.8,
+          "expectancy_R": 0.246,
+          "total_R": 805.5,
+          "profit_factor": 1.39,
+          "avg_win_R": 2.32,
+          "avg_loss_R": -1.01,
+          "max_drawdown_pct": -30.8,
+          "sharpe": 0.63,
+          "sortino": 12.2,
+          "equity_mult": 9.05,
+          "note": "additive (non-compounded); n inflated by overlapping signals"
+        }
+      },
+      "benchmark_spy_bh_return_pct": 1037.2,
+      "span": [
+        "1997-08-11",
+        "2026-04-29"
+      ],
+      "verdict": "Deploy",
+      "confidence": "medium-high",
+      "biggest_risk": "Survivorship bias \u2014 universe excludes delisted names; live edge likely lower.",
+      "deflated_sharpe_ratio": 1.0,
+      "expected_max_sharpe_from_trials": 0.0422
+    },
+    "BREAKOUT": {
+      "hypothesis": "Price breaking above a multi-week base/52w high on volume continues higher.",
+      "rationale": "Supply above is exhausted; breakout triggers momentum + breakout-buyer demand. Counterparty: range traders fading the move, who are wrong in trends.",
+      "fails_when": "Low-volume breakout = false; snaps back into base.",
+      "full": {
+        "n_trades": 3701,
+        "win_rate": 72.4,
+        "expectancy_R": 0.028,
+        "total_R": 102.1,
+        "profit_factor": 1.11,
+        "avg_win_R": 0.38,
+        "avg_loss_R": -0.9,
+        "max_drawdown_pct": -64.0,
+        "sharpe": 0.22,
+        "sortino": 0.5,
+        "equity_mult": 2.02,
+        "note": "additive (non-compounded); n inflated by overlapping signals"
+      },
+      "in_sample": {
+        "n_trades": 2220,
+        "win_rate": 71.3,
+        "expectancy_R": 0.005,
+        "total_R": 11.2,
+        "profit_factor": 1.02,
+        "avg_win_R": 0.37,
+        "avg_loss_R": -0.91,
+        "max_drawdown_pct": -64.0,
+        "sharpe": 0.04,
+        "sortino": 0.09,
+        "equity_mult": 1.11,
+        "note": "additive (non-compounded); n inflated by overlapping signals"
+      },
+      "out_of_sample": {
+        "n_trades": 1481,
+        "win_rate": 74.2,
+        "expectancy_R": 0.061,
+        "total_R": 91.0,
+        "profit_factor": 1.27,
+        "avg_win_R": 0.39,
+        "avg_loss_R": -0.9,
+        "max_drawdown_pct": -28.5,
+        "sharpe": 0.5,
+        "sortino": 1.06,
+        "equity_mult": 1.91,
+        "note": "additive (non-compounded); n inflated by overlapping signals"
+      },
+      "walk_forward_efficiency": 12.19,
+      "bootstrap_ci_expectancy_R": [
+        0.005,
+        0.05
+      ],
+      "stationary_bootstrap_ci_R": [
+        -0.0101,
+        0.0661
+      ],
+      "effective_sample_size": 1325.3,
+      "probabilistic_sharpe_ratio": 0.9921,
+      "min_track_record_length": 1718,
+      "deflated_sharpe": 0.18,
+      "monte_carlo_dd": {
+        "dd_median_pct": -23.0,
+        "dd_p95_pct": -33.4
+      },
+      "trade_removal": {
+        "expectancy_R_ex_top3": 0.026,
+        "top3_share_of_profit_pct": 0.6
+      },
+      "by_regime": {
+        "bear": {
+          "n_trades": 166,
+          "win_rate": 66.9,
+          "expectancy_R": -0.054,
+          "total_R": -9.0,
+          "profit_factor": 0.8,
+          "avg_win_R": 0.32,
+          "avg_loss_R": -0.8,
+          "max_drawdown_pct": -14.8,
+          "sharpe": -0.47,
+          "sortino": -0.77,
+          "equity_mult": 0.91,
+          "note": "additive (non-compounded); n inflated by overlapping signals"
+        },
+        "bull": {
+          "n_trades": 2371,
+          "win_rate": 72.3,
+          "expectancy_R": 0.023,
+          "total_R": 53.8,
+          "profit_factor": 1.09,
+          "avg_win_R": 0.39,
+          "avg_loss_R": -0.93,
+          "max_drawdown_pct": -40.8,
+          "sharpe": 0.18,
+          "sortino": 0.45,
+          "equity_mult": 1.54,
+          "note": "additive (non-compounded); n inflated by overlapping signals"
+        },
+        "bull_volatile": {
+          "n_trades": 92,
+          "win_rate": 73.9,
+          "expectancy_R": 0.083,
+          "total_R": 7.6,
+          "profit_factor": 1.46,
+          "avg_win_R": 0.36,
+          "avg_loss_R": -0.7,
+          "max_drawdown_pct": -3.0,
+          "sharpe": 0.75,
+          "sortino": 0.96,
+          "equity_mult": 1.08,
+          "note": "additive (non-compounded); n inflated by overlapping signals"
+        },
+        "chop": {
+          "n_trades": 778,
+          "win_rate": 73.0,
+          "expectancy_R": 0.032,
+          "total_R": 24.8,
+          "profit_factor": 1.13,
+          "avg_win_R": 0.37,
+          "avg_loss_R": -0.89,
+          "max_drawdown_pct": -16.2,
+          "sharpe": 0.26,
+          "sortino": 0.54,
+          "equity_mult": 1.25,
+          "note": "additive (non-compounded); n inflated by overlapping signals"
+        },
+        "euphoria": {
+          "n_trades": 294,
+          "win_rate": 74.8,
+          "expectancy_R": 0.085,
+          "total_R": 24.9,
+          "profit_factor": 1.38,
+          "avg_win_R": 0.41,
+          "avg_loss_R": -0.88,
+          "max_drawdown_pct": -16.6,
+          "sharpe": 0.7,
+          "sortino": 1.4,
+          "equity_mult": 1.25,
+          "note": "additive (non-compounded); n inflated by overlapping signals"
+        }
+      },
+      "by_asset": {
+        "stock": {
+          "n_trades": 3701,
+          "win_rate": 72.4,
+          "expectancy_R": 0.028,
+          "total_R": 102.1,
+          "profit_factor": 1.11,
+          "avg_win_R": 0.38,
+          "avg_loss_R": -0.9,
+          "max_drawdown_pct": -64.0,
+          "sharpe": 0.22,
+          "sortino": 0.5,
+          "equity_mult": 2.02,
+          "note": "additive (non-compounded); n inflated by overlapping signals"
+        }
+      },
+      "benchmark_spy_bh_return_pct": 0.0,
+      "span": [
+        "1997-05-23",
+        "2026-05-22"
+      ],
+      "verdict": "Iterate",
+      "confidence": "low-medium",
+      "biggest_risk": "Edge concentrated in healthy regimes; loses in bear/crash \u2014 regime gating mandatory.",
+      "deflated_sharpe_ratio": 0.4437,
+      "expected_max_sharpe_from_trials": 0.0422,
+      "overfit_flag": [
+        "Deflated Sharpe 0.4437 < 0.5 (edge plausibly a multiple-testing artifact)"
+      ]
+    },
+    "MEAN_REVERSION": {
+      "hypothesis": "Sharp oversold dislocations (>2 std below 20d) in names still above MA200 snap back.",
+      "rationale": "Forced/panic selling overshoots fair value; liquidity providers earn the reversion premium. Low win rate, fat-tailed winners.",
+      "fails_when": "The dislocation is the start of a real trend break, not noise.",
+      "full": {
+        "n_trades": 3035,
+        "win_rate": 20.4,
+        "expectancy_R": 0.52,
+        "total_R": 1578.0,
+        "profit_factor": 1.64,
+        "avg_win_R": 6.54,
+        "avg_loss_R": -1.02,
+        "max_drawdown_pct": -23.7,
+        "sharpe": 0.81,
+        "sortino": 42.3,
+        "equity_mult": 16.78,
+        "note": "additive (non-compounded); n inflated by overlapping signals"
+      },
+      "in_sample": {
+        "n_trades": 1821,
+        "win_rate": 19.5,
+        "expectancy_R": 0.424,
+        "total_R": 771.6,
+        "profit_factor": 1.52,
+        "avg_win_R": 6.38,
+        "avg_loss_R": -1.02,
+        "max_drawdown_pct": -23.7,
+        "sharpe": 0.68,
+        "sortino": 32.48,
+        "equity_mult": 8.72,
+        "note": "additive (non-compounded); n inflated by overlapping signals"
+      },
+      "out_of_sample": {
+        "n_trades": 1214,
+        "win_rate": 21.7,
+        "expectancy_R": 0.664,
+        "total_R": 806.4,
+        "profit_factor": 1.83,
+        "avg_win_R": 6.77,
+        "avg_loss_R": -1.02,
+        "max_drawdown_pct": -42.4,
+        "sharpe": 0.99,
+        "sortino": 60.25,
+        "equity_mult": 9.06,
+        "note": "additive (non-compounded); n inflated by overlapping signals"
+      },
+      "walk_forward_efficiency": 1.57,
+      "bootstrap_ci_expectancy_R": [
+        0.393,
+        0.646
+      ],
+      "stationary_bootstrap_ci_R": [
+        0.3533,
+        0.7024
+      ],
+      "effective_sample_size": 1228.8,
+      "probabilistic_sharpe_ratio": 1.0,
+      "min_track_record_length": 90,
+      "deflated_sharpe": 0.65,
+      "monte_carlo_dd": {
+        "dd_median_pct": -38.5,
+        "dd_p95_pct": -51.1
+      },
+      "trade_removal": {
+        "expectancy_R_ex_top3": 0.5,
+        "top3_share_of_profit_pct": 1.5
+      },
+      "by_regime": {
+        "bear": {
+          "n_trades": 473,
+          "win_rate": 20.5,
+          "expectancy_R": 0.617,
+          "total_R": 291.7,
+          "profit_factor": 1.76,
+          "avg_win_R": 6.97,
+          "avg_loss_R": -1.02,
+          "max_drawdown_pct": -33.7,
+          "sharpe": 0.9,
+          "sortino": 50.45,
+          "equity_mult": 3.92,
+          "note": "additive (non-compounded); n inflated by overlapping signals"
+        },
+        "bull": {
+          "n_trades": 1373,
+          "win_rate": 19.9,
+          "expectancy_R": 0.446,
+          "total_R": 611.8,
+          "profit_factor": 1.54,
+          "avg_win_R": 6.37,
+          "avg_loss_R": -1.02,
+          "max_drawdown_pct": -25.7,
+          "sharpe": 0.71,
+          "sortino": 38.32,
+          "equity_mult": 7.12,
+          "note": "additive (non-compounded); n inflated by overlapping signals"
+        },
+        "bull_volatile": {
+          "n_trades": 87,
+          "win_rate": 24.1,
+          "expectancy_R": 0.474,
+          "total_R": 41.2,
+          "profit_factor": 1.62,
+          "avg_win_R": 5.13,
+          "avg_loss_R": -1.01,
+          "max_drawdown_pct": -21.8,
+          "sharpe": 0.81,
+          "sortino": 22.26,
+          "equity_mult": 1.41,
+          "note": "additive (non-compounded); n inflated by overlapping signals"
+        },
+        "chop": {
+          "n_trades": 1005,
+          "win_rate": 20.5,
+          "expectancy_R": 0.52,
+          "total_R": 522.9,
+          "profit_factor": 1.64,
+          "avg_win_R": 6.51,
+          "avg_loss_R": -1.02,
+          "max_drawdown_pct": -28.2,
+          "sharpe": 0.81,
+          "sortino": 40.85,
+          "equity_mult": 6.23,
+          "note": "additive (non-compounded); n inflated by overlapping signals"
+        },
+        "euphoria": {
+          "n_trades": 90,
+          "win_rate": 24.4,
+          "expectancy_R": 1.307,
+          "total_R": 117.6,
+          "profit_factor": 2.68,
+          "avg_win_R": 8.52,
+          "avg_loss_R": -1.03,
+          "max_drawdown_pct": -11.1,
+          "sharpe": 1.59,
+          "sortino": 396.86,
+          "equity_mult": 2.18,
+          "note": "additive (non-compounded); n inflated by overlapping signals"
+        }
+      },
+      "by_asset": {
+        "stock": {
+          "n_trades": 3035,
+          "win_rate": 20.4,
+          "expectancy_R": 0.52,
+          "total_R": 1578.0,
+          "profit_factor": 1.64,
+          "avg_win_R": 6.54,
+          "avg_loss_R": -1.02,
+          "max_drawdown_pct": -23.7,
+          "sharpe": 0.81,
+          "sortino": 42.3,
+          "equity_mult": 16.78,
+          "note": "additive (non-compounded); n inflated by overlapping signals"
+        }
+      },
+      "benchmark_spy_bh_return_pct": 0.0,
+      "span": [
+        "1997-06-03",
+        "2026-05-19"
+      ],
+      "verdict": "Deploy",
+      "confidence": "medium-high",
+      "biggest_risk": "Survivorship bias \u2014 universe excludes delisted names; live edge likely lower.",
+      "deflated_sharpe_ratio": 1.0,
+      "expected_max_sharpe_from_trials": 0.0422
+    },
+    "TREND_LEADER": {
+      "hypothesis": "The strongest-trending names (>MA50/200, positive RS) keep leading.",
+      "rationale": "Momentum/relative-strength premium \u2014 one of the most durable, widely-documented anomalies. Underreaction to good news.",
+      "fails_when": "Regime flips risk-off; high-beta leaders fall hardest.",
+      "full": {
+        "n_trades": 19109,
+        "win_rate": 66.9,
+        "expectancy_R": 0.073,
+        "total_R": 1386.1,
+        "profit_factor": 1.23,
+        "avg_win_R": 0.57,
+        "avg_loss_R": -0.93,
+        "max_drawdown_pct": -57.2,
+        "sharpe": 0.41,
+        "sortino": 1.53,
+        "equity_mult": 14.86,
+        "note": "additive (non-compounded); n inflated by overlapping signals"
+      },
+      "in_sample": {
+        "n_trades": 11465,
+        "win_rate": 65.9,
+        "expectancy_R": 0.05,
+        "total_R": 577.0,
+        "profit_factor": 1.16,
+        "avg_win_R": 0.56,
+        "avg_loss_R": -0.93,
+        "max_drawdown_pct": -57.2,
+        "sharpe": 0.29,
+        "sortino": 1.05,
+        "equity_mult": 6.77,
+        "note": "additive (non-compounded); n inflated by overlapping signals"
+      },
+      "out_of_sample": {
+        "n_trades": 7644,
+        "win_rate": 68.4,
+        "expectancy_R": 0.106,
+        "total_R": 809.1,
+        "profit_factor": 1.36,
+        "avg_win_R": 0.59,
+        "avg_loss_R": -0.94,
+        "max_drawdown_pct": -45.1,
+        "sharpe": 0.58,
+        "sortino": 2.25,
+        "equity_mult": 9.09,
+        "note": "additive (non-compounded); n inflated by overlapping signals"
+      },
+      "walk_forward_efficiency": 2.1,
+      "bootstrap_ci_expectancy_R": [
+        0.058,
+        0.087
+      ],
+      "stationary_bootstrap_ci_R": [
+        0.0349,
+        0.1071
+      ],
+      "effective_sample_size": 2863.7,
+      "probabilistic_sharpe_ratio": 1.0,
+      "min_track_record_length": 435,
+      "deflated_sharpe": 0.35,
+      "monte_carlo_dd": {
+        "dd_median_pct": -29.8,
+        "dd_p95_pct": -39.8
+      },
+      "trade_removal": {
+        "expectancy_R_ex_top3": 0.07,
+        "top3_share_of_profit_pct": 0.6
+      },
+      "by_regime": {
+        "bear": {
+          "n_trades": 2715,
+          "win_rate": 64.3,
+          "expectancy_R": 0.042,
+          "total_R": 114.6,
+          "profit_factor": 1.13,
+          "avg_win_R": 0.58,
+          "avg_loss_R": -0.92,
+          "max_drawdown_pct": -104.7,
+          "sharpe": 0.23,
+          "sortino": 0.84,
+          "equity_mult": 2.15,
+          "note": "additive (non-compounded); n inflated by overlapping signals"
+        },
+        "bull": {
+          "n_trades": 9963,
+          "win_rate": 67.1,
+          "expectancy_R": 0.056,
+          "total_R": 555.6,
+          "profit_factor": 1.18,
+          "avg_win_R": 0.54,
+          "avg_loss_R": -0.94,
+          "max_drawdown_pct": -33.3,
+          "sharpe": 0.32,
+          "sortino": 1.21,
+          "equity_mult": 6.56,
+          "note": "additive (non-compounded); n inflated by overlapping signals"
+        },
+        "bull_volatile": {
+          "n_trades": 862,
+          "win_rate": 65.5,
+          "expectancy_R": 0.082,
+          "total_R": 70.8,
+          "profit_factor": 1.27,
+          "avg_win_R": 0.59,
+          "avg_loss_R": -0.89,
+          "max_drawdown_pct": -49.7,
+          "sharpe": 0.5,
+          "sortino": 1.45,
+          "equity_mult": 1.71,
+          "note": "additive (non-compounded); n inflated by overlapping signals"
+        },
+        "chop": {
+          "n_trades": 4252,
+          "win_rate": 66.9,
+          "expectancy_R": 0.098,
+          "total_R": 415.4,
+          "profit_factor": 1.31,
+          "avg_win_R": 0.61,
+          "avg_loss_R": -0.94,
+          "max_drawdown_pct": -36.4,
+          "sharpe": 0.53,
+          "sortino": 2.17,
+          "equity_mult": 5.15,
+          "note": "additive (non-compounded); n inflated by overlapping signals"
+        },
+        "crash": {
+          "n_trades": 23,
+          "win_rate": 65.2,
+          "expectancy_R": 0.208,
+          "total_R": 4.8,
+          "profit_factor": 2.53,
+          "avg_win_R": 0.53,
+          "avg_loss_R": -0.39,
+          "max_drawdown_pct": -2.3,
+          "sharpe": 1.74,
+          "sortino": 2.21,
+          "equity_mult": 1.05,
+          "note": "additive (non-compounded); n inflated by overlapping signals"
+        },
+        "euphoria": {
+          "n_trades": 1294,
+          "win_rate": 71.7,
+          "expectancy_R": 0.174,
+          "total_R": 224.8,
+          "profit_factor": 1.66,
+          "avg_win_R": 0.61,
+          "avg_loss_R": -0.93,
+          "max_drawdown_pct": -11.4,
+          "sharpe": 0.9,
+          "sortino": 3.49,
+          "equity_mult": 3.25,
+          "note": "additive (non-compounded); n inflated by overlapping signals"
+        }
+      },
+      "by_asset": {
+        "stock": {
+          "n_trades": 19109,
+          "win_rate": 66.9,
+          "expectancy_R": 0.073,
+          "total_R": 1386.1,
+          "profit_factor": 1.23,
+          "avg_win_R": 0.57,
+          "avg_loss_R": -0.93,
+          "max_drawdown_pct": -57.2,
+          "sharpe": 0.41,
+          "sortino": 1.53,
+          "equity_mult": 14.86,
+          "note": "additive (non-compounded); n inflated by overlapping signals"
+        }
+      },
+      "benchmark_spy_bh_return_pct": 0.0,
+      "span": [
+        "1997-05-22",
+        "2026-05-27"
+      ],
+      "verdict": "Deploy",
+      "confidence": "medium-high",
+      "biggest_risk": "Survivorship bias \u2014 universe excludes delisted names; live edge likely lower.",
+      "deflated_sharpe_ratio": 1.0,
+      "expected_max_sharpe_from_trials": 0.0422
+    },
+    "VCP": {
+      "hypothesis": "Volatility contraction (tightening range) before expansion precedes a directional move.",
+      "rationale": "Coiling = supply absorbed near a decision point; the break releases pent-up energy.",
+      "fails_when": "Contraction resolves the wrong way in a hostile regime.",
+      "full": {
+        "n_trades": 20242,
+        "win_rate": 56.9,
+        "expectancy_R": 0.167,
+        "total_R": 3376.8,
+        "profit_factor": 1.39,
+        "avg_win_R": 1.05,
+        "avg_loss_R": -1.0,
+        "max_drawdown_pct": -42.7,
+        "sharpe": 0.59,
+        "sortino": 6.02,
+        "equity_mult": 34.77,
+        "note": "additive (non-compounded); n inflated by overlapping signals"
+      },
+      "in_sample": {
+        "n_trades": 12145,
+        "win_rate": 56.6,
+        "expectancy_R": 0.172,
+        "total_R": 2085.3,
+        "profit_factor": 1.4,
+        "avg_win_R": 1.07,
+        "avg_loss_R": -1.0,
+        "max_drawdown_pct": -42.7,
+        "sharpe": 0.6,
+        "sortino": 5.99,
+        "equity_mult": 21.85,
+        "note": "additive (non-compounded); n inflated by overlapping signals"
+      },
+      "out_of_sample": {
+        "n_trades": 8097,
+        "win_rate": 57.4,
+        "expectancy_R": 0.159,
+        "total_R": 1291.5,
+        "profit_factor": 1.37,
+        "avg_win_R": 1.02,
+        "avg_loss_R": -1.0,
+        "max_drawdown_pct": -68.0,
+        "sharpe": 0.57,
+        "sortino": 6.1,
+        "equity_mult": 13.91,
+        "note": "additive (non-compounded); n inflated by overlapping signals"
+      },
+      "walk_forward_efficiency": 0.93,
+      "bootstrap_ci_expectancy_R": [
+        0.145,
+        0.188
+      ],
+      "stationary_bootstrap_ci_R": [
+        0.1121,
+        0.2178
+      ],
+      "effective_sample_size": 3228.1,
+      "probabilistic_sharpe_ratio": 1.0,
+      "min_track_record_length": 173,
+      "deflated_sharpe": 0.51,
+      "monte_carlo_dd": {
+        "dd_median_pct": -32.1,
+        "dd_p95_pct": -41.9
+      },
+      "trade_removal": {
+        "expectancy_R_ex_top3": 0.164,
+        "top3_share_of_profit_pct": 0.5
+      },
+      "by_regime": {
+        "bear": {
+          "n_trades": 1827,
+          "win_rate": 55.0,
+          "expectancy_R": 0.122,
+          "total_R": 222.8,
+          "profit_factor": 1.27,
+          "avg_win_R": 1.04,
+          "avg_loss_R": -0.99,
+          "max_drawdown_pct": -91.2,
+          "sharpe": 0.43,
+          "sortino": 4.09,
+          "equity_mult": 3.23,
+          "note": "additive (non-compounded); n inflated by overlapping signals"
+        },
+        "bull": {
+          "n_trades": 11832,
+          "win_rate": 56.8,
+          "expectancy_R": 0.141,
+          "total_R": 1672.2,
+          "profit_factor": 1.33,
+          "avg_win_R": 1.01,
+          "avg_loss_R": -1.0,
+          "max_drawdown_pct": -26.1,
+          "sharpe": 0.51,
+          "sortino": 5.15,
+          "equity_mult": 17.72,
+          "note": "additive (non-compounded); n inflated by overlapping signals"
+        },
+        "bull_volatile": {
+          "n_trades": 400,
+          "win_rate": 63.5,
+          "expectancy_R": 0.338,
+          "total_R": 135.3,
+          "profit_factor": 1.94,
+          "avg_win_R": 1.1,
+          "avg_loss_R": -0.98,
+          "max_drawdown_pct": -23.0,
+          "sharpe": 1.22,
+          "sortino": 9.93,
+          "equity_mult": 2.35,
+          "note": "additive (non-compounded); n inflated by overlapping signals"
+        },
+        "chop": {
+          "n_trades": 5093,
+          "win_rate": 56.3,
+          "expectancy_R": 0.213,
+          "total_R": 1084.1,
+          "profit_factor": 1.49,
+          "avg_win_R": 1.15,
+          "avg_loss_R": -1.0,
+          "max_drawdown_pct": -42.3,
+          "sharpe": 0.7,
+          "sortino": 7.95,
+          "equity_mult": 11.84,
+          "note": "additive (non-compounded); n inflated by overlapping signals"
+        },
+        "euphoria": {
+          "n_trades": 1088,
+          "win_rate": 61.9,
+          "expectancy_R": 0.239,
+          "total_R": 260.1,
+          "profit_factor": 1.63,
+          "avg_win_R": 1.0,
+          "avg_loss_R": -1.0,
+          "max_drawdown_pct": -12.2,
+          "sharpe": 0.84,
+          "sortino": 8.33,
+          "equity_mult": 3.6,
+          "note": "additive (non-compounded); n inflated by overlapping signals"
+        }
+      },
+      "by_asset": {
+        "stock": {
+          "n_trades": 20242,
+          "win_rate": 56.9,
+          "expectancy_R": 0.167,
+          "total_R": 3376.8,
+          "profit_factor": 1.39,
+          "avg_win_R": 1.05,
+          "avg_loss_R": -1.0,
+          "max_drawdown_pct": -42.7,
+          "sharpe": 0.59,
+          "sortino": 6.02,
+          "equity_mult": 34.77,
+          "note": "additive (non-compounded); n inflated by overlapping signals"
+        }
+      },
+      "benchmark_spy_bh_return_pct": 0.0,
+      "span": [
+        "1997-05-22",
+        "2026-05-27"
+      ],
+      "verdict": "Deploy",
+      "confidence": "medium-high",
+      "biggest_risk": "Survivorship bias \u2014 universe excludes delisted names; live edge likely lower.",
+      "deflated_sharpe_ratio": 1.0,
+      "expected_max_sharpe_from_trials": 0.0422
+    }
+  }
+}

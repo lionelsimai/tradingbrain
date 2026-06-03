@@ -1,0 +1,63 @@
+{
+  "accepted_signals": 0,
+  "asof": "2026-06-03T01:25:41.149247+00:00",
+  "average_R": null,
+  "backtest_versus_paper_gap": null,
+  "confidence_band_breakdown": {},
+  "demotion_recommendations": [
+    "collect more forward paper evidence"
+  ],
+  "drift_status": "insufficient_forward_paper",
+  "evidence_source": "paper",
+  "expectancy_R": null,
+  "fill_quality": {
+    "fill_rate_pct": null,
+    "filled_orders": 0,
+    "missed_fill_rate_pct": null,
+    "orders": 0,
+    "partial_fill_rate_pct": null
+  },
+  "filled_orders": 0,
+  "legacy_signal_ledger_paper": {
+    "note": "Included only when source='paper'; replay rows are excluded.",
+    "open": 3,
+    "resolved": 0
+  },
+  "live_like_resolved_trades": 0,
+  "live_like_signal_count": 0,
+  "max_consecutive_losses": 0,
+  "max_drawdown_R": 0.0,
+  "median_R": null,
+  "methodology_caveat": "Forward paper records here are paper-only. Replay/backtest rows are not counted. Live-like paper readiness requires resolved trades whose decision quotes came from fresh approved intraday sources, currently moomoo:market_snapshot.",
+  "missed_fills": 0,
+  "open": 3,
+  "open_incidents": [],
+  "overall": {
+    "n": 0
+  },
+  "partial_fills": 0,
+  "performance_by_regime": {},
+  "performance_by_strategy": {},
+  "performance_by_ticker": {},
+  "quote_source_breakdown": {},
+  "regime_breakdown": {},
+  "rejected_signals": 0,
+  "resolved": 0,
+  "resolved_trades": 0,
+  "slippage_average_bps": null,
+  "slippage_summary": {
+    "average_bps": null,
+    "max_bps": null,
+    "median_bps": null,
+    "n": 0,
+    "over_25bps": 0,
+    "over_50bps": 0,
+    "p95_bps": null
+  },
+  "strategy_breakdown": {},
+  "synthetic_quote_signal_count": 0,
+  "ticker_breakdown": {},
+  "total_signals": 3,
+  "verdict": "INSUFFICIENT PAPER EVIDENCE (0 paper trades). No paper gating.",
+  "win_rate": null
+}

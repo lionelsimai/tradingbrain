@@ -1,0 +1,11 @@
+id,ts,cycle_id,agent,task,hypothesis,data_window,result,decision,rationale
+1,2026-05-29 23:02:59.989719,cyc_20260529_230259,orchestrator,rule PULLBACK,,,"{""ruling"": ""Deploy"", ""red_team"": ""SURVIVES"", ""risk"": ""APPROVED""}",Deploy,
+2,2026-05-29 23:03:00.166903,cyc_20260529_230259,orchestrator,rule BREAKOUT,,,"{""ruling"": ""Iterate"", ""red_team"": ""WOUNDED"", ""risk"": ""APPROVED""}",Iterate,
+3,2026-05-29 23:03:00.347949,cyc_20260529_230259,orchestrator,rule MEAN_REVERSION,,,"{""ruling"": ""Deploy"", ""red_team"": ""SURVIVES"", ""risk"": ""APPROVED""}",Deploy,
+4,2026-05-29 23:03:00.549425,cyc_20260529_230259,orchestrator,rule TREND_LEADER,,,"{""ruling"": ""Deploy"", ""red_team"": ""SURVIVES"", ""risk"": ""APPROVED""}",Deploy,
+5,2026-05-29 23:03:00.746045,cyc_20260529_230259,orchestrator,rule VCP,,,"{""ruling"": ""Deploy"", ""red_team"": ""SURVIVES"", ""risk"": ""APPROVED""}",Deploy,
+6,2026-05-29 23:19:36.672259,cyc_20260529_231936,orchestrator,rule PULLBACK,,,"{""ruling"": ""Deploy"", ""red_team"": ""SURVIVES"", ""risk"": ""APPROVED""}",Deploy,
+7,2026-05-29 23:19:36.854468,cyc_20260529_231936,orchestrator,rule BREAKOUT,,,"{""ruling"": ""Iterate"", ""red_team"": ""WOUNDED"", ""risk"": ""APPROVED""}",Iterate,
+8,2026-05-29 23:19:37.010069,cyc_20260529_231936,orchestrator,rule MEAN_REVERSION,,,"{""ruling"": ""Deploy"", ""red_team"": ""SURVIVES"", ""risk"": ""APPROVED""}",Deploy,
+9,2026-05-29 23:19:37.16728,cyc_20260529_231936,orchestrator,rule TREND_LEADER,,,"{""ruling"": ""Deploy"", ""red_team"": ""SURVIVES"", ""risk"": ""APPROVED""}",Deploy,
+10,2026-05-29 23:19:37.342681,cyc_20260529_231936,orchestrator,rule VCP,,,"{""ruling"": ""Deploy"", ""red_team"": ""SURVIVES"", ""risk"": ""APPROVED""}",Deploy,

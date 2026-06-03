@@ -1,0 +1,136 @@
+{
+  "asof": "2026-06-03T01:21:58.310021+00:00",
+  "verdict": "LIVE_EXECUTION_LOCKED",
+  "execution_enabled": false,
+  "live_execution_authorized": false,
+  "all_live_gates_clear": false,
+  "paper_trading_enabled": true,
+  "read_only_live_features_enabled": true,
+  "mode": "paper",
+  "allow_live_flag": "0",
+  "human_approved_flag": "0",
+  "broker_key_id_masked": "PK**********************PT",
+  "risk_policy_hash": "rp_c1b79487863d",
+  "go_live_status": "BLOCKED",
+  "readiness_verdict": "RESEARCH_ONLY",
+  "features": [
+    {
+      "id": "canonical_risk_policy",
+      "status": "READY",
+      "detail": "risk_policy.yaml is valid",
+      "blocks_live": false
+    },
+    {
+      "id": "paper_execution_path",
+      "status": "READY",
+      "detail": "paper mode safe_to_trade passed",
+      "blocks_live": false
+    },
+    {
+      "id": "broker_credentials",
+      "status": "READY",
+      "detail": "Alpaca credentials are present and masked",
+      "blocks_live": false
+    },
+    {
+      "id": "live_data_health",
+      "status": "READY",
+      "detail": "live data health passed",
+      "blocks_live": false
+    },
+    {
+      "id": "go_live_authority",
+      "status": "BLOCKED",
+      "detail": "BLOCKED",
+      "blocks_live": true
+    },
+    {
+      "id": "forward_paper_evidence",
+      "status": "BLOCKED",
+      "detail": "0 resolved forward paper observations",
+      "blocks_live": true
+    },
+    {
+      "id": "incident_gate",
+      "status": "READY",
+      "detail": "no blocking incidents open",
+      "blocks_live": false
+    },
+    {
+      "id": "dashboard_truthfulness",
+      "status": "READY",
+      "detail": "dashboard shows blocked while authority is blocked",
+      "blocks_live": false
+    }
+  ],
+  "blockers": [
+    {
+      "id": "go_live_authority",
+      "status": "BLOCKED",
+      "detail": "BLOCKED",
+      "blocks_live": true
+    },
+    {
+      "id": "forward_paper_evidence",
+      "status": "BLOCKED",
+      "detail": "0 resolved forward paper observations",
+      "blocks_live": true
+    }
+  ],
+  "live_prerequisites": [
+    "policy: live_trading_enabled=false",
+    "env: TB_ALLOW_LIVE!=1",
+    "env: TB_MODE!=live",
+    "env: TB_HUMAN_APPROVED!=1"
+  ],
+  "live_safe_to_trade_reasons": [
+    "live mode requires TB_ALLOW_LIVE=1 (fail-closed)",
+    "live mode requires broker API keys in env"
+  ],
+  "data_health": {
+    "asof": "2026-06-03T01:21:57.655177+00:00",
+    "ok": true,
+    "status": "PASS",
+    "hard_failures": [],
+    "warnings": [
+      "intraday snapshot is not currently sourced from moomoo"
+    ],
+    "require_realtime": false,
+    "max_quote_age_seconds": 900,
+    "providers": {
+      "moomoo": {
+        "name": "moomoo",
+        "market": "US equities",
+        "market_data_only": true,
+        "host": "127.0.0.1",
+        "port": 11111,
+        "package_installed": true,
+        "module": "moomoo",
+        "opend_reachable": false,
+        "quote_report_exists": false,
+        "quote_report_asof": null,
+        "quote_report_returned": null
+      }
+    },
+    "intraday_snapshot": {
+      "exists": true,
+      "path": "/Users/lionel/Documents/New project/TradingBrain/data/intraday_snap.parquet",
+      "rows": 3,
+      "sources": [
+        "yfinance:1m"
+      ],
+      "latest_quote_ts": "2026-06-02T14:43:00+00:00",
+      "latest_fetch_ts": "2026-06-02T14:42:13.300300+00:00",
+      "quote_age_seconds": 38384
+    },
+    "safety": {
+      "market_data_only": true,
+      "tb_mode": "paper",
+      "tb_allow_live": "0",
+      "live_trading_enabled": false
+    }
+  },
+  "dashboard_report": "/Users/lionel/Documents/New project/TradingBrain/reports/live-readiness-dashboard.json",
+  "safe_next_action": "Run paper/live-like preflight, collect forward paper evidence, and clear reports before any live review.",
+  "forbidden_next_action": "Do not enable live trading, submit real-money orders, or bypass go-live gates."
+}

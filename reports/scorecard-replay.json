@@ -1,0 +1,102 @@
+{
+  "evidence_source": "replay",
+  "asof": "2026-06-02T14:09:31.012930+00:00",
+  "resolved": 1919,
+  "open": 0,
+  "overall": {
+    "n": 1919,
+    "win_rate": 68.4,
+    "expectancy_R": 0.314,
+    "avg_win_R": 0.91,
+    "avg_loss_R": -0.97,
+    "profit_factor": 2.03,
+    "avg_hold_days": 10.8
+  },
+  "by_setup": {
+    "BREAKOUT": {
+      "n": 23,
+      "win_rate": 65.2,
+      "expectancy_R": 0.082,
+      "avg_win_R": 0.66,
+      "avg_loss_R": -1.0,
+      "profit_factor": 1.23,
+      "avg_hold_days": 7.1,
+      "backtest_expectancy_R": 0.052,
+      "drift_R": 0.03
+    },
+    "MEAN_REVERSION": {
+      "n": 72,
+      "win_rate": 33.3,
+      "expectancy_R": 1.896,
+      "avg_win_R": 7.65,
+      "avg_loss_R": -0.98,
+      "profit_factor": 3.9,
+      "avg_hold_days": 12.3,
+      "backtest_expectancy_R": 0.608,
+      "drift_R": 1.288
+    },
+    "PULLBACK": {
+      "n": 45,
+      "win_rate": 46.7,
+      "expectancy_R": 1.049,
+      "avg_win_R": 3.36,
+      "avg_loss_R": -0.97,
+      "profit_factor": 3.02,
+      "avg_hold_days": 12.7,
+      "backtest_expectancy_R": 0.404,
+      "drift_R": 0.645
+    },
+    "TREND_LEADER": {
+      "n": 1717,
+      "win_rate": 71.5,
+      "expectancy_R": 0.232,
+      "avg_win_R": 0.71,
+      "avg_loss_R": -0.96,
+      "profit_factor": 1.84,
+      "avg_hold_days": 10.8,
+      "backtest_expectancy_R": 0.088,
+      "drift_R": 0.144
+    },
+    "VCP": {
+      "n": 62,
+      "win_rate": 41.9,
+      "expectancy_R": 0.321,
+      "avg_win_R": 2.15,
+      "avg_loss_R": -1.0,
+      "profit_factor": 1.55,
+      "avg_hold_days": 9.6,
+      "backtest_expectancy_R": 0.164,
+      "drift_R": 0.157
+    }
+  },
+  "by_grade": {
+    "A": {
+      "n": 50,
+      "win_rate": 50.0,
+      "expectancy_R": 0.443,
+      "avg_win_R": 1.89,
+      "avg_loss_R": -1.0,
+      "profit_factor": 1.89,
+      "avg_hold_days": 9.2
+    },
+    "B": {
+      "n": 121,
+      "win_rate": 41.3,
+      "expectancy_R": 1.073,
+      "avg_win_R": 3.98,
+      "avg_loss_R": -0.98,
+      "profit_factor": 2.87,
+      "avg_hold_days": 11.4
+    },
+    "C": {
+      "n": 1748,
+      "win_rate": 70.8,
+      "expectancy_R": 0.258,
+      "avg_win_R": 0.76,
+      "avg_loss_R": -0.96,
+      "profit_factor": 1.92,
+      "avg_hold_days": 10.8
+    }
+  },
+  "verdict": "REPLAY-BASED, NOT FORWARD (+0.314R over 1919 replay trades)."
+}

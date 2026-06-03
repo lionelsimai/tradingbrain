@@ -1,0 +1,12 @@
+{
+  "evidence_source": "live",
+  "asof": "2026-06-02T14:09:31.007161+00:00",
+  "resolved": 0,
+  "open": 0,
+  "overall": {
+    "n": 0
+  },
+  "by_setup": {},
+  "by_grade": {},
+  "verdict": "INSUFFICIENT LIVE EVIDENCE (0 live trades). No live gating."
+}

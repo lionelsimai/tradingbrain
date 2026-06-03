@@ -1,0 +1,157 @@
+# Trusted finance source registry for the recursive learning loop.
+# Tiered by signal quality. Free-only by default; paid sources commented.
+
+defaults:
+  user_agent: "TradingBrain/0.1 lionel@theaicapitol.com"   # required by SEC
+  rate_limit_per_sec: 5
+  retries: 3
+  cache_ttl_hours: 6
+
+# Tier 1 — ground truth fundamentals & insider activity. Highest weight in brain.
+tier_1_fundamentals:
+  edgar_filings:
+    enabled: true
+    base_url: "https://data.sec.gov"
+    submissions_url: "https://data.sec.gov/submissions/CIK{cik}.json"
+    facts_url: "https://data.sec.gov/api/xbrl/companyfacts/CIK{cik}.json"
+    forms: ["10-K", "10-Q", "8-K", "S-1", "DEF 14A"]
+    poll_minutes: 720          # 2x/day
+  edgar_form4:
+    enabled: true
+    description: "Insider transactions. Cluster buys are a primary edge signal."
+    forms: ["4", "4/A"]
+    poll_minutes: 360          # 4x/day
+  edgar_13f:
+    enabled: true
+    description: "Institutional holdings (45-day lag). Smart money positioning."
+    poll_minutes: 1440         # daily
+
+# Tier 2 — macro & regime context.
+tier_2_macro:
+  fred:
+    enabled: true
+    base_url: "https://api.stlouisfed.org/fred"
+    series:
+      - { id: "DGS10", label: "10Y Treasury yield" }
+      - { id: "DGS2",  label: "2Y Treasury yield" }
+      - { id: "DGS3MO", label: "3M Treasury yield" }
+      - { id: "T10Y2Y", label: "10Y-2Y spread (recession bellwether)" }
+      - { id: "CPIAUCSL", label: "CPI all items" }
+      - { id: "FEDFUNDS", label: "Fed funds rate" }
+      - { id: "UNRATE", label: "Unemployment rate" }
+      - { id: "M2SL", label: "M2 money supply" }
+      - { id: "VIXCLS", label: "VIX close" }
+      - { id: "DEXUSEU", label: "USD/EUR" }
+      - { id: "WALCL", label: "Fed balance sheet" }
+    api_key_env: "FRED_API_KEY"   # optional; can scrape CSV if missing
+    poll_minutes: 1440
+  treasury_yield_curve:
+    enabled: true
+    url: "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/daily-treasury-rates.csv"
+    poll_minutes: 1440
+
+# Tier 3 — earnings transcripts & strategic context.
+tier_3_qualitative:
+  motley_fool_transcripts:
+    enabled: true
+    base_url: "https://www.fool.com/earnings-call-transcripts/"
+    description: "Free earnings transcripts. Sentiment + guidance shifts."
+    poll_minutes: 720
+  stratechery_rss:
+    enabled: false
+    url: "https://stratechery.com/feed/"
+    description: "Strategic AI/tech analysis. Paid subscription required."
+    paid: true
+  the_transcript_rss:
+    enabled: true
+    url: "https://thetranscript.substack.com/feed"
+    description: "Weekly digest of CEO commentary across companies."
+    poll_minutes: 1440
+  semianalysis_rss:
+    enabled: true
+    url: "https://www.semianalysis.com/feed"
+    description: "Deep semiconductor industry research."
+    poll_minutes: 1440
+
+# Tier 4 — sentiment & live signal. Treat carefully; high noise.
+tier_4_sentiment:
+  finviz_news:
+    enabled: true
+    base_url: "https://finviz.com/quote.ashx"
+    poll_minutes: 240
+  reuters_business_rss:
+    enabled: true
+    url: "https://feeds.reuters.com/reuters/businessNews"
+    poll_minutes: 60
+  yahoo_finance_news:
+    enabled: true
+    description: "Per-ticker headlines via yfinance .news"
+    poll_minutes: 240
+  x_fintwit_list:
+    enabled: false              # gate behind x integration
+    list_handles:
+      - "modestproposal1"       # buyside thoughtful
+      - "carlquintanilla"       # CNBC macro
+      - "zerohedge"             # noisy but fast on macro
+      - "DiMartinoBooth"        # macro
+      - "BobEUnlimited"         # macro
+      - "WallStreetSilv"        # contrarian/silver bug
+      - "Mayhem4Markets"        # tape
+      - "PauloMacro"            # macro
+      - "Convertbond"           # rates/credit
+      - "_inarteCarlos"         # AI/tech operator
+      - "dnystedt"              # semis
+      - "deedydas"              # ai infra
+    poll_minutes: 60
+  capitol_trades:
+    enabled: true
+    url: "https://www.capitoltrades.com"
+    description: "Congress trades. Niche but real signal in regulated sectors."
+    poll_minutes: 720
+
+# Tier 5 — technical research feeds (for AI universe specifically).
+tier_5_technical_research:
+  arxiv_cs_ai:
+    enabled: true
+    url: "https://export.arxiv.org/rss/cs.AI"
+    poll_minutes: 1440
+  arxiv_cs_lg:
+    enabled: true
+    url: "https://export.arxiv.org/rss/cs.LG"
+    poll_minutes: 1440
+  papers_with_code_trending:
+    enabled: true
+    url: "https://paperswithcode.com/latest"
+    poll_minutes: 1440
+
+# Per-ticker enrichment (looked up on-demand, not polled).
+fundamentals_lookup:
+  yfinance:
+    enabled: true
+    fields: [trailingPE, forwardPE, priceToBook, priceToSalesTrailing12Months,
+             freeCashflow, totalRevenue, grossMargins, operatingMargins,
+             returnOnEquity, returnOnAssets, debtToEquity, totalCash,
+             totalDebt, sharesOutstanding, marketCap, beta]
+  stooq:
+    enabled: true
+    description: "Backup price source if yfinance rate-limited"
+
+# Source tier → weight in brain's composite score.
+weights:
+  tier_1_fundamentals: 0.40
+  tier_2_macro:        0.15
+  tier_3_qualitative:  0.20
+  tier_4_sentiment:    0.10
+  tier_5_technical:    0.05
+  signals_quantitative: 0.10   # momentum/value/quality scores
+
+# Hard rules — brain may suggest but rules always override.
+risk_rules:
+  max_position_pct: 0.10
+  max_sector_pct: 0.35
+  stop_loss_pct: 0.10
+  take_profit_pct: 0.25
+  max_drawdown_halt_pct: 0.20
+  min_confidence: 0.60
+  cash_only_if_regime_off: true
+  no_new_positions_if_vix_above: 30

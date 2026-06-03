@@ -1,0 +1,30 @@
+{
+  "asof": "2026-05-29",
+  "debates": [
+    {
+      "ticker": "NVDA",
+      "asof": "2026-05-29",
+      "agents": {
+        "fundamentals": {
+          "_": "```json\n{\n  \"rating\": 4,\n  \"thesis\": \"NVDA's forward PE compression to ~17x alongside 74% gross margins, $46B FCF, and 114% ROE signals a high-quality compounder still pricing in substantial earnings growth \u2014 fundamentally bullish, but persistent insider selling and a missing transcript cap conviction.\",\n  \"top_points\": [\n    \"Forward PE (16.93x) vs trailing PE (32.81x) implies ~94% earnings growth expected \u2014 if the May-2026 10-Q trajectory holds, multiple re-rating is asymmetrically positive; this is the single strongest fundamental signal.\",\n    \"Quality metrics are exceptional at scale: 74.14% gross margins, 114.29% ROE, and $46.34B FCF on $253.49B revenue \u2014 this is not a speculative story, it is a cash-generative moat at peak AI infrastructure build-out.\",\n    \"Insider signal is a net drag: zero insider buys since July 2023 (nearly 3 years) with $163.6M in open-market sells and $131M in tax-withholding liquidations across 6 insiders in the last 90 days alone \u2014 insiders are not co-investing at current levels, which is a meaningful divergence from the bullish fundamental read.\"\n  ],\n  \"confidence\": 0.65\n}\n```"
+        },
+        "technical": {
+          "_": "```json\n{\n  \"rating\": 4,\n  \"thesis\": \"NVDA earns a swing BUY on top-quartile value+quality (z=+1.75) and positive news flow, but slightly negative momentum (-0.20) and $163M of insider selling in 90 days argue for a measured entry rather than a full-size add.\",\n  \"top_points\": [\n    \"Value+quality z-score of +1.75 is the primary edge driver \u2014 forward PE of 16.93 vs trailing 32.81 implies a near-doubling of earnings power already priced in by analysts, with 74% gross margins and 114% ROE validating the quality side.\",\n    \"Momentum sub-score is mildly negative (-0.20) \u2014 this is the key swing-trade risk: price may still need to reset or consolidate before a clean technical entry, and no support/resistance levels are available in the brain page to anchor a stop.\",\n    \"Insider signal is a headwind: six insiders sold ~$163M in the last 90 days with zero buys since July 2023, and critical data gaps (no earnings transcript, no X/FinTwit sentiment) mean the composite z of +0.47 is leaning heavily on value and news alone.\"\n  ],\n  \"confidence\": 0.67\n}\n```"
+        },
+        "sentiment": {
+          "_": "```json\n{\n  \"rating\": 4,\n  \"thesis\": \"NVDA's news z-score (+0.87) and exceptional fundamentals (74% gross margin, 114% ROE, forward PE ~17x implying ~2x earnings growth) support a bullish bias, but the primary near-term catalyst (Q1 FY2027 10-Q + 8-K filed May 20) has already passed and momentum has rolled mildly negative, suggesting a post-earnings consolidation phase with no imminent re-rating trigger.\",\n  \"top_points\": [\n    \"Catalyst passed, not approaching: the May 20 10-Q and same-day 8-K (earnings release) are the most significant recent events \u2014 market has already digested them; the mildly negative momentum z (-0.20) is consistent with a 'sell-the-news' drift and limits short-term upside unless the next 8-K or AI capex headline breaks materially positive.\",\n    \"Quantitative news signal is positive (z=+0.87) but the displayed 'Recent themes' headlines are data-pipeline noise \u2014 all EDGAR links resolve to 2020-era filings (Mellanox acquisition, Q1FY21 10-Q); discount the themes section entirely and rely solely on the computed z-score and the May 2026 timeline entries.\",\n    \"Critical sentiment blind spots: X/FinTwit signal is null, no earnings transcript ingested, and last insider buy was July 2023 \u2014 insiders have only sold ($163M) or had shares withheld in the last 90 days; net sentiment picture is constructive on fundamentals but thin on confirming social/management conviction signals.\"\n  ],\n  \"confidence\": 0.52\n}\n```"
+        },
+        "risk": {
+          "_": "```json\n{\n  \"verdict\": \"APPROVE\",\n  \"size_R\": 0.5,\n  \"primary_concern\": \"No support/resistance levels exist in the brain page to anchor a stop, momentum z is mildly negative (-0.20) consistent with post-earnings drift, and $163M of insider selling with zero insider buys since July 2023 collectively undermine conviction at full size.\",\n  \"stop_discipline\": \"Place hard stop at the nearest identifiable swing low (must be defined before entry via chart \u2014 do not enter without a level); reduce to 0.25R or exit flat if momentum z does not turn positive within 3 sessions.\"\n}\n```"
+        },
+        "trader": {
+          "action": "BUY",
+          "size_R": 0.5,
+          "horizon_days": 10,
+          "final_thesis": "Three analysts converge bullish on the value+quality edge (z=+1.75) with risk approving at 0.5R \u2014 the forward PE compression to ~17x against 74% margins and 114% ROE is the tape's signal, even with insiders quiet. Post-earnings drift and negative momentum z mean we size measured, not heroic.",
+          "key_invalidation": "Momentum z fails to turn positive within 3 sessions or price breaks the nearest swing low."
+        }
+      }
+    }
+  ]
+}

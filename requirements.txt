@@ -1,0 +1,15 @@
+# TradingBrain — pinned runtime dependencies (reproducible installs).
+# Core data + compute
+duckdb==1.4.2
+pandas==3.0.3
+numpy==2.4.6
+pyarrow==24.0.0
+PyYAML==6.0.3
+# Live market data ingestion
+yfinance==1.4.1
+moomoo-api==10.6.6608
+# Regime model (HMM)
+hmmlearn==0.3.3
+scikit-learn==1.8.0
+# Tests
+pytest==9.0.3

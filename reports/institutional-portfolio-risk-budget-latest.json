@@ -1,0 +1,47 @@
+{
+  "asof": "2026-06-03T01:30:51.465967+00:00",
+  "mode": "paper_research_risk_budget",
+  "equity": 50000.0,
+  "institutional_risk_budget_ok": true,
+  "portfolio_heat_pct": 0.257,
+  "gross_exposure_pct": 1.925,
+  "max_position_risk_pct": 0.257,
+  "max_position_pct": 1.925,
+  "policy_limits": {
+    "risk_per_trade_pct": 0.5,
+    "max_risk_per_trade_pct": 1.0,
+    "max_position_pct": 10.0,
+    "max_portfolio_heat_pct": 4.0,
+    "max_concurrent_positions": 6,
+    "min_reward_to_risk": 1.5
+  },
+  "bucket_heat_pct": {
+    "satellite": 0.257
+  },
+  "accepted_candidates": [
+    {
+      "ticker": "MU",
+      "source_report": "recommendations.json",
+      "bucket": "satellite",
+      "entry": 962.605,
+      "stop": 834.24,
+      "target": 1223.67,
+      "shares": 1,
+      "notional": 962.61,
+      "position_pct": 1.925,
+      "risk_dollars": 128.37,
+      "risk_pct": 0.257,
+      "reward_risk": 2.034,
+      "accepted": true,
+      "reject_reasons": []
+    }
+  ],
+  "rejected_candidates": [],
+  "blockers": [],
+  "required_next_actions": [
+    "Keep portfolio heat within canonical policy before paper entries.",
+    "Reject any candidate without stop, target, valid reward:risk, or non-zero position size.",
+    "Use this report as research evidence only; execution still goes through OrderManager."
+  ],
+  "disclaimer": "Research/paper-only portfolio risk budget. No orders are submitted."
+}

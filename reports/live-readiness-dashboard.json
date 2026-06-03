@@ -1,0 +1,180 @@
+{
+  "asof": "2026-06-03T02:48:31.074515+00:00",
+  "status": "LIVE_BLOCKED",
+  "verdict": "RESEARCH_ONLY",
+  "posture": "RESEARCH_ONLY",
+  "mode": "live",
+  "current_mode": "live",
+  "live_authorized": false,
+  "live_blocked": true,
+  "go_live_status": "BLOCKED",
+  "go_live_cleared": false,
+  "kill_switch_halted": false,
+  "blockers": [
+    {
+      "id": "go_live_blocked",
+      "severity": "critical",
+      "evidence": [
+        "4. Overfitting checks",
+        "5. Paper matches backtest",
+        "6. Risk controls + kill switch + data health",
+        "7. Human approval",
+        "2. Monte Carlo worst-case drawdown",
+        "3. Stress scenarios survived"
+      ],
+      "required_action": "Clear every go-live gate with real evidence."
+    },
+    {
+      "id": "paper_evidence_thin",
+      "severity": "critical",
+      "evidence": {
+        "live_like_resolved": 0,
+        "total_resolved": 0
+      },
+      "required_action": "Collect at least 50 resolved forward paper trades with fresh approved live-like quotes."
+    },
+    {
+      "id": "health_check_failed",
+      "severity": "high",
+      "evidence": {
+        "risk_policy": {
+          "ok": true,
+          "detail": "[]"
+        },
+        "kill_switch": {
+          "ok": true,
+          "detail": "clear"
+        },
+        "db_schema": {
+          "ok": false,
+          "detail": "['schema_versions', 'migrations', 'paper_orders', 'paper_fills', 'paper_equity_curve', 'paper_reconciliation']"
+        },
+        "mode": {
+          "ok": true,
+          "detail": "live"
+        },
+        "live_data": {
+          "ok": false,
+          "detail": "live execution flags are enabled; live-data health refuses unsafe mode; moomoo OpenAPI package is not installed; moomoo OpenD is not reachable at 127.0.0.1:11111; reports/moomoo-live-quotes.json is missing; data/intraday_snap.parquet is missing"
+        }
+      },
+      "required_action": "Fix failed health components."
+    },
+    {
+      "id": "live_data_health_failed",
+      "severity": "high",
+      "evidence": [
+        "live execution flags are enabled; live-data health refuses unsafe mode",
+        "moomoo OpenAPI package is not installed",
+        "moomoo OpenD is not reachable at 127.0.0.1:11111",
+        "reports/moomoo-live-quotes.json is missing",
+        "data/intraday_snap.parquet is missing"
+      ],
+      "required_action": "Start OpenD, refresh moomoo quotes, and re-run live-data health."
+    }
+  ],
+  "authority_blockers": [
+    "go-live authority not cleared",
+    "live-data health gate not passing",
+    "zero forward PAPER observations (replay/backtest does not count)",
+    "human go-live approval not in place"
+  ],
+  "warnings": [
+    "2. Monte Carlo worst-case drawdown",
+    "3. Stress scenarios survived"
+  ],
+  "open_incidents": [],
+  "critical_incident_open": false,
+  "last_stress_run": "2026-06-02T15:37:26.365532+00:00",
+  "stress_status": "LIVE_BLOCKED",
+  "stress": {
+    "verdict": "LIVE_BLOCKED",
+    "overall_score": 0,
+    "asof": "2026-06-02T15:37:26.365532+00:00"
+  },
+  "live_data_health": {
+    "asof": "2026-06-03T02:48:30.599881+00:00",
+    "ok": false,
+    "status": "FAIL",
+    "hard_failures": [
+      "live execution flags are enabled; live-data health refuses unsafe mode",
+      "moomoo OpenAPI package is not installed",
+      "moomoo OpenD is not reachable at 127.0.0.1:11111",
+      "reports/moomoo-live-quotes.json is missing",
+      "data/intraday_snap.parquet is missing"
+    ],
+    "warnings": [],
+    "require_realtime": true,
+    "max_quote_age_seconds": 900,
+    "providers": {
+      "moomoo": {
+        "name": "moomoo",
+        "market": "US equities",
+        "market_data_only": true,
+        "host": "127.0.0.1",
+        "port": 11111,
+        "package_installed": false,
+        "module": null,
+        "opend_reachable": false,
+        "quote_report_exists": false,
+        "quote_report_asof": null,
+        "quote_report_returned": null
+      }
+    },
+    "intraday_snapshot": {
+      "exists": false,
+      "path": "/Users/lionel/tb-review/data/intraday_snap.parquet",
+      "rows": 0,
+      "sources": [],
+      "latest_quote_ts": null,
+      "latest_fetch_ts": null,
+      "quote_age_seconds": null
+    },
+    "safety": {
+      "market_data_only": true,
+      "tb_mode": "live",
+      "tb_allow_live": "1",
+      "live_trading_enabled": false
+    }
+  },
+  "data_quality_pass": true,
+  "paper_evidence": {
+    "resolved_forward_paper_obs": 0,
+    "weeks": 0,
+    "regimes": 0,
+    "evidence_source": "replay"
+  },
+  "paper_evidence_summary": {
+    "paper_resolved": 0,
+    "paper_live_like_resolved": 0,
+    "paper_live_like_signals": 0,
+    "paper_synthetic_quote_signals": 0,
+    "paper_open": 3,
+    "live_resolved": 0,
+    "live_open": 0,
+    "replay_resolved": 1919,
+    "paper_verdict": "INSUFFICIENT PAPER EVIDENCE (0 paper trades). No paper gating.",
+    "live_verdict": "INSUFFICIENT LIVE EVIDENCE (0 live trades). No live gating.",
+    "replay_verdict": "REPLAY-BASED, NOT FORWARD (+0.314R over 1919 replay trades)."
+  },
+  "risk_policy_hash": "rp_c1b79487863d",
+  "report_pack_hash": "ae05e545c854",
+  "report_pack_sha": "ae05e545c854",
+  "approval_status": [
+    {
+      "gate": "7. Human approval",
+      "status": "FAIL",
+      "detail": "approved is not true; approved_by is empty (need a named human); date is empty; cannot approve a system with no real paper track record (gate 5 not passing); reviewed_pack_sha is empty \u2014 set it to the current pack hash (171c857ddaec) to bind approval to the reports you reviewed"
+    }
+  ],
+  "human_approval": false,
+  "research_only_warning": true,
+  "next_action": "Run live-like paper mode and collect forward paper evidence.",
+  "truthfulness": {
+    "advertises_live_ready": false,
+    "conviction_cap_active": true,
+    "paper_is_forward_only": true,
+    "missing_reports_are_warnings": true
+  },
+  "disclaimer": "Research/paper only unless the live-readiness authority authorizes live. Replay and backtest evidence are never shown as forward-paper proof."
+}

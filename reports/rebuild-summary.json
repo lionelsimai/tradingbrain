@@ -1,0 +1,55 @@
+{
+  "rebuild_seconds": 54.6,
+  "seed": 1,
+  "fast": true,
+  "steps": [
+    {
+      "step": "validate (no-look-ahead / live==backtest / determinism)",
+      "ok": true,
+      "seconds": 6.1,
+      "cmd": "/usr/local/bin/python3 -m lab.validate"
+    },
+    {
+      "step": "data_quality",
+      "ok": true,
+      "seconds": 1.0,
+      "cmd": "/usr/local/bin/python3 -m lab.data_quality"
+    },
+    {
+      "step": "stress_test -> calibration.json",
+      "ok": true,
+      "seconds": 22.5,
+      "cmd": "/usr/local/bin/python3 -m backtest.stress_test"
+    },
+    {
+      "step": "signal replay backfill",
+      "ok": true,
+      "seconds": 15.5,
+      "cmd": "/usr/local/bin/python3 -m loops.signal_tracker backfill"
+    },
+    {
+      "step": "signal resolve",
+      "ok": true,
+      "seconds": 7.4,
+      "cmd": "/usr/local/bin/python3 -m loops.signal_tracker resolve"
+    },
+    {
+      "step": "scorecard",
+      "ok": true,
+      "seconds": 0.6,
+      "cmd": "/usr/local/bin/python3 -m loops.signal_tracker scorecard"
+    },
+    {
+      "step": "reconcile",
+      "ok": true,
+      "seconds": 0.9,
+      "cmd": "/usr/local/bin/python3 -m loops.reconcile"
+    },
+    {
+      "step": "provenance -> MANIFEST.json",
+      "ok": true,
+      "seconds": 0.6,
+      "cmd": "/usr/local/bin/python3 -m lab.provenance"
+    }
+  ]
+}

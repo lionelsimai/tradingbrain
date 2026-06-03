@@ -1,0 +1,113 @@
+# AI-trade equity universe — full stack from silicon to power to applications.
+# Tickers are Yahoo Finance symbols. Categories drive the dashboard layout.
+
+regime_benchmarks:
+  - SPY     # S&P 500 ETF (Clenow regime filter)
+  - QQQ     # Nasdaq 100 ETF (concentrated AI regime read)
+  - SMH     # Semiconductor ETF (AI-trade-specific regime)
+
+universe:
+  # ── Compute silicon ────────────────────────────────────────────────────
+  gpu_accelerators:
+    - NVDA
+    - AMD
+    - AVGO          # custom silicon for hyperscalers (Google TPU, etc.)
+    - INTC
+    - QCOM
+    - ARM
+  foundry_packaging:
+    - TSM
+    - ASML          # EUV monopoly
+    - LRCX
+    - KLAC
+    - AMAT
+    - TER           # test equipment
+    - ENTG          # advanced materials
+  memory_storage:
+    - MU            # DRAM + HBM
+    - WDC           # NAND + HDD
+    - STX           # HDD (data center)
+  eda_design:
+    - SNPS          # EDA — chip design tools
+    - CDNS          # EDA + AI verification
+  ai_connectivity_optics:
+    - ANET          # AI fabric switches
+    - MRVL          # AI silicon, optics DSP
+    - CRDO          # AI ethernet
+    - CIEN          # optical networking
+    - COHR          # lasers + AI optics
+    - LITE          # optics components
+    - FN            # Fabrinet — optics manufacturing
+    - AAOI          # AI optics
+    - ALAB          # Astera Labs — AI connectivity
+
+  # ── Infrastructure & cooling ───────────────────────────────────────────
+  servers_systems:
+    - DELL
+    - HPE
+    - CLS           # Celestica — hyperscaler ODM
+    - SMCI
+  cooling_thermal:
+    - VRT           # Vertiv — liquid cooling king
+    - TT            # Trane Technologies — data center HVAC
+    - NVT           # nVent — enclosures + cooling
+  datacenter_reits:
+    - EQIX          # colo
+    - DLR           # data centers
+  cybersecurity_ai_ops:
+    - CRWD
+    - ZS
+    - NET           # Cloudflare
+    - DDOG          # observability
+
+  # ── Power for AI (single biggest 2025-2027 bottleneck) ─────────────────
+  power_generation:
+    - VST           # Vistra — nuclear + gas, biggest AI power name
+    - CEG           # Constellation — nuclear
+    - NRG           # generation + retail
+    - TLN           # Talen — nuclear
+    - GEV           # GE Vernova — turbines + grid
+  grid_electrification:
+    - ETN           # Eaton — power management
+    - PWR           # Quanta — grid build
+    - PCG           # PG&E (datacenter buildout)
+  nuclear_smr:
+    - BWXT          # SMR components
+    - OKLO          # SMR pure-play
+    - NNE           # Nano Nuclear
+    - LEU           # Centrus — uranium enrichment
+
+  # ── Hyperscalers & platforms ───────────────────────────────────────────
+  hyperscalers:
+    - MSFT
+    - GOOGL
+    - AMZN
+    - META
+    - ORCL
+    - AAPL
+  ai_native_apps:
+    - PLTR
+    - SNOW
+    - MDB
+    - NOW
+    - AI            # C3 AI
+    - PATH          # UiPath
+    - IOT           # Samsara
+    - S             # SentinelOne
+    - TEM           # Tempus AI — healthcare AI
+    - APP           # AppLovin — ad AI
+    - RDDT          # Reddit — data licensing
+
+  # ── Robotics / edge / autonomy ─────────────────────────────────────────
+  robotics_autonomy:
+    - TSLA          # FSD + robotics
+    - ISRG          # surgical robotics
+    - UBER          # autonomy + dispatch AI
+
+  # ── Adjacent enterprise / IT services ──────────────────────────────────
+  adjacent_enterprise:
+    - IBM
+    - ACN
+    - ADBE
+    - INTU
+    - CRM

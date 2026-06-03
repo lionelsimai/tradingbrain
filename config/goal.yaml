@@ -1,0 +1,37 @@
+# TradingBrain — LOCKED GOAL
+# The single, explicit objective every self-improvement cycle is scored against.
+# (Self-improving-agent criterion #3: a well-defined, measurable goal.)
+#
+# >>> REVIEW / EDIT THESE BEFORE GOING TO PAPER-LIVE. <<<
+# Defaults are deliberately REALISTIC for what this system has *proven* it does
+# (drawdown-controlled trend-following), NOT "beat the market". The system's own
+# teardown (FLAWS-AND-PROFIT) showed it trails buy-and-hold in bull regimes, so a
+# goal like "beat QQQ on these names" is UNREALISTIC — the cycle will flag it.
+
+objective: "Earn a positive, risk-controlled edge while capping drawdown — survive every regime."
+
+# --- SUCCESS: ALL must hold, measured on TRUE live/paper fills (not replay) ---
+success:
+  min_live_trades: 50          # never declare success on a thin sample
+  min_expectancy_R: 0.05       # net-positive per trade after costs (1R = initial risk)
+  min_profit_factor: 1.3
+  min_win_rate_pct: 45         # context only; expectancy is the real test
+  max_drawdown_pct: 20         # ceiling on peak-to-trough equity
+  min_sharpe: 0.5
+  not_worse_than_qqq_sharpe: true   # must not lose to buy-and-hold risk-adjusted
+
+# --- FAILURE: ANY one trips the brakes -> halt + human review ---
+failure:
+  expectancy_R_below: 0.0      # live edge has gone negative on a real sample
+  drawdown_pct_above: 20       # breached the drawdown ceiling
+  consecutive_losing_cycles: 3 # 3 cycles in a row drifting toward failure
+  min_n_for_failure_call: 30   # need this many live trades before calling failure
+
+# --- measurement & cadence (role separation: Operator vs Tuner, staggered) ---
+horizon:
+  operator_review_days: 7      # Operator cycle (mechanics, sizing, scoring)
+  tuner_offset_days: 3         # Tuner cycle, offset so changes never collide
+  evaluation_window_days: 90   # rolling window for the live verdict
+
+# --- master safety switch (do not weaken) ---
+mode: read_only                # read_only -> paper -> (never automatically) live

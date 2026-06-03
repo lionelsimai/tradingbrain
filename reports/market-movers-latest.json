@@ -1,0 +1,951 @@
+{
+  "asof": "2026-06-02T14:42:11.604069+00:00",
+  "counts": {
+    "econ": 87,
+    "macro": 15,
+    "ticker": 56,
+    "high": 79,
+    "total": 158
+  },
+  "items": [
+    {
+      "kind": "econ",
+      "impact": "HIGH",
+      "ts": "2026-06-09 14:00:00",
+      "headline": "Existing Home Sales",
+      "actual": null,
+      "estimate": null,
+      "prev": 4.02,
+      "unit": "",
+      "tickers": [],
+      "source": "Finnhub Econ",
+      "url": null
+    },
+    {
+      "kind": "econ",
+      "impact": "HIGH",
+      "ts": "2026-06-05 12:30:00",
+      "headline": "Non Farm Payrolls",
+      "actual": null,
+      "estimate": 85,
+      "prev": 115,
+      "unit": "",
+      "tickers": [],
+      "source": "Finnhub Econ",
+      "url": null
+    },
+    {
+      "kind": "econ",
+      "impact": "HIGH",
+      "ts": "2026-06-05 12:30:00",
+      "headline": "U-6 Unemployment Rate",
+      "actual": null,
+      "estimate": null,
+      "prev": 8.2,
+      "unit": "%",
+      "tickers": [],
+      "source": "Finnhub Econ",
+      "url": null
+    },
+    {
+      "kind": "econ",
+      "impact": "HIGH",
+      "ts": "2026-06-05 12:30:00",
+      "headline": "Unemployment Rate",
+      "actual": null,
+      "estimate": 4.3,
+      "prev": 4.3,
+      "unit": "%",
+      "tickers": [],
+      "source": "Finnhub Econ",
+      "url": null
+    },
+    {
+      "kind": "econ",
+      "impact": "HIGH",
+      "ts": "2026-06-03 14:00:00",
+      "headline": "ISM Services PMI",
+      "actual": null,
+      "estimate": 53.8,
+      "prev": 53.6,
+      "unit": "",
+      "tickers": [],
+      "source": "Finnhub Econ",
+      "url": null
+    },
+    {
+      "kind": "macro",
+      "impact": "HIGH",
+      "ts": "2026-06-02T14:09:31+00:00",
+      "headline": "Iran studying deal to halt war as stalemate persists - Reuters",
+      "summary": "Iran studying deal to halt war as stalemate persists\u00a0\u00a0Reuters",
+      "tickers": [],
+      "source": "Reuters",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQcG1DSFVhQ3MxRlgtdV9LYlZndTBDX0VvZDZ4ZkZuZEV5QnhMYlhmd2phazdVMnBlUXRWXzUzWTZFSXZfSDhNMzF2VTVwdlZiMU9aMEVVVVhyWEk1QmFNWjJRSFNfWTFzOGNMXzk1ZnJSOE5EZDJycERabElIeEQ1SjQxWE9CejBZT2FDY1FnLVdFaGlvR0FQeVVkM3JSanNmdkE?oc=5"
+    },
+    {
+      "kind": "ticker",
+      "impact": "HIGH",
+      "ts": "2026-06-02T13:43:12+00:00",
+      "headline": "Meta Platforms upgraded, Okta downgraded: Wall Street's top analyst calls",
+      "summary": "Meta Platforms upgraded, Okta downgraded: Wall Street's top analyst calls",
+      "tickers": [
+        "INTU"
+      ],
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=dfcc5f291a1f12b31d66152cdbf8f54d1ee458d3d8c0edad85206bfdf7cdbc33"
+    },
+    {
+      "kind": "ticker",
+      "impact": "HIGH",
+      "ts": "2026-06-02T13:43:12+00:00",
+      "headline": "Meta Platforms upgraded, Okta downgraded: Wall Street's top analyst calls",
+      "summary": "Meta Platforms upgraded, Okta downgraded: Wall Street's top analyst calls",
+      "tickers": [
+        "META"
+      ],
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=dfcc5f291a1f12b31d66152cdbf8f54d1ee458d3d8c0edad85206bfdf7cdbc33"
+    },
+    {
+      "kind": "ticker",
+      "impact": "HIGH",
+      "ts": "2026-06-02T13:35:36+00:00",
+      "headline": "As Software M&A Heats Up, These 3 Acquisition Targets Are in the Spotlight",
+      "summary": "Software M&A is heating up again as private equity dry powder collides with depressed SaaS (software as a service) multiples and AI-driven stack consolidation among hyperscalers. Public market valuati",
+      "tickers": [
+        "NVDA"
+      ],
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=59ba537025dd62751c27aaff129baf6e7b7ae5653161456878d65e05e4657e58"
+    },
+    {
+      "kind": "ticker",
+      "impact": "HIGH",
+      "ts": "2026-06-02T13:29:40+00:00",
+      "headline": "Why the epic Dell stock price surge isn't over, Goldman Sachs says",
+      "summary": "Dell stock could have more upside after a sizzling run.",
+      "tickers": [
+        "DELL"
+      ],
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=985f50e806d1053ace3d0c8ff8223dd14dac1f6edac2cd7c4e59294909f9fbbe"
+    },
+    {
+      "kind": "ticker",
+      "impact": "HIGH",
+      "ts": "2026-06-02T12:31:06+00:00",
+      "headline": "SpaceX-Tesla Merger Could Trigger Elon Musk's $1 Trillion Pay Package: Report",
+      "summary": "A merger between Tesla Inc. and SpaceX could reportedly trigger Elon Musk\u2018s $1 trillion Tesla pay package without the EV giant having to reach any operational milestones. $1 Trillion Package Kicks In ",
+      "tickers": [
+        "TSLA"
+      ],
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=0b119be19f9789ec2e7a4b488dd2e2663e645ba9fe05d03396766db6fb05fd7d"
+    },
+    {
+      "kind": "ticker",
+      "impact": "HIGH",
+      "ts": "2026-06-02T12:30:00+00:00",
+      "headline": "GlobalFoundries completes acquisition of Synopsys\u2019 Processor IP Solutions Business, delivering a holistic technology platform for Physical AI",
+      "summary": "Combines GF's Physical AI portfolio with MIPS' RISC-V and software-to-silicon expertise to accelerate custom, software-first products for automotive, industrial and agentic edge platformsMALTA, N.Y., ",
+      "tickers": [
+        "SNPS"
+      ],
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=0c517a8817febd752e4de40fe625ef0a5a162c94ac426320e6c0dca84095805e"
+    },
+    {
+      "kind": "ticker",
+      "impact": "HIGH",
+      "ts": "2026-06-02T12:19:55+00:00",
+      "headline": "Raymond James Doubles Micron Stock Price Target on Booming AI Demand",
+      "summary": "Analyst Upgrade Ignites Micron Rally as Supply Stays Tight and Demand Soars",
+      "tickers": [
+        "MU"
+      ],
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=cdf5e3610d7d889e5c5cc1baf4dad36760edc767804c7f15defec35f1ff125f5"
+    },
+    {
+      "kind": "ticker",
+      "impact": "HIGH",
+      "ts": "2026-06-02T12:17:11+00:00",
+      "headline": "Morgan Stanley Admits It Got Dell Wrong, Lifts Price Target by 164%",
+      "summary": "Dell Wins Over Morgan Stanley as AI Demand and Market Share Surge",
+      "tickers": [
+        "DELL"
+      ],
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=85742fefa13ba7956255ff4a9a6b27bc22b5e710772f59bad50117343bc7e40c"
+    },
+    {
+      "kind": "macro",
+      "impact": "HIGH",
+      "ts": "2026-06-02T12:01:40+00:00",
+      "headline": "US lawmakers to grill Rubio, as Iran war enters fourth month - Reuters",
+      "summary": "US lawmakers to grill Rubio, as Iran war enters fourth month\u00a0\u00a0Reuters",
+      "tickers": [],
+      "source": "Reuters",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQMnhHX3pib0VOUmUzRkNhT1VGQVRRVnBVeVc1eVgta1dMNDVGRVVTZ0Jtb21oYUIyYjg1b3BoY28zMHd1dVQza1hPa3pWMFBzRktIOVVmdG5zVGFHaHdRZjJrdWVNUVJ1cEZPa0d6S2FiVDFOb1haX1I0ZlRLcjNJQjFRNk9MUWlodkxpOVhwM3RtdzE0Q1B4QklrNklVTDQ?oc=5"
+    },
+    {
+      "kind": "macro",
+      "impact": "HIGH",
+      "ts": "2026-06-02T11:51:25+00:00",
+      "headline": "Netanyahu faces criticism after Trump halts Israeli strikes on Beirut - Reuters",
+      "summary": "Netanyahu faces criticism after Trump halts Israeli strikes on Beirut\u00a0\u00a0Reuters",
+      "tickers": [],
+      "source": "Reuters",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQZWZLTTJ4UXAzSlBOV095bmFhd2hLQW1TSDhQUGRFVWNfMVNXekxMem9KNXVXVTdmQWFvcms3ZEpzSDFiVVd4MEF3SzdMYkJJZDRwY0dLT3FTNHk3SFN5TmhxWXk4SnROLUpLZnctbUNOZXhLWVRjdUt0cWNMVnVmN3FYUlFCdVpPQmVhQVM0c3NoQlRUTmdOU3dUeFVsckE1VlBuSElPcU1IT2xXcXNwVEk3clY3dDBrbkpVY3pPWWgwaEREYUlXTA?oc=5"
+    },
+    {
+      "kind": "ticker",
+      "impact": "HIGH",
+      "ts": "2026-06-02T11:20:11+00:00",
+      "headline": "Top 5 Stocks That Will Profit From the Silicon Valley Defense Tech Surge",
+      "summary": "Steve Eisman said on a recent podcast: \u201cI\u2019m sort of bewildered, given that there\u2019s a war going on, why people would be selling defense stocks.\u201d The reason that bewilderment matters to your portfolio i",
+      "tickers": [
+        "PLTR"
+      ],
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=9e7deb55f62b7dc2d5f6e09d251c922d9eb8f20e64490ee44d8155e86101923c"
+    },
+    {
+      "kind": "ticker",
+      "impact": "HIGH",
+      "ts": "2026-06-02T11:15:43+00:00",
+      "headline": "HPE Q2 2026 earnings beat on AI server demand surge",
+      "summary": "The company raised its full-year earnings guidance by $1 per share and said it is now two years ahead of its long-term financial plan",
+      "tickers": [
+        "HPE"
+      ],
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=d9addc1c519e20a307735461fa1393083c8143e1d8906e20947c954d099f8a6a"
+    },
+    {
+      "kind": "ticker",
+      "impact": "HIGH",
+      "ts": "2026-06-02T11:14:17+00:00",
+      "headline": "Marvell Shares Surge After Nvidia\u2019s Jensen Huang Calls It the Next \u201cTrillion-Dollar Company\u201d (MRVL)",
+      "summary": "Marvell Technology (NASDAQ:MRVL) shares soared more than 22% in premarket trading on Tuesday after Nvidia Chief Executive Jensen Huang praised the semiconductor company and described it as the next \u201ct",
+      "tickers": [
+        "MRVL"
+      ],
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=610dabcf7a8277a59a25a5c25c7490362f1444e5cae532df3474a3925ffeac5f"
+    },
+    {
+      "kind": "ticker",
+      "impact": "HIGH",
+      "ts": "2026-06-02T11:14:17+00:00",
+      "headline": "Marvell Shares Surge After Nvidia\u2019s Jensen Huang Calls It the Next \u201cTrillion-Dollar Company\u201d (MRVL)",
+      "summary": "Marvell Technology (NASDAQ:MRVL) shares soared more than 22% in premarket trading on Tuesday after Nvidia Chief Executive Jensen Huang praised the semiconductor company and described it as the next \u201ct",
+      "tickers": [
+        "NVDA"
+      ],
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=610dabcf7a8277a59a25a5c25c7490362f1444e5cae532df3474a3925ffeac5f"
+    },
+    {
+      "kind": "ticker",
+      "impact": "HIGH",
+      "ts": "2026-06-02T09:13:00+00:00",
+      "headline": "HPE Stock Jumps 25% After Earnings Beat. It\u2019s Another AI Beneficiary.",
+      "summary": "Hewlett Packard Enterprise  stock soared after the information technology company reported better-than-expected financial results and raised its fiscal year outlook as artificial intelligence demand c",
+      "tickers": [
+        "DELL"
+      ],
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=80b9575e43323a35d4f23152b6fe7e112a82ff0c23209dc7e6de555921e60c0f"
+    },
+    {
+      "kind": "ticker",
+      "impact": "HIGH",
+      "ts": "2026-06-02T09:13:00+00:00",
+      "headline": "HPE Stock Jumps 25% After Earnings Beat. It\u2019s Another AI Beneficiary.",
+      "summary": "Hewlett Packard Enterprise  stock soared after the information technology company reported better-than-expected financial results and raised its fiscal year outlook as artificial intelligence demand c",
+      "tickers": [
+        "HPE"
+      ],
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=80b9575e43323a35d4f23152b6fe7e112a82ff0c23209dc7e6de555921e60c0f"
+    },
+    {
+      "kind": "ticker",
+      "impact": "HIGH",
+      "ts": "2026-06-02T08:28:23+00:00",
+      "headline": "HPE Q1 Deep Dive: AI Demand, Networking Synergies, and Upgraded Full-Year Outlook",
+      "summary": "Enterprise technology company Hewlett Packard Enterprise (NYSE:HPE) announced better-than-expected revenue in Q1 CY2026, with sales up 40% year on year to $10.68 billion. On top of that, next quarter\u2019",
+      "tickers": [
+        "HPE"
+      ],
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=2dba616d178ab0391ce99183b8bb416df153e1e769b24af9d4475db3a63902ef"
+    },
+    {
+      "kind": "ticker",
+      "impact": "HIGH",
+      "ts": "2026-06-02T07:10:02+00:00",
+      "headline": "Constellation Energy: Heavy Reliance On One Market And Costly Acquisition Keep Me On Hold",
+      "summary": "Constellation Energy (CEG) rated HOLD: AI growth priced in.",
+      "tickers": [
+        "CEG"
+      ],
+      "source": "SeekingAlpha",
+      "url": "https://finnhub.io/api/news?id=e87751bdcd97cd77729e3f93b8e4c8169af8ce75eed0c51d50d4f7664f96b1ab"
+    },
+    {
+      "kind": "ticker",
+      "impact": "HIGH",
+      "ts": "2026-06-02T07:10:02+00:00",
+      "headline": "Constellation Energy: Heavy Reliance On One Market And Costly Acquisition Keep Me On Hold",
+      "summary": "Constellation Energy (CEG) rated HOLD: AI growth priced in.",
+      "tickers": [
+        "VST"
+      ],
+      "source": "SeekingAlpha",
+      "url": "https://finnhub.io/api/news?id=e87751bdcd97cd77729e3f93b8e4c8169af8ce75eed0c51d50d4f7664f96b1ab"
+    },
+    {
+      "kind": "ticker",
+      "impact": "HIGH",
+      "ts": "2026-06-02T07:04:00+00:00",
+      "headline": "Does the Surge in Demand for ASICs Make Broadcom a No-Brainer Buy Before June 3?",
+      "summary": "Broadcom's custom chips are well suited to capitalize on the artificial intelligence (AI) inferencing boom.",
+      "tickers": [
+        "AVGO"
+      ],
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=5c213618ac85be55455558ce884824350818e2b97c2deaf62bb72bb5125e67c0"
+    },
+    {
+      "kind": "ticker",
+      "impact": "HIGH",
+      "ts": "2026-06-02T07:04:00+00:00",
+      "headline": "Does the Surge in Demand for ASICs Make Broadcom a No-Brainer Buy Before June 3?",
+      "summary": "Broadcom's custom chips are well suited to capitalize on the artificial intelligence (AI) inferencing boom.",
+      "tickers": [
+        "NVDA"
+      ],
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=5c213618ac85be55455558ce884824350818e2b97c2deaf62bb72bb5125e67c0"
+    },
+    {
+      "kind": "macro",
+      "impact": "HIGH",
+      "ts": "2026-06-02T06:13:00+00:00",
+      "headline": "AI frenzy stokes inflation heat too - Reuters",
+      "summary": "AI frenzy stokes inflation heat too\u00a0\u00a0Reuters",
+      "tickers": [],
+      "source": "Reuters",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPdXFvbjBVdll5VmplS3JBTTdQV2lvVDd2SXhxdlNwcWliZkthelpncTJLLVRNQ29hN2NuamU5RFdKSG41X3dDWVB0NXBSSXY4V2JxNkxPcVJteVptODFUbE4wel81Vi1qSlJLaDh0clpkeUpzYlFBdWIwZFpZV3V2R1h1aGdodXFtSEl4RVphV0hQMS1hb2VVVXFVSW55dDRCUmJpRnRPRQ?oc=5"
+    },
+    {
+      "kind": "econ",
+      "impact": "HIGH",
+      "ts": "2026-06-02 14:00:00",
+      "headline": "JOLTs Job Openings",
+      "actual": 7.618,
+      "estimate": 6.88,
+      "prev": 6.887,
+      "unit": "",
+      "tickers": [],
+      "source": "Finnhub Econ",
+      "url": null
+    },
+    {
+      "kind": "econ",
+      "impact": "HIGH",
+      "ts": "2026-06-02 14:00:00",
+      "headline": "JOLTs Job Quits",
+      "actual": 2.977,
+      "estimate": null,
+      "prev": 3.16,
+      "unit": "",
+      "tickers": [],
+      "source": "Finnhub Econ",
+      "url": null
+    },
+    {
+      "kind": "macro",
+      "impact": "HIGH",
+      "ts": "2026-06-02T05:31:00+00:00",
+      "headline": "Euro zone firms struggle to raise prices despite Iran war shock - Reuters",
+      "summary": "Euro zone firms struggle to raise prices despite Iran war shock\u00a0\u00a0Reuters",
+      "tickers": [],
+      "source": "Reuters",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPU1dNWHhQcDI1NnFQQTZxQVdFY1RXMnBhU0JDUVFjbzhDUk9rOHdUdmRFTEl4NVZLV256YUp4b0RsbkxUUzhOaGpPUkJDemIzVnh0SzJBdl8xVzNxQ2JaNTZadnlIM1A0a09CSW12NTQ5eE50ckZKWDZRQjMtc3g4d2E4X1FFYzVxczRoc2hELXNMS25TOUhHb1g5RFVRaF91ZnFwLVpZRER4ZTkxUTV2WnB2UQ?oc=5"
+    },
+    {
+      "kind": "ticker",
+      "impact": "HIGH",
+      "ts": "2026-06-02T04:59:37+00:00",
+      "headline": "Tesla Stock Dips On SpaceX Merger Fears \u2014 Retail Influencer Pitches Bull Case That Could Add $450B To Valuation",
+      "summary": "Tesla influencer AleXandra Merz said that a 50/50 SpaceX-Tesla merger could revalue Tesla from $1.6 trillion to $2.05 trillion.",
+      "tickers": [
+        "TSLA"
+      ],
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=303fef979322e2269182a4f9b5b192bf215920e8105fb3d982cadf4ce670d4ef"
+    },
+    {
+      "kind": "ticker",
+      "impact": "HIGH",
+      "ts": "2026-06-02T04:29:58+00:00",
+      "headline": "Has Coherent (COHR) Run Too Far After Its 9x Three Year Share Price Surge",
+      "summary": "If you are wondering whether Coherent's current share price still offers value or has already run too far ahead, you are not alone. The stock last closed at US$362.90, with returns of 10.1% over the p",
+      "tickers": [
+        "COHR"
+      ],
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=05a45e3ffa1e9343b603289360619e4d9d1741b3d0c64642fafab5bb3f4b602f"
+    },
+    {
+      "kind": "ticker",
+      "impact": "HIGH",
+      "ts": "2026-06-02T04:27:44+00:00",
+      "headline": "Tesla Faces China FSD Lawsuit As Robotics Competition Tests Valuation",
+      "summary": "Tesla (NasdaqGS:TSLA) is facing a new class-action lawsuit in China alleging false advertising and consumer fraud related to its Full Self-Driving feature. The case challenges how Tesla markets FSD in",
+      "tickers": [
+        "NVDA"
+      ],
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=d707711f4bd908bfacbfca97bca20e7f186d806a4e6955c3bb893974056211f8"
+    },
+    {
+      "kind": "ticker",
+      "impact": "HIGH",
+      "ts": "2026-06-02T04:27:44+00:00",
+      "headline": "Tesla Faces China FSD Lawsuit As Robotics Competition Tests Valuation",
+      "summary": "Tesla (NasdaqGS:TSLA) is facing a new class-action lawsuit in China alleging false advertising and consumer fraud related to its Full Self-Driving feature. The case challenges how Tesla markets FSD in",
+      "tickers": [
+        "TSLA"
+      ],
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=d707711f4bd908bfacbfca97bca20e7f186d806a4e6955c3bb893974056211f8"
+    },
+    {
+      "kind": "ticker",
+      "impact": "HIGH",
+      "ts": "2026-06-02T02:48:48+00:00",
+      "headline": "SPCE, BB, HPE Stocks Hit 52-Week Highs Today: What's Driving The Surge?",
+      "summary": "Space tourism, enterprise software, and technology infrastructure firms each benefited from institutional buying, AI enthusiasm, and strong earnings.",
+      "tickers": [
+        "HPE"
+      ],
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=e65f21c210d77ad8c8458204adfa8fd8163236d4664b5e92823e7c1424a5d45e"
+    },
+    {
+      "kind": "macro",
+      "impact": "HIGH",
+      "ts": "2026-06-02T02:27:00+00:00",
+      "headline": "Indian shares snap losing run on IT boost; oil dips after Trump comments - Reuters",
+      "summary": "Indian shares snap losing run on IT boost; oil dips after Trump comments\u00a0\u00a0Reuters",
+      "tickers": [],
+      "source": "Reuters",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQRVRBMG5hd0lkV1NwQUpSWWtfdWF3WU5DR0xSblF2T01qdzlOTmI1MDFzczdzRXVfTVRzX2Y5TUVxamJqNlExUGVodEFnR3NNemxkMndGalZjQUlTeEVLeFhYdGpuNFYwekFBWEVPc3FTQTFpVEJvcFlIaGkzOTZEYmRBVWRWRUYyeUpFZzFCMVhReWQtb0NqR1VmQWx2UnNCcXpfR3BIbTdxX09qU3ZV?oc=5"
+    },
+    {
+      "kind": "macro",
+      "impact": "HIGH",
+      "ts": "2026-06-02T01:12:00+00:00",
+      "headline": "Gold climbs as lower oil eases inflation, rate-hike fears - Reuters",
+      "summary": "Gold climbs as lower oil eases inflation, rate-hike fears\u00a0\u00a0Reuters",
+      "tickers": [],
+      "source": "Reuters",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPWVVWNVNodVFSeXdsWW9GZ1o4WnJKc0pqbkN4NGhBVkVOV3RqcXRQMDJfZHVHUUk4YWpGZFB5TGhCNmxBdXE0U20tRW0zMlNjYlBuenpIcVdoa0txQjNzb3lCNnZhWGpfOWZPUTM0WFBMVTdxM0dRUWVacnJzNjJsc3Fhb3hNWXZRLVUySkg2eHU2U3VEVG9zY3BLQXFva1lFeVhqLVhHQnFJZUhO?oc=5"
+    },
+    {
+      "kind": "macro",
+      "impact": "HIGH",
+      "ts": "2026-06-01T23:18:00+00:00",
+      "headline": "At least 18 killed in heavy Russian attack on Ukrainian cities - Reuters",
+      "summary": "At least 18 killed in heavy Russian attack on Ukrainian cities\u00a0\u00a0Reuters",
+      "tickers": [],
+      "source": "Reuters",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQdzJpWFQ4UGVVSjFXNWtsSjBGRG1DdTVNRFg3bnVGTC1qSlRIazIwR19QdFVHRk5ySW1JaTd4bDF5X282cTdFaWhwdXh2Z2hER0hyN2Y2TE9vR1dwVk0zaC1sdUQweXlVelFBa3BrSkFzcXNoM0h1NUR3VFZWaXRPTkFUSk14c1BFVlNSUnEwcG1hVFF5Vndyd3FyTVRfN1NBQXU1T20xT0ljMmpJUnBtNVBJaGgwdnB3WjlXMTdSTQ?oc=5"
+    },
+    {
+      "kind": "ticker",
+      "impact": "HIGH",
+      "ts": "2026-06-01T23:17:00+00:00",
+      "headline": "Morgan Stanley resets Microsoft stock price target",
+      "summary": "Big tech companies spend enormous sums of money all the time. They buy back stock, pay dividends, make acquisitions, and write checks that would make a defense contractor blush. Most of that spending ",
+      "tickers": [
+        "MSFT"
+      ],
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=03a40237f3c54845a3a59c1869eefcdd3d27422064133860f1a73af02117dff9"
+    },
+    {
+      "kind": "macro",
+      "impact": "HIGH",
+      "ts": "2026-06-01T23:15:00+00:00",
+      "headline": "South Korea inflation hits two-year high, imminent rate hike in play - Reuters",
+      "summary": "South Korea inflation hits two-year high, imminent rate hike in play\u00a0\u00a0Reuters",
+      "tickers": [],
+      "source": "Reuters",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPZnlYOTdwUGhWaW9KMGdIcFZEOEhyd2VabGJFdWQwSGE5UTdrTTRnSmtsVGY3amRBeVI2TXhJazd4QmhqbHROVUhtZzVsWUJwNzJ2V0Z2VVZsSkx0ZnBKMlpfdVB6R2JtTzY0d0xyZ3M2ak1GcVQ2NDAyYWxZc2ktUWZfaVoza0Y4bE44TXprdks4eF82a3NtUk1vdkRMbkZzSmJXeHRNQmNLbmM?oc=5"
+    },
+    {
+      "kind": "ticker",
+      "impact": "HIGH",
+      "ts": "2026-06-01T23:12:34+00:00",
+      "headline": "Is It Time To Reassess ServiceNow (NOW) After Recent Share Price Surge?",
+      "summary": "For investors considering whether ServiceNow's current share price aligns with its business outlook, or whether the stock might be mispriced, this article outlines several key signals the market is wa",
+      "tickers": [
+        "NOW"
+      ],
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=46b09c84085de444d4dcdb998553a632402f0593d9bb4391992bd14e22223c78"
+    },
+    {
+      "kind": "ticker",
+      "impact": "HIGH",
+      "ts": "2026-06-01T23:05:19+00:00",
+      "headline": "Mizuho Raises Micron (MU) Price Target to $1,150, Keeps Outperform Rating",
+      "summary": "Micron Technology, Inc. (NASDAQ:MU) is one of the 12 Stocks Most Bought by Hedge Funds in Q1 2026. On May 27, Mizuho lifted its price target on Micron Technology, Inc. (NASDAQ:MU) from $800 to $1,150 ",
+      "tickers": [
+        "MU"
+      ],
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=0b5908ca625e2b6fc7a8dd7c856c26ec9bb9cafe54eab4e27b88f9ea0b5026a2"
+    },
+    {
+      "kind": "ticker",
+      "impact": "HIGH",
+      "ts": "2026-06-01T23:04:42+00:00",
+      "headline": "Melius Raises Apple (AAPL) Price Target Ahead of WWDC",
+      "summary": "Apple Inc. (NASDAQ:AAPL) is one of the 12 Stocks Most Bought by Hedge Funds in Q1 2026. On May 26, Melius increased its price target on Apple Inc. (NASDAQ:AAPL) from $355 to $385, noting that the comp",
+      "tickers": [
+        "AAPL"
+      ],
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=6ad2b97e80117f157722fed7665db4cb69f930368a3b50acb11a9fe5c268cb3f"
+    },
+    {
+      "kind": "ticker",
+      "impact": "HIGH",
+      "ts": "2026-06-01T23:04:33+00:00",
+      "headline": "Susquehanna and UBS Raise Broadcom (AVGO) Price Target Ahead of Results",
+      "summary": "Broadcom Inc. (NASDAQ:AVGO) is one of the 12 Stocks Most Bought by Hedge Funds in Q1 2026. On May 28, Susquehanna analyst Christopher Rolland increased the firm\u2019s price target on Broadcom Inc. (NASDAQ",
+      "tickers": [
+        "AVGO"
+      ],
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=ee774b6d40ac30dd8629d9a2b88f10f1e6b6fba71fb9203427e4838f8fbdc489"
+    },
+    {
+      "kind": "ticker",
+      "impact": "HIGH",
+      "ts": "2026-06-01T23:03:02+00:00",
+      "headline": "Tigress Financial Lifts NVIDIA (NVDA) Price Target, Keeps Strong Buy Rating",
+      "summary": "NVIDIA Corporation (NASDAQ:NVDA) is one of the 12 Stocks Most Bought by Hedge Funds in Q1 2026. On May 27, Tigress Financial Partners increased its price target on NVIDIA Corporation (NASDAQ:NVDA) fro",
+      "tickers": [
+        "NVDA"
+      ],
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=ce9df12882d028f3af8f4c502598d5c976ec5ae3bb8717af03d4bfd3234fcae8"
+    },
+    {
+      "kind": "ticker",
+      "impact": "HIGH",
+      "ts": "2026-06-01T21:44:00+00:00",
+      "headline": "Talen Energy Receives Regulatory Clearances for Lawrenceburg, Waterford and Darby Acquisition",
+      "summary": "HOUSTON, June 01, 2026 (GLOBE NEWSWIRE) -- Talen Energy Corporation (\u201cTalen,\u201d \u201cwe,\u201d or \u201cour\u201d) (NASDAQ: TLN), a leading independent power producer, today announced that it has received the remaining ou",
+      "tickers": [
+        "TLN"
+      ],
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=9f16a823e17399508f01203b2a80fe6a1c6e80eae5cd3a4aef2e5c9a62530cb0"
+    },
+    {
+      "kind": "ticker",
+      "impact": "HIGH",
+      "ts": "2026-06-01T20:51:00+00:00",
+      "headline": "HPE Stock Jumps 30% After Earnings Beat. It\u2019s Another AI Beneficiary.",
+      "summary": "Hewlett Packard Enterprise  stock soared after the information technology company reported better-than-expected financial results and raised its fiscal year outlook as artificial intelligence demand c",
+      "tickers": [
+        "DELL"
+      ],
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=6314954b1cd0fd87d587d145673c915af20ed845ab1ba1ae8d310b05d2ea0f12"
+    },
+    {
+      "kind": "ticker",
+      "impact": "HIGH",
+      "ts": "2026-06-01T20:51:00+00:00",
+      "headline": "HPE Stock Jumps 30% After Earnings Beat. It\u2019s Another AI Beneficiary.",
+      "summary": "Hewlett Packard Enterprise  stock soared after the information technology company reported better-than-expected financial results and raised its fiscal year outlook as artificial intelligence demand c",
+      "tickers": [
+        "HPE"
+      ],
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=6314954b1cd0fd87d587d145673c915af20ed845ab1ba1ae8d310b05d2ea0f12"
+    },
+    {
+      "kind": "ticker",
+      "impact": "HIGH",
+      "ts": "2026-06-01T20:40:29+00:00",
+      "headline": "Credo Technology Group (NASDAQ:CRDO) Q4 Results Beat Estimates but Inline Guidance Triggers Post-Earnings Sell-Off",
+      "summary": "Credo Technology beats Q4 estimates with record revenue and strong EPS, but stock plunges 11.7% after guidance disappoints elevated market expectations.",
+      "tickers": [
+        "CRDO"
+      ],
+      "source": "ChartMill",
+      "url": "https://finnhub.io/api/news?id=32866c11cf29802e4856db7a54ae1601f21625857fea1c7badf65a72a7d4bd9a"
+    },
+    {
+      "kind": "ticker",
+      "impact": "HIGH",
+      "ts": "2026-06-01T20:40:06+00:00",
+      "headline": "HPE Stock Surges On Fiscal Q2 Earnings Beat, Raised Guidance, Fiscal 2027 Outlook",
+      "summary": "HPE stock surged on a big fiscal Q2 earnings beat. HPE raised its 2026 full-year guidance and projected 8% to 12% sales growth in fiscal 2027.",
+      "tickers": [
+        "HPE"
+      ],
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=aa6234edcb218b51610b59c1fb5d2cf59c3fa7575277280f675e640da0813318"
+    },
+    {
+      "kind": "ticker",
+      "impact": "HIGH",
+      "ts": "2026-06-01T20:09:33+00:00",
+      "headline": "Is It Too Late To Consider Alphabet (GOOGL) After A 126% One Year Surge?",
+      "summary": "Wondering if Alphabet at around US$380 a share still offers value, or if most of the easy gains are already behind it, starts with understanding what the current price actually reflects. The stock has",
+      "tickers": [
+        "GOOGL"
+      ],
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=0b47250d56b640965b8d2dfe529c62f71f1b943444e16bfc594acb5112f2ceef"
+    },
+    {
+      "kind": "ticker",
+      "impact": "HIGH",
+      "ts": "2026-06-01T20:06:51+00:00",
+      "headline": "HPE fast forwards to 2028 goals on robust AI demand, shares surge 36%",
+      "summary": "Hewlett Packard Enterprise posted record second-quarter results on Monday, prompting it to accelerate its long-term financial goals by two years, as expansion \u200cof AI data centers boosts demand, sendin",
+      "tickers": [
+        "AMZN"
+      ],
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=bc71611b1aabea1e01f07337f5b45439e6450dbafa63673a91a1d69e35cef654"
+    },
+    {
+      "kind": "ticker",
+      "impact": "HIGH",
+      "ts": "2026-06-01T20:06:51+00:00",
+      "headline": "HPE fast forwards to 2028 goals on robust AI demand, shares surge 36%",
+      "summary": "Hewlett Packard Enterprise posted record second-quarter results on Monday, prompting it to accelerate its long-term financial goals by two years, as expansion \u200cof AI data centers boosts demand, sendin",
+      "tickers": [
+        "DELL"
+      ],
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=bc71611b1aabea1e01f07337f5b45439e6450dbafa63673a91a1d69e35cef654"
+    },
+    {
+      "kind": "ticker",
+      "impact": "HIGH",
+      "ts": "2026-06-01T20:06:51+00:00",
+      "headline": "HPE fast forwards to 2028 goals on robust AI demand, shares surge 36%",
+      "summary": "Hewlett Packard Enterprise posted record second-quarter results on Monday, prompting it to accelerate its long-term financial goals by two years, as expansion \u200cof AI data centers boosts demand, sendin",
+      "tickers": [
+        "GOOGL"
+      ],
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=bc71611b1aabea1e01f07337f5b45439e6450dbafa63673a91a1d69e35cef654"
+    },
+    {
+      "kind": "ticker",
+      "impact": "HIGH",
+      "ts": "2026-06-01T20:06:51+00:00",
+      "headline": "HPE fast forwards to 2028 goals on robust AI demand, shares surge 36%",
+      "summary": "Hewlett Packard Enterprise posted record second-quarter results on Monday, prompting it to accelerate its long-term financial goals by two years, as expansion \u200cof AI data centers boosts demand, sendin",
+      "tickers": [
+        "HPE"
+      ],
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=bc71611b1aabea1e01f07337f5b45439e6450dbafa63673a91a1d69e35cef654"
+    },
+    {
+      "kind": "ticker",
+      "impact": "HIGH",
+      "ts": "2026-06-01T20:06:51+00:00",
+      "headline": "HPE fast forwards to 2028 goals on robust AI demand, shares surge 36%",
+      "summary": "Hewlett Packard Enterprise posted record second-quarter results on Monday, prompting it to accelerate its long-term financial goals by two years, as expansion \u200cof AI data centers boosts demand, sendin",
+      "tickers": [
+        "SMCI"
+      ],
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=bc71611b1aabea1e01f07337f5b45439e6450dbafa63673a91a1d69e35cef654"
+    },
+    {
+      "kind": "ticker",
+      "impact": "HIGH",
+      "ts": "2026-06-01T20:05:00+00:00",
+      "headline": "HPE Earnings Beat. It\u2019s Another AI Beneficiary.",
+      "summary": "Hewlett Packard Enterprise  reported better-than-expected financial results and raised its fiscal year outlook as artificial intelligence demand continues to benefit the company\u2019s growth.  HPE\u2019s  earn",
+      "tickers": [
+        "DELL"
+      ],
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=5b6d70d7e01ef8b4883b47e23e0a800a75f6d3d8f362a8c19718b80fc98af31c"
+    },
+    {
+      "kind": "ticker",
+      "impact": "HIGH",
+      "ts": "2026-06-01T20:05:00+00:00",
+      "headline": "HPE Earnings Beat. It\u2019s Another AI Beneficiary.",
+      "summary": "Hewlett Packard Enterprise  reported better-than-expected financial results and raised its fiscal year outlook as artificial intelligence demand continues to benefit the company\u2019s growth.  HPE\u2019s  earn",
+      "tickers": [
+        "HPE"
+      ],
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=5b6d70d7e01ef8b4883b47e23e0a800a75f6d3d8f362a8c19718b80fc98af31c"
+    },
+    {
+      "kind": "macro",
+      "impact": "HIGH",
+      "ts": "2026-06-01T19:54:59+00:00",
+      "headline": "'We are in a war,' alleged Iran-backed militant exclaims in US court - Reuters",
+      "summary": "'We are in a war,' alleged Iran-backed militant exclaims in US court\u00a0\u00a0Reuters",
+      "tickers": [],
+      "source": "Reuters",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNWmMxYU5JcVc4WW9qMUdfQjZYU0xMSjdBVXJ3U3FKSDhQU3pTTERoYTVqRGloMmw0cGVjNV9kdzY1eFZKWUVURl9PS3BGYzhrMGhDTVJPQVJxSGFIRG9XV18tVDF3eG5YRUxpd25BN3YwbjBROW8wczVOcDRMWUhSMnlUYVo4Z1hJNXR1eHRHaVhJVUc3MUZZOHBKQ05kdDFMUW9QVkRpM1Rma0cyV1dv?oc=5"
+    },
+    {
+      "kind": "ticker",
+      "impact": "HIGH",
+      "ts": "2026-06-01T19:05:44+00:00",
+      "headline": "Vertiv\u2019s AI-Focused Bolt-On Acquisition Push Might Change The Case For Investing In Vertiv Holdings Co (VRT)",
+      "summary": "At Vertiv\u2019s 2026 Investor Conference in May, management outlined an active M&A agenda, highlighting a history of US$3.00\u2013US$4.00 billion in acquisitions over four years and a continued focus on US$750",
+      "tickers": [
+        "VRT"
+      ],
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=24974ccc8157a069922ecfffc5e84336e0582cf17f16ea76d2a381e13adecafe"
+    },
+    {
+      "kind": "macro",
+      "impact": "HIGH",
+      "ts": "2026-06-01T18:57:00+00:00",
+      "headline": "Exclusive: Iran war hands Syria windfall as airlines reroute over its airspace - Reuters",
+      "summary": "Exclusive: Iran war hands Syria windfall as airlines reroute over its airspace\u00a0\u00a0Reuters",
+      "tickers": [],
+      "source": "Reuters",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNczFBdUJtallacmpMc054RnJwTXFUcUtscWwwb0NmYm1RQVAwT1ZHVEJ5cDU3LVBBajh2QlJRcDJ2VmdfMW5pVmRKZ3RDMUM3aHU0dTU2SGVOdEZDZUUwRXk4Y3JvQUE5b1BqMTBzTU5KM1ZmcnoyMklCWDA4Uzd5dTNRVl9iS1haMHRQVHNCam12QlRLcU5TTE81b2RpU2dYc1M1WXhXb1BldkJ6aWkzR0VOQWlfUkVXSXc?oc=5"
+    },
+    {
+      "kind": "macro",
+      "impact": "HIGH",
+      "ts": "2026-06-01T18:40:09+00:00",
+      "headline": "Trump says he spoke to Lebanon's Hezbollah through intermediaries - Reuters",
+      "summary": "Trump says he spoke to Lebanon's Hezbollah through intermediaries\u00a0\u00a0Reuters",
+      "tickers": [],
+      "source": "Reuters",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxONDZETGU3TFh2UFRaRjc2b3lGU3RSRDZwUzVpWU9YRXRwWlM5MDdoMS1JQ09NVXR5TUQ1SnRXQWl2S2sxNWg3eTNxR2RPNTdEY0RhSWxMQ1Jndm1SaHZMRklDZVNuZ1dQdGJCRkw5alY0ekpTNllfZFpfNkNob2lRaWJqWV8zR2d5eXFKNDdWOXl6UnNqa0pyc2kyeE5aejRQX2lyMnppcjdoeXR5RzZwckxNT0NpejdKNzdOTU1EbFo?oc=5"
+    },
+    {
+      "kind": "ticker",
+      "impact": "HIGH",
+      "ts": "2026-06-01T18:36:36+00:00",
+      "headline": "STX Stock Gains Over 6% \u2014 Company Settles Huawei Lawsuit For $175M",
+      "summary": "Seagate agreed to pay $175 million to settle claims that it failed to disclose hard drive sales to Huawei that allegedly violated U.S. export restrictions.",
+      "tickers": [
+        "STX"
+      ],
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=35bad1656374cba36b21e4edfe4ad03c85bf5cfc2e5097dd2decacea191890b4"
+    },
+    {
+      "kind": "ticker",
+      "impact": "HIGH",
+      "ts": "2026-06-01T18:31:23+00:00",
+      "headline": "IBM Stock Jumps Double Digits as Barclays Lifts Price Target to $350",
+      "summary": "Wall Street Turns Bullish on IBM as Quantum Vision Gains Momentum",
+      "tickers": [
+        "IBM"
+      ],
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=7b0ee31b224c7b2c253ad5fb3e7622f24394a3440556b4ad9edcdc36d824230d"
+    },
+    {
+      "kind": "ticker",
+      "impact": "HIGH",
+      "ts": "2026-06-01T18:30:42+00:00",
+      "headline": "CRM Stock Jumps Amid Software Rally \u2014 Company Expands AI Push With Contentful Acquisition",
+      "summary": "The deal is expected to close in the third quarter of FY27.",
+      "tickers": [
+        "CRM"
+      ],
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=c1454002f090e591e900775e5e3dc2190caa79c6a8615e9f94ed5d7b1396cd52"
+    },
+    {
+      "kind": "macro",
+      "impact": "HIGH",
+      "ts": "2026-06-01T18:05:19+00:00",
+      "headline": "Trump says talks with Iran continue - Reuters",
+      "summary": "Trump says talks with Iran continue\u00a0\u00a0Reuters",
+      "tickers": [],
+      "source": "Reuters",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPRHc0b2dFbkViQVZROTVkQk5PamlkRTdyalVkVUJsSmNwbGV6MUkyRWRuV1kyNlA4WjJiQ2hnWVV2eTJtZ3dnTUZHZHBrbnhMQUw1NWNreXQ3aUV6NGlFWG1PVGFoNU1TMTFUVFpxbUFySWZkTjktNjQwR2l3TW5aVm9QQlFSZ3dlRFlRSW81d0VvUUVKLVpKWlBvT2w3VXZxbTBrT2lVTHU3dm1TNTFOcjluWWhMcHJzeXlYRDdzd180S05odkVYSUVOX212djg?oc=5"
+    },
+    {
+      "kind": "macro",
+      "impact": "HIGH",
+      "ts": "2026-06-01T18:00:43+00:00",
+      "headline": "US crude exports hit record high in May as Iran war tightens global oil supplies - Reuters",
+      "summary": "US crude exports hit record high in May as Iran war tightens global oil supplies\u00a0\u00a0Reuters",
+      "tickers": [],
+      "source": "Reuters",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNaXpYSkhEUGc2bmV1d2MxQ201MjlkN2VQbmVWcVJycVdaWDUta0ZaNFRSV1Zycnp0RWNGTWlYQzdKVFg5RktPZXVtOWhUX1JHbDQ0aTBMbGk5MDVGUWVkUUt5R19CWUtMOUEzekJJNDlqRkRNZHN3SGdxVHVXc1QxTU1KMXZRS19haU9XXzRTTFhOaThNQzB0Qmh5NGZCRDV3X09LUVROQy1ZV3ZWbFVvU2wyYUxuVDhFUVlfRDNJTnhWTzdG?oc=5"
+    },
+    {
+      "kind": "ticker",
+      "impact": "HIGH",
+      "ts": "2026-06-01T17:56:00+00:00",
+      "headline": "PLAB Q2 Earnings Miss on Delayed Semiconductor Design Releases",
+      "summary": "Photronics' Q2 FY26 EPS and revenue miss estimates as IC revenues fall on delayed chip design releases; gross margin shrinks, and Q3 guidance remains cautious.",
+      "tickers": [
+        "CIEN"
+      ],
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=7cfaf9c0baa995831a9365d5a573d711e499f11c6218f918bf73c330d2d06ee6"
+    },
+    {
+      "kind": "ticker",
+      "impact": "HIGH",
+      "ts": "2026-06-01T17:38:44+00:00",
+      "headline": "Dell Stock Soars After Bernstein Lifts Price Target to Street-High $500 on AI Boom",
+      "summary": "Dell Surges as Bernstein Sees Massive Upside From Exploding AI Demand",
+      "tickers": [
+        "DELL"
+      ],
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=1ff0c776903cb5e4b826b705b1dfe30ff5159d3b9a6234ec8e710ce94e0daedf"
+    },
+    {
+      "kind": "ticker",
+      "impact": "HIGH",
+      "ts": "2026-06-01T16:24:52+00:00",
+      "headline": "Warren Buffett's Successor, Greg Abel, Just Made His First Big Acquisition as CEO of Berkshire Hathaway. Here's What Investors Need to Know",
+      "summary": "Abel took the reins of Berkshire at the start of the year, and he's been fairly active since.",
+      "tickers": [
+        "INTC"
+      ],
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=57097df2f78290f696a2a4c741cfc57a6e212936f50a13ea4edf8b12d2785070"
+    },
+    {
+      "kind": "ticker",
+      "impact": "HIGH",
+      "ts": "2026-06-01T16:10:02+00:00",
+      "headline": "Will Micron (MU) Beat Estimates Again in Its Next Earnings Report?",
+      "summary": "Micron (MU) has an impressive earnings surprise history and currently possesses the right combination of the two key ingredients for a likely beat in its next quarterly report.",
+      "tickers": [
+        "MU"
+      ],
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=4bf94429a418bfcfb48b8bdb551a0797bbc3dda1b4fdbefe06c982dfceab2bb5"
+    },
+    {
+      "kind": "ticker",
+      "impact": "HIGH",
+      "ts": "2026-06-01T15:25:07+00:00",
+      "headline": "Stocks Pressured as Oil Prices Jump on Report that Iran Has Halted Ceasefire Negotiations",
+      "summary": "The S&P 500 Index ($SPX ) (SPY ) is down -0.08%, the Dow Jones Industrial Average ($DOWI ) (DIA ) is down -0.43%, and the Nasdaq 100 Index ($IUXX ) (QQQ ) is up +0.11%. June E-mini S&P futures (ESM26 ",
+      "tickers": [
+        "AMD"
+      ],
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=f8fca0762df3ca95618e5a491c62a9dfb732a4267fb6686f452075efdf810025"
+    },
+    {
+      "kind": "ticker",
+      "impact": "HIGH",
+      "ts": "2026-06-01T15:25:07+00:00",
+      "headline": "Stocks Pressured as Oil Prices Jump on Report that Iran Has Halted Ceasefire Negotiations",
+      "summary": "The S&P 500 Index ($SPX ) (SPY ) is down -0.08%, the Dow Jones Industrial Average ($DOWI ) (DIA ) is down -0.43%, and the Nasdaq 100 Index ($IUXX ) (QQQ ) is up +0.11%. June E-mini S&P futures (ESM26 ",
+      "tickers": [
+        "QCOM"
+      ],
+      "source": "Yahoo",
+      "url": "https://finnhub.io/api/news?id=f8fca0762df3ca95618e5a491c62a9dfb732a4267fb6686f452075efdf810025"
+    },
+    {
+      "kind": "macro",
+      "impact": "HIGH",
+      "ts": "2026-06-01T15:21:39+00:00",
+      "headline": "UK public inflation expectations ease further in May from March's Iran shock, survey shows - Reuters",
+      "summary": "UK public inflation expectations ease further in May from March's Iran shock, survey shows\u00a0\u00a0Reuters",
+      "tickers": [],
+      "source": "Reuters",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNSHRmZ0dFWjVhZl9oYm9qOHh5RF9BQkNJUTJhcjI1RHRnOVZoNVhPR3NrTHFNNm1XdjY5ZXN0WWptSmY4QWJfcmZNb2p5aDdiQW1IOHVOV1pfVldyaUVwVTVzYVpOVVR2dWNsM1dqSzBudTFPbkp6UER5ODZSZUM1MW41T3NaQWtabm5ZbXhtR19zdzZDeF9LMmhvRjVET3MxUUd2clRwSUw5YjJGUWVQU3BLb3lTTDRCaHU0TXBnaTJLd2s?oc=5"
+    },
+    {
+      "kind": "ticker",
+      "impact": "HIGH",
+      "ts": "2026-06-01T15:12:42+00:00",
+      "headline": "Citigroup Maintains Neutral on Accenture, Lowers Price Target to $195",
+      "summary": "Citigroup  analyst Bryan Keane   maintains Accenture (NYSE:ACN) with a Neutral and lowers the price target from $215 to $195.",
+      "tickers": [
+        "ACN"
+      ],
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=27c239ec0e259b0fe943ce942d8368cc0554e1ea327bba9ef7aafe766b2b2bb1"
+    },
+    {
+      "kind": "ticker",
+      "impact": "HIGH",
+      "ts": "2026-06-01T15:04:58+00:00",
+      "headline": "Tesla Registrations Surge 655% In France: What Prediction Markets Say It Means For TSLA",
+      "summary": "Elon Musk&#39;s Tesla saw France registrations surge 655% in May. Polymarket and Kalshi bettors are pricing a Q2 delivery beat.",
+      "tickers": [
+        "TSLA"
+      ],
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=5b9fc4d4b4d24d5f165c6bb5a0d9c30e7e883d0989c1aa8250d6025d866b9c82"
+    },
+    {
+      "kind": "ticker",
+      "impact": "HIGH",
+      "ts": "2026-06-01T14:48:51+00:00",
+      "headline": "Barclays Maintains Equal-Weight on Intel, Raises Price Target to $100",
+      "summary": "Barclays  analyst Tom O&#39;Malley   maintains Intel (NASDAQ:INTC) with a Equal-Weight and raises the price target from $65 to $100.",
+      "tickers": [
+        "INTC"
+      ],
+      "source": "Benzinga",
+      "url": "https://finnhub.io/api/news?id=246dc1762c4c06bfdf49289df2241e9b9c76cf1567b3224799870dbe1d2c23f9"
+    },
+    {
+      "kind": "econ",
+      "impact": "HIGH",
+      "ts": "2026-06-01 14:00:00",
+      "headline": "ISM Manufacturing PMI",
+      "actual": 54,
+      "estimate": 53,
+      "prev": 52.7,
+      "unit": "",
+      "tickers": [],
+      "source": "Finnhub Econ",
+      "url": null
+    },
+    {
+      "kind": "econ",
+      "impact": "MED",
+      "ts": "2026-06-09 14:00:00",
+      "headline": "Existing Home Sales MoM",
+      "actual": null,
+      "estimate": null,
+      "prev": 0.2,
+      "unit": "%",
+      "tickers": [],
+      "source": "Finnhub Econ",
+      "url": null
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "asof": "2026-05-30T22:56:43.696342+00:00",
+  "paths": 20000,
+  "trades_per_path": 1919,
+  "seed": 7,
+  "source": "replay",
+  "method": "block",
+  "method_note": "block bootstrap (streak-preserving) \u2014 the honest drawdown estimate",
+  "ledger_counts": {
+    "live": 0,
+    "replay": 1919
+  },
+  "honesty_note": "Resampled from REPLAY trades (survivorship-biased, INDICATIVE only) unless source=live. No trades are invented; only recorded R-multiples are reshuffled.",
+  "risk_per_trade_pct_assumed": 0.5,
+  "concurrency_caveat": "%-drawdown assumes NON-overlapping positions, but policy allows 6 concurrent \u2014 real %-equity drawdown can be up to ~6x worse if positions are correlated and lose together.",
+  "total_return_R": {
+    "p5": 471.17,
+    "p50": 603.09,
+    "p95": 734.45,
+    "worst_p1": 416.89,
+    "min": 295.11
+  },
+  "max_drawdown_R": {
+    "p50": 20.06,
+    "p95": 31.33,
+    "p99": 38.26,
+    "worst_max": 60.98
+  },
+  "max_drawdown_pct_approx": {
+    "p50": 10.0,
+    "p95": 15.7,
+    "p99": 19.1,
+    "note": "\u2248 R-drawdown \u00d7 0.5%/trade, single-position approximation (see concurrency_caveat)."
+  },
+  "drawdown_ceiling_pct": 20.0,
+  "prob_breach_ceiling": 0.0075,
+  "risk_of_ruin": {
+    "ruin_level_pct_equity": 50.0,
+    "probability": 0.0,
+    "tolerance": 0.01,
+    "pass": true,
+    "note": "P(equity drawdown >= ruin level) across resampled orderings; tests sequence-of-returns risk. REPLAY-based unless source=live."
+  },
+  "longest_losing_streak": {
+    "p50": 11,
+    "p95": 14,
+    "worst": 23
+  },
+  "time_to_recovery_trades": {
+    "recovered_fraction": 0.968,
+    "median": 38,
+    "p95": 113
+  }
+}

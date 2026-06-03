@@ -1,0 +1,47 @@
+# Curated FinTwit handles for X sentiment ingestion.
+# Quality > quantity. Only handles with consistent signal-to-noise.
+# Used by the daily digest agent when it calls x_search.
+
+semiconductors_ai_infra:
+  - SemiAnalysis_         # Dylan Patel — supply chain, compute economics
+  - dylan522p             # Dylan Patel personal
+  - dnystedt              # Dan Nystedt — Asia semi supply chain
+  - JayKim_LA             # AI hardware
+  - jonerlichman          # tech business
+  - chamath               # macro + tech
+  - Citrini7              # AI thematic
+  - hedgeye               # macro
+
+power_energy:
+  - JosephPolitano        # macro + energy
+  - 0xMert_               # not finance — exclude
+  - Mining_Stock_Edu      # uranium + power
+  - WallStreetSilv        # energy macro
+
+macro_markets:
+  - KobeissiLetter        # market structure
+  - zerohedge             # macro headlines (filter for signal)
+  - LizAnnSonders         # Schwab strategist — solid macro
+  - SoberLook             # macro charts
+  - Ole_S_Hansen          # commodities
+  - LanceRoberts          # macro + risk
+  - GameofTrades_         # technical
+
+ai_tech_strategy:
+  - benthompson           # Stratechery
+  - patrickc              # Stripe / business
+  - sundeep               # cloud strategy
+  - Carnage4Life          # tech strategy
+
+# Combine into a single list the agent uses by default.
+default_query_handles:
+  - SemiAnalysis_
+  - dylan522p
+  - dnystedt
+  - KobeissiLetter
+  - LizAnnSonders
+  - Citrini7
+  - benthompson
+  - SoberLook
+  - JayKim_LA
+  - LanceRoberts

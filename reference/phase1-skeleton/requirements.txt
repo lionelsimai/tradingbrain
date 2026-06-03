@@ -1,0 +1,12 @@
+# Core: NONE required. The skeleton runs on the Python standard library.
+# Turn these on as you switch each hook from stub to real:
+
+# [HOOK 1] real stock data
+# yfinance>=0.2
+# pandas>=2.0
+
+# [HOOK 3] LLM advisor (key read from your environment, see .env.example)
+# anthropic>=0.40
+
+# Testing
+# pytest>=8.0

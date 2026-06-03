@@ -1,0 +1,420 @@
+{
+  "asof": "2026-06-03T01:45:47.910649+00:00",
+  "mode": "super_smart_research_recommender_v1",
+  "latest_price_date": null,
+  "universe_scanned": 4,
+  "strict_current_picks": [
+    "MU"
+  ],
+  "macro_context": {
+    "macro_risk": "low",
+    "stance": "no known major macro event in the local calendar window; still monitor yields/DXY/QQQ/SMH",
+    "upcoming_events": []
+  },
+  "audit": {
+    "asof": "2026-06-03T01:45:47.910629+00:00",
+    "verdict": "research_only",
+    "capability_score": 38,
+    "gaps": [
+      {
+        "id": "universe_breadth",
+        "status": "limited",
+        "severity": "critical",
+        "evidence": "configured_universe=77, priced_tickers=81",
+        "why_it_matters": "A true US stock recommender should scan a broad US equity universe, not only the current AI/watchlist universe.",
+        "build_next": "Add a liquid-US-stock discovery universe from Polygon/Nasdaq listings, then price/rank at least 500-1500 tradable names."
+      },
+      {
+        "id": "point_in_time_survivorship",
+        "status": "open",
+        "severity": "critical",
+        "evidence": "point_in_time_universe=False, pit_status=open, delisted_included_pct=0.0",
+        "why_it_matters": "Backtests on all-alive universes overstate edge and miss dead-name losers.",
+        "build_next": "Promote Polygon inactive/corporate-action reference into a survivorship-free PIT universe or import Sharadar/Norgate/Intrinio PIT data."
+      },
+      {
+        "id": "forward_paper_evidence",
+        "status": "accumulating_pending_outcomes",
+        "severity": "high",
+        "evidence": "forward_paper_trades=3, observations=3, resolved=0",
+        "why_it_matters": "Replay/backtest edge must survive daily forward paper observations before confidence can be high.",
+        "build_next": "Keep premarket/EOD paper loops running and require 200+ resolved forward observations across regimes."
+      },
+      {
+        "id": "analyst_target_provenance",
+        "status": "missing",
+        "severity": "high",
+        "evidence": "analyst_target_records=0",
+        "why_it_matters": "External/banker targets can be stale, concentrated, or promotional unless broker/analyst/date/source provenance is tracked.",
+        "build_next": "Ingest lawful analyst target records with ticker, broker, analyst, rating, target, date, source_url, and independence/dispersion checks."
+      },
+      {
+        "id": "fresh_fundamental_catalyst_coverage",
+        "status": "partial",
+        "severity": "medium",
+        "evidence": "fresh_fundamental_ticker_pct=0.0%, fresh_news_ticker_pct=25.0%",
+        "why_it_matters": "A stock recommender needs fresh earnings, fundamentals, filings, and catalyst context, not just price momentum.",
+        "build_next": "Run/expand fundamentals, EDGAR, news, earnings-calendar, and transcript ingestion; require freshness badges on each pick."
+      },
+      {
+        "id": "sentiment_manipulation_coverage",
+        "status": "partial",
+        "severity": "medium",
+        "evidence": "social_ticker_pct=0.0%",
+        "why_it_matters": "Crowded/euphoric/manipulated social flow can turn a good chart into a bad chase.",
+        "build_next": "Continue lawful social sentiment ingestion and require manipulation/euphoria checks on each candidate."
+      }
+    ],
+    "coverage": {
+      "fresh_fundamental_ticker_pct": 0.0,
+      "fresh_news_ticker_pct": 0.25,
+      "social_ticker_pct": 0.0,
+      "forward_paper_trades": 3,
+      "forward_paper_observations": 3,
+      "forward_paper_resolved": 0,
+      "analyst_target_records": 0
+    },
+    "pit_coverage": {
+      "asof": "2026-06-03T01:45:47.903679+00:00",
+      "status": "open",
+      "closed": false,
+      "has_prices": true,
+      "has_universe": true,
+      "universe_rows": 80,
+      "universe_columns": [
+        "added_at",
+        "category",
+        "ticker"
+      ],
+      "has_point_in_time_universe": false,
+      "has_vendor_pit_universe": false,
+      "delisted_rows": 0,
+      "delisted_included_pct": 0.0,
+      "polygon_inactive_reference_rows": 0,
+      "corporate_action_rows": 0,
+      "splits_rows": 0,
+      "dividends_rows": 0,
+      "candidate_count": 15,
+      "candidate_traceable": 15,
+      "candidate_traceable_pct": 100.0,
+      "candidate_coverage_status": "excellent",
+      "candidate_rows": [
+        {
+          "ticker": "MU",
+          "price_rows": 7550,
+          "universe_rows": 1,
+          "price_traceable": true,
+          "universe_traceable": true
+        },
+        {
+          "ticker": "ARM",
+          "price_rows": 679,
+          "universe_rows": 1,
+          "price_traceable": true,
+          "universe_traceable": true
+        },
+        {
+          "ticker": "AAPL",
+          "price_rows": 7550,
+          "universe_rows": 1,
+          "price_traceable": true,
+          "universe_traceable": true
+        },
+        {
+          "ticker": "INTC",
+          "price_rows": 7550,
+          "universe_rows": 1,
+          "price_traceable": true,
+          "universe_traceable": true
+        },
+        {
+          "ticker": "AMD",
+          "price_rows": 7550,
+          "universe_rows": 1,
+          "price_traceable": true,
+          "universe_traceable": true
+        },
+        {
+          "ticker": "STX",
+          "price_rows": 5903,
+          "universe_rows": 1,
+          "price_traceable": true,
+          "universe_traceable": true
+        },
+        {
+          "ticker": "WDC",
+          "price_rows": 7550,
+          "universe_rows": 1,
+          "price_traceable": true,
+          "universe_traceable": true
+        },
+        {
+          "ticker": "ALAB",
+          "price_rows": 550,
+          "universe_rows": 1,
+          "price_traceable": true,
+          "universe_traceable": true
+        },
+        {
+          "ticker": "DDOG",
+          "price_rows": 1682,
+          "universe_rows": 1,
+          "price_traceable": true,
+          "universe_traceable": true
+        },
+        {
+          "ticker": "COHR",
+          "price_rows": 7550,
+          "universe_rows": 1,
+          "price_traceable": true,
+          "universe_traceable": true
+        },
+        {
+          "ticker": "QCOM",
+          "price_rows": 7550,
+          "universe_rows": 1,
+          "price_traceable": true,
+          "universe_traceable": true
+        },
+        {
+          "ticker": "GEV",
+          "price_rows": 545,
+          "universe_rows": 1,
+          "price_traceable": true,
+          "universe_traceable": true
+        },
+        {
+          "ticker": "AAOI",
+          "price_rows": 3187,
+          "universe_rows": 1,
+          "price_traceable": true,
+          "universe_traceable": true
+        },
+        {
+          "ticker": "MRVL",
+          "price_rows": 6516,
+          "universe_rows": 1,
+          "price_traceable": true,
+          "universe_traceable": true
+        },
+        {
+          "ticker": "LITE",
+          "price_rows": 2729,
+          "universe_rows": 1,
+          "price_traceable": true,
+          "universe_traceable": true
+        }
+      ],
+      "blockers": [
+        "universe lacks PIT/delisting columns",
+        "no delisted/inactive rows in PIT universe",
+        "corporate-action reference missing"
+      ],
+      "required_next_actions": [
+        "Import or build a delisted-inclusive point-in-time universe with active/delisted timestamps.",
+        "Bind every price row to the universe state valid at that historical date.",
+        "Collect split/dividend/symbol-change corporate actions for every traded candidate.",
+        "Keep candidate traceability >=95% before any 9/10 research-quality claim."
+      ],
+      "methodology_caveat": "PIT coverage is an evidence audit only. Candidate price traceability does not close survivorship bias unless the universe is delisted-inclusive and point-in-time."
+    },
+    "disclaimer": "Research-only decision support, not financial advice or an instruction to trade. TradingBrain remains paper/research mode until forward evidence, PIT data, and human review gates improve."
+  },
+  "picks": [
+    {
+      "ticker": "MU",
+      "sector": null,
+      "recommender_score": 68.0,
+      "action_label": "watch_to_accumulate",
+      "confidence_ceiling": "low",
+      "last_close": 962.605,
+      "setup": "fallback_candidate",
+      "modeled_upside_pct": 27.1,
+      "reward_risk": 2.0,
+      "return_3y_pct": null,
+      "return_1y_pct": null,
+      "return_6m_pct": null,
+      "max_drawdown_3y_pct": null,
+      "why_it_scores": [
+        "Passed strict TradingBrain short-term gate / defined-risk recommender.",
+        "Technical scenario has high modeled upside (27.1%).",
+        "Reward/risk clears strict threshold (2.00R)."
+      ],
+      "evidence_gaps": [
+        "Missing analyst-target provenance; external/banker targets are not trusted.",
+        "Fresh fundamental/value-quality evidence missing or stale.",
+        "Social/manipulation sentiment unavailable for this ticker."
+      ],
+      "red_team_risks": [
+        "No hard veto found, but still research-only and subject to regime reversal."
+      ],
+      "source_candidate": {
+        "ticker": "MU",
+        "asset_class": "equity",
+        "direction": "long",
+        "conviction_score": 60,
+        "conviction_band": "moderate",
+        "time_horizon": "5-15 trading days",
+        "entry_zone": {
+          "low": 961.16,
+          "high": 964.05
+        },
+        "stop_loss": 834.24,
+        "targets": [
+          {
+            "level": 1223.67,
+            "rationale": "Clenow rank #13, new 5d high"
+          }
+        ],
+        "reward_to_risk": 2.0,
+        "position_size": {
+          "shares_or_units": 3,
+          "dollar_risk": 389.43,
+          "percent_of_equity": 0.5
+        },
+        "thesis": "MOMO_CONT setup: Clenow rank #13, new 5d high. Trend and regime support the timing; risk is defined at the stop.",
+        "pillar_reads": {
+          "trend": "bullish + strong relative strength (RS20 81), setup MOMO_CONT",
+          "momentum": "bullish, healthy (RSI 70)",
+          "volume": "no data (volume confirmation not in current feed)",
+          "fundamental_catalyst": "no data (fundamentals/catalyst calendar not connected)",
+          "sentiment": "no data (run scripts.ingest.* then scripts.signals.social_sentiment)",
+          "regime": "supportive (Bull, stable)"
+        },
+        "key_risks": [
+          "In the worst stress window the book bled -0.59R per trade \u2014 a fast regime flip would hurt.",
+          "Conviction rests on only part of the picture: no volume, fundamental_catalyst, sentiment data."
+        ],
+        "invalidation": "a close below the stop at 834.24 (thesis wrong).",
+        "confidence_caveats": "Conviction capped at 60 (moderate) because the system has 0 live trades \u2014 scores are from REPLAY/survivorship-biased data and are indicative only. Missing pillars: volume, fundamental_catalyst, sentiment.",
+        "data_freshness": "2026-05-29",
+        "x_sentiment": null,
+        "social_sentiment": null,
+        "_raw_uncapped_score": 70,
+        "_self_red_team": [
+          "In the worst stress window the book bled -0.59R per trade \u2014 a fast regime flip would hurt.",
+          "Conviction rests on only part of the picture: no volume, fundamental_catalyst, sentiment data.",
+          "Survivorship: scoring history excludes delisted names, so the real edge is lower than it looks."
+        ],
+        "composite_score": 60.0,
+        "last_close": 962.605,
+        "target_upside_pct": 27.12,
+        "reward_risk": 2.0,
+        "setup": "fallback_candidate",
+        "_fallback_rank_source": "recommendations.json"
+      }
+    },
+    {
+      "ticker": "AAOI",
+      "sector": null,
+      "recommender_score": 45.0,
+      "action_label": "conditional_watch_only",
+      "confidence_ceiling": "low",
+      "last_close": null,
+      "setup": "fallback_candidate",
+      "modeled_upside_pct": null,
+      "reward_risk": null,
+      "return_3y_pct": null,
+      "return_1y_pct": null,
+      "return_6m_pct": null,
+      "max_drawdown_3y_pct": null,
+      "why_it_scores": [
+        "Positive composite pattern score, but evidence stack is incomplete."
+      ],
+      "evidence_gaps": [
+        "Fresh fundamental/value-quality evidence missing or stale.",
+        "No fresh news/filing/catalyst document in the last 14 days.",
+        "Social/manipulation sentiment unavailable for this ticker."
+      ],
+      "red_team_risks": [
+        "No hard veto found, but still research-only and subject to regime reversal."
+      ],
+      "source_candidate": {
+        "ticker": "AAOI",
+        "composite_score": 50.0,
+        "last_close": null,
+        "target_upside_pct": null,
+        "reward_risk": null,
+        "setup": "fallback_candidate",
+        "_fallback_rank_source": "super-smart-recommendations.json"
+      }
+    },
+    {
+      "ticker": "MRVL",
+      "sector": null,
+      "recommender_score": 45.0,
+      "action_label": "conditional_watch_only",
+      "confidence_ceiling": "low",
+      "last_close": null,
+      "setup": "fallback_candidate",
+      "modeled_upside_pct": null,
+      "reward_risk": null,
+      "return_3y_pct": null,
+      "return_1y_pct": null,
+      "return_6m_pct": null,
+      "max_drawdown_3y_pct": null,
+      "why_it_scores": [
+        "Positive composite pattern score, but evidence stack is incomplete."
+      ],
+      "evidence_gaps": [
+        "Fresh fundamental/value-quality evidence missing or stale.",
+        "No fresh news/filing/catalyst document in the last 14 days.",
+        "Social/manipulation sentiment unavailable for this ticker."
+      ],
+      "red_team_risks": [
+        "No hard veto found, but still research-only and subject to regime reversal."
+      ],
+      "source_candidate": {
+        "ticker": "MRVL",
+        "composite_score": 50.0,
+        "last_close": null,
+        "target_upside_pct": null,
+        "reward_risk": null,
+        "setup": "fallback_candidate",
+        "_fallback_rank_source": "super-smart-recommendations.json"
+      }
+    },
+    {
+      "ticker": "INTC",
+      "sector": null,
+      "recommender_score": 45.0,
+      "action_label": "conditional_watch_only",
+      "confidence_ceiling": "low",
+      "last_close": null,
+      "setup": "fallback_candidate",
+      "modeled_upside_pct": null,
+      "reward_risk": null,
+      "return_3y_pct": null,
+      "return_1y_pct": null,
+      "return_6m_pct": null,
+      "max_drawdown_3y_pct": null,
+      "why_it_scores": [
+        "Positive composite pattern score, but evidence stack is incomplete."
+      ],
+      "evidence_gaps": [
+        "Fresh fundamental/value-quality evidence missing or stale.",
+        "No fresh news/filing/catalyst document in the last 14 days.",
+        "Social/manipulation sentiment unavailable for this ticker."
+      ],
+      "red_team_risks": [
+        "No hard veto found, but still research-only and subject to regime reversal."
+      ],
+      "source_candidate": {
+        "ticker": "INTC",
+        "composite_score": 50.0,
+        "last_close": null,
+        "target_upside_pct": null,
+        "reward_risk": null,
+        "setup": "fallback_candidate",
+        "_fallback_rank_source": "super-smart-recommendations.json"
+      }
+    }
+  ],
+  "what_i_was_lacking_and_built": [
+    "Added a self-auditing recommender layer that states data/intelligence gaps before ranking.",
+    "Added candidate-level confidence ceilings so missing evidence cannot masquerade as high conviction.",
+    "Blended strict TradingBrain picks, 3-year pattern rank, macro, outlier, target-quality, catalyst/news, fundamentals, and social coverage.",
+    "Kept outputs research-only with explicit red-team risks and evidence gaps per ticker."
+  ],
+  "disclaimer": "Research-only decision support, not financial advice or an instruction to trade. TradingBrain remains paper/research mode until forward evidence, PIT data, and human review gates improve."
+}

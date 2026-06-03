@@ -1,0 +1,9 @@
+id,ts,cycle_id,setup,failure_mode,context,lesson_id,source
+1,2026-05-29 23:03:01.078441,cyc_20260529_230259,BREAKOUT,Survivorship bias: universe excludes delisted names — live edge likely lower.,,2,red_team
+2,2026-05-29 23:03:01.240023,cyc_20260529_230259,BREAKOUT,Walk-forward efficiency -20.69: OOS is a poor fraction of IS — overfit risk.,,3,red_team
+3,2026-05-29 23:03:01.451092,cyc_20260529_230259,BREAKOUT,Negative expectancy in regimes: ['bear'] — gate these off.,,4,red_team
+4,2026-05-29 23:19:37.652815,cyc_20260529_231936,BREAKOUT,Survivorship bias: universe excludes delisted names — live edge likely lower.,,2,red_team
+5,2026-05-29 23:19:37.818352,cyc_20260529_231936,BREAKOUT,Walk-forward efficiency -20.69: OOS is a poor fraction of IS — overfit risk.,,3,red_team
+6,2026-05-29 23:19:37.985172,cyc_20260529_231936,BREAKOUT,Negative expectancy in regimes: ['bear'] — gate these off.,,4,red_team
+7,2026-05-30 00:41:45.296624,reconcile_20260530,BREAKOUT,live edge flipped negative vs backtest,"live -0.101R n=28, backtest +0.028R",,live
+8,2026-05-30 00:41:46.937001,reconcile_20260530,VCP,live edge flipped negative vs backtest,"live -0.427R n=88, backtest +0.147R",,live

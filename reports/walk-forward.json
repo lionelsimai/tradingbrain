@@ -1,0 +1,82 @@
+{
+  "windows": 6,
+  "median_oos_sharpe": 0.82,
+  "median_oos_cagr": 0.2077,
+  "median_alpha_cagr": 0.145,
+  "is_vs_oos_gap": 1.69,
+  "windows_beating_spy": 6,
+  "rows": [
+    {
+      "window": 1,
+      "train_period": "1996-05-28 -> 1999-05-21",
+      "test_period": "1999-05-24 -> 2001-12-18",
+      "in_sample_sharpe": 2.83,
+      "oos_sharpe": 0.73,
+      "oos_cagr": 0.2419,
+      "oos_maxdd": -0.4889,
+      "spy_sharpe": -0.16,
+      "spy_cagr": -0.0561,
+      "alpha_cagr": 0.298
+    },
+    {
+      "window": 2,
+      "train_period": "2000-09-01 -> 2003-09-05",
+      "test_period": "2003-09-08 -> 2006-03-31",
+      "in_sample_sharpe": 2.47,
+      "oos_sharpe": 1.01,
+      "oos_cagr": 0.2479,
+      "oos_maxdd": -0.2773,
+      "spy_sharpe": 0.9,
+      "spy_cagr": 0.0951,
+      "alpha_cagr": 0.1528
+    },
+    {
+      "window": 3,
+      "train_period": "2004-12-20 -> 2007-12-17",
+      "test_period": "2007-12-18 -> 2010-07-14",
+      "in_sample_sharpe": 2.56,
+      "oos_sharpe": 0.27,
+      "oos_cagr": 0.0339,
+      "oos_maxdd": -0.6055,
+      "spy_sharpe": -0.18,
+      "spy_cagr": -0.1033,
+      "alpha_cagr": 0.1372
+    },
+    {
+      "window": 4,
+      "train_period": "2009-04-02 -> 2012-03-28",
+      "test_period": "2012-03-29 -> 2014-10-23",
+      "in_sample_sharpe": 1.11,
+      "oos_sharpe": 0.92,
+      "oos_cagr": 0.1734,
+      "oos_maxdd": -0.1832,
+      "spy_sharpe": 1.13,
+      "spy_cagr": 0.1361,
+      "alpha_cagr": 0.0373
+    },
+    {
+      "window": 5,
+      "train_period": "2013-07-16 -> 2016-07-12",
+      "test_period": "2016-07-13 -> 2019-02-06",
+      "in_sample_sharpe": 2.66,
+      "oos_sharpe": 1.49,
+      "oos_cagr": 0.3319,
+      "oos_maxdd": -0.254,
+      "spy_sharpe": 0.8,
+      "spy_cagr": 0.0972,
+      "alpha_cagr": 0.2347
+    },
+    {
+      "window": 6,
+      "train_period": "2017-10-24 -> 2020-10-21",
+      "test_period": "2020-10-22 -> 2023-05-18",
+      "in_sample_sharpe": 2.25,
+      "oos_sharpe": 0.62,
+      "oos_cagr": 0.1651,
+      "oos_maxdd": -0.4698,
+      "spy_sharpe": 0.51,
+      "spy_cagr": 0.0816,
+      "alpha_cagr": 0.0835
+    }
+  ]
+}

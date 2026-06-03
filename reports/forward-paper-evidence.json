@@ -1,0 +1,15 @@
+{
+  "asof": "2026-06-03T02:48:35.632311+00:00",
+  "available": true,
+  "by_horizon": [],
+  "by_status": {},
+  "decision_useful": false,
+  "invalid_observations": 0,
+  "methodology_caveat": "Research-only forward observation ledger. Rows are not broker fills, not live trades, and not authorization to trade.",
+  "pending_observations": 0,
+  "regime_count": 0,
+  "resolved_observations": 0,
+  "tickers": [],
+  "total_observations": 0,
+  "weeks_covered": 0
+}

@@ -1,0 +1,49 @@
+# TradingBrain — Section 0 Session Configuration
+# Per DOCTRINE.md §0. Edit these to match your account and risk tolerance.
+# `tb analyze <TICKER>` reads this for position sizing and trade gating.
+
+# --- Capital & risk ---
+account_equity_usd: 50000        # TODO: set your real equity
+risk_per_trade_pct: 1.0          # default 1%, hard ceiling 2.0
+max_portfolio_heat_pct: 4.0      # PASSIVE: canonical source is config/risk_policy.yaml
+max_concurrent_positions: 6      # default 5–8
+max_position_pct: 10.0           # PASSIVE: canonical source is config/risk_policy.yaml
+
+# --- Scope & style ---
+markets_in_scope: ["us_equities"]   # US AI equities only
+holding_period_days: [2, 20]     # typical swing window
+min_reward_to_risk: 2.0          # never accept below this; prefer 3.0
+prefer_reward_to_risk: 3.0
+
+# --- Leverage ---
+leverage_allowed: false          # equities: false. crypto perps: set max multiple below
+max_leverage: 1.0
+
+# --- Data ---
+data_mode: LIVE                  # LIVE (we have yfinance/Finnhub) or MANUAL
+
+# --- Circuit breaker (DOCTRINE §6.10) ---
+circuit_breaker_loss_streak: 3   # N consecutive losses -> half size + review
+circuit_breaker_drawdown_pct: 10 # account drawdown % -> half size + review
+
+# --- Costs (DOCTRINE §6.7) ---
+commission_bps: 0                # per-side commission in basis points
+slippage_bps: 5                  # assumed slippage per side
+spread_bps: 4                    # assumed half-spread paid per side
+crypto_funding_bps_per_day: 3    # perps funding estimate (multi-day holds compound)
+
+# --- Backtest / research (DOCTRINE Part II–V) ---
+backtest_window_years: 30        # equities: 30y; crypto uses max clean history
+in_sample_frac: 0.60             # oldest 60% = workshop; rest sealed for OOS
+walk_forward_train_years: 4      # rolling optimize window
+walk_forward_test_years: 1       # next unseen window
+min_trades_for_significance: 100 # below this, result is "indicative only"
+monte_carlo_paths: 5000          # trade-order reshuffles for DD distribution
+
+# --- Data quality declaration (DOCTRINE §5 integrity gate) ---
+data_quality:
+  source: "yfinance (split/div-adjusted close)"
+  survivorship_bias_free: false  # universe = today's survivors only -> INDICATIVE ONLY
+  point_in_time_universe: false  # no historical index membership
+  total_return: false            # price/adjusted-close, not full dividend reinvest
+  note: "Results carry an INDICATIVE-ONLY caveat until a point-in-time, delisting-inclusive universe is sourced."

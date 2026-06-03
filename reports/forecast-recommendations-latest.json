@@ -1,0 +1,183 @@
+{
+  "asof": "2026-06-02T15:40:14.406934+00:00",
+  "equity": 100000.0,
+  "risk_per_trade_pct": 0.5,
+  "min_reward_risk": 2.0,
+  "live_trades_on_record": 0,
+  "conviction_cap_active": true,
+  "picks": [
+    {
+      "ticker": "MU",
+      "asset_class": "equity",
+      "direction": "long",
+      "conviction_score": 60,
+      "conviction_band": "moderate",
+      "time_horizon": "5-15 trading days",
+      "entry_zone": {
+        "low": 961.16,
+        "high": 964.05
+      },
+      "stop_loss": 834.24,
+      "targets": [
+        {
+          "level": 1223.67,
+          "rationale": "Clenow rank #13, new 5d high"
+        }
+      ],
+      "reward_to_risk": 2.0,
+      "position_size": {
+        "shares_or_units": 3,
+        "dollar_risk": 389.43,
+        "percent_of_equity": 0.5
+      },
+      "thesis": "MOMO_CONT setup: Clenow rank #13, new 5d high. Trend and regime support the timing; risk is defined at the stop.",
+      "pillar_reads": {
+        "trend": "bullish + strong relative strength (RS20 81), setup MOMO_CONT",
+        "momentum": "bullish, healthy (RSI 70)",
+        "volume": "no data (volume confirmation not in current feed)",
+        "fundamental_catalyst": "no data (fundamentals/catalyst calendar not connected)",
+        "sentiment": "no data (run scripts.ingest.* then scripts.signals.social_sentiment)",
+        "regime": "supportive (Bull, stable)"
+      },
+      "key_risks": [
+        "In the worst stress window the book bled -0.59R per trade \u2014 a fast regime flip would hurt.",
+        "Conviction rests on only part of the picture: no volume, fundamental_catalyst, sentiment data."
+      ],
+      "invalidation": "a close below the stop at 834.24 (thesis wrong).",
+      "confidence_caveats": "Conviction capped at 60 (moderate) because the system has 0 live trades \u2014 scores are from REPLAY/survivorship-biased data and are indicative only. Missing pillars: volume, fundamental_catalyst, sentiment.",
+      "data_freshness": "2026-05-29",
+      "x_sentiment": null,
+      "social_sentiment": null,
+      "_raw_uncapped_score": 70,
+      "_self_red_team": [
+        "In the worst stress window the book bled -0.59R per trade \u2014 a fast regime flip would hurt.",
+        "Conviction rests on only part of the picture: no volume, fundamental_catalyst, sentiment data.",
+        "Survivorship: scoring history excludes delisted names, so the real edge is lower than it looks."
+      ]
+    }
+  ],
+  "watch_list": [
+    {
+      "ticker": "ARM",
+      "setup": "MOMO_CONT",
+      "why_not": "conviction 42 (weak) \u2014 mixed/thin signals",
+      "trigger": "stronger confluence (volume/sentiment confirmation)"
+    },
+    {
+      "ticker": "AAPL",
+      "setup": "BREAKOUT",
+      "why_not": "reward:risk 1.69 below minimum 2.0",
+      "trigger": "a pullback that lifts R:R to >= 2.0"
+    },
+    {
+      "ticker": "INTC",
+      "setup": "TREND_LEADER",
+      "why_not": "reward:risk 1.50 below minimum 2.0",
+      "trigger": "a pullback that lifts R:R to >= 2.0"
+    },
+    {
+      "ticker": "AMD",
+      "setup": "TREND_LEADER",
+      "why_not": "reward:risk 1.50 below minimum 2.0",
+      "trigger": "a pullback that lifts R:R to >= 2.0"
+    },
+    {
+      "ticker": "STX",
+      "setup": "TREND_LEADER",
+      "why_not": "reward:risk 1.50 below minimum 2.0",
+      "trigger": "a pullback that lifts R:R to >= 2.0"
+    },
+    {
+      "ticker": "WDC",
+      "setup": "TREND_LEADER",
+      "why_not": "reward:risk 1.50 below minimum 2.0",
+      "trigger": "a pullback that lifts R:R to >= 2.0"
+    },
+    {
+      "ticker": "ALAB",
+      "setup": "TREND_LEADER",
+      "why_not": "reward:risk 1.50 below minimum 2.0",
+      "trigger": "a pullback that lifts R:R to >= 2.0"
+    },
+    {
+      "ticker": "DDOG",
+      "setup": "TREND_LEADER",
+      "why_not": "reward:risk 1.50 below minimum 2.0",
+      "trigger": "a pullback that lifts R:R to >= 2.0"
+    }
+  ],
+  "market_read": "Regime: Bull (STABLE), target exposure 0.9. Risk is concentrated in momentum names; sizing kept small. Macro/rates: low \u2014 no known major macro event in the local calendar window; still monitor yields/DXY/QQQ/SMH Open risk budgeted: 0.5% of 4.0% max heat.",
+  "macro_context": {
+    "available": true,
+    "asof": "2026-06-02",
+    "horizon_days": 7,
+    "macro_risk": "low",
+    "stance": "no known major macro event in the local calendar window; still monitor yields/DXY/QQQ/SMH",
+    "drivers": [],
+    "upcoming_events": [],
+    "truth_social_policy_posts": [],
+    "truth_social_available": false,
+    "event_calendar_available": false,
+    "rate_sensitive_markets": [
+      {
+        "symbol": "DXY",
+        "label": "US dollar"
+      },
+      {
+        "symbol": "TNX",
+        "label": "10Y Treasury yield"
+      },
+      {
+        "symbol": "FVX",
+        "label": "5Y Treasury yield"
+      },
+      {
+        "symbol": "QQQ",
+        "label": "Nasdaq/growth proxy"
+      },
+      {
+        "symbol": "SMH",
+        "label": "Semiconductor proxy"
+      }
+    ],
+    "rules": [
+      {
+        "name": "fed_or_cpi_window",
+        "if": "high_importance_event_within_1_day",
+        "action": "lower confidence one notch; avoid pretending technical breakouts are independent of macro"
+      },
+      {
+        "name": "hawkish_rate_repricing",
+        "if": "yields_up_and_cut_odds_down",
+        "action": "penalize high-multiple AI/growth names; prefer smaller size/watchlist status"
+      },
+      {
+        "name": "dovish_rate_repricing",
+        "if": "yields_down_and_cut_odds_up",
+        "action": "supportive for duration/growth, but watch for recession interpretation"
+      },
+      {
+        "name": "trump_tariff_or_china_post",
+        "if": "fresh_truth_social_policy_post_on_tariffs_china_export_controls",
+        "action": "flag semiconductor/AI supply-chain event risk; reduce confidence until price confirms"
+      },
+      {
+        "name": "trump_fed_pressure_post",
+        "if": "fresh_truth_social_post_about_fed_chair_rates_or_inflation",
+        "action": "flag Fed-independence/rate-volatility risk; monitor USD/yields reaction"
+      }
+    ],
+    "missing_data": [
+      "No local data/macro/events.json calendar yet; add FOMC/CPI/PCE/payrolls/ISM/Treasury events or wire a calendar feed.",
+      "No local Truth Social ingestion file yet; add lawful Trump post ingestion to data/raw/truthsocial/trump_posts.jsonl."
+    ],
+    "disclaimer": "Macro context is a research overlay only. It may reduce confidence or flag event risk, but it is not a stand-alone buy/sell signal and never executes trades."
+  },
+  "no_qualifying_setups": false,
+  "survivorship": {
+    "universe_size": 80,
+    "delisted_included_pct": 0,
+    "warning": "0% of the universe is delisted/dead \u2014 survivorship bias is maximal. Treat every replay expectancy as an optimistic ceiling; a prudent working assumption is that real edge is materially lower (often roughly half), and only live fills resolve the true number. The real fix is adding point-in-time delisted names."
+  },
+  "disclaimer": "Decision-support only \u2014 informational, not personalized financial advice. A human operator must review and execute. Markets risk loss of capital; past/backtested performance does not predict results."
+}

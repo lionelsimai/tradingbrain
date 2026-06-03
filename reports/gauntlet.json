@@ -1,0 +1,76 @@
+{
+  "asof": "2026-05-30T22:56:44.432293+00:00",
+  "evidence": "REPLAY ledger (~8 months, survivorship-biased) \u2014 indicative only.",
+  "checks": {
+    "pbo": {
+      "value_pct": 92.9,
+      "pass": false,
+      "n_setups": 5,
+      "combinations": 70,
+      "note": "low PBO is good; <=20% passes. Short ledger => limited power."
+    },
+    "deflated_sharpe": {
+      "per_trade_sharpe": 0.195,
+      "trials_N": 5,
+      "expected_max_sharpe_SR0": 0.165,
+      "deflated_sharpe_prob": 0.971,
+      "pass": true,
+      "note": "P(true Sharpe>0 after correcting for N trials). >=0.95 passes."
+    },
+    "skill_vs_beta": {
+      "beta_to_market": 1.1,
+      "annualized_alpha_pct": 376.36,
+      "months": 9,
+      "strategy_win_rate_pct": 68.4,
+      "random_long_win_rate_pct": 61.1,
+      "beats_random_entries": true,
+      "annualized_alpha_reliable": false,
+      "pass": true,
+      "note": "skill must beat a matched-horizon random long; alpha should be >0 net of market beta. ~8-month sample => alpha MAGNITUDE is an unreliable artifact (ignore the headline %); the win-rate-vs-random margin is the meaningful read."
+    },
+    "break_even_cost": {
+      "net_expectancy_R": 0.314,
+      "current_cost_R": 0.03,
+      "break_even_extra_cost_R": 0.314,
+      "headroom_multiple": 10.5,
+      "pass": true,
+      "note": "edge dies when added cost \u2248 net expectancy; >=2x headroom passes. REPLAY/survivorship-inflated, so true headroom is lower."
+    },
+    "capacity": {
+      "median_ADV_usd": 880657964,
+      "capital_ceiling_usd_approx": 88065796,
+      "pass": true,
+      "note": "rough ADV-based ceiling (assumes ~5% stop, 1% ADV impact cap). For scaling guidance only, not a precise limit."
+    },
+    "fractional_kelly": {
+      "kelly_fraction": 0.347,
+      "half_kelly": 0.174,
+      "quarter_kelly": 0.087,
+      "risk_per_trade_used": 0.005,
+      "pass": true,
+      "note": "risk-per-trade should sit at/below ~quarter-Kelly. Note: if the edge is inflated (it is \u2014 survivorship), Kelly is overstated, so staying far below it is the correct, safe choice."
+    }
+  },
+  "scorecard_0_100": {
+    "edge_persistence": 46,
+    "overfitting_safety": 7,
+    "genuine_skill_vs_beta": 70,
+    "regime_robustness": 26,
+    "cost_capacity_resilience": 80,
+    "tail_survival": 100,
+    "risk_of_ruin_safety": 100,
+    "param_noise_stability": 50,
+    "fail_safe_behavior": 90,
+    "deflated_sharpe_significance": 97,
+    "live_reconciliation": 0
+  },
+  "overall_score": 60.5,
+  "verdict": "REJECTED",
+  "hard_gate_failures": [
+    "Phase K: no forward paper-trading record (required gate)",
+    "Phase C: PBO 92.9% too high",
+    "Phase D: severe loss in worst regime (-0.59R/trade)",
+    "Phase B/C: in-sample/out-of-sample Sharpe gap 1.69 too large"
+  ],
+  "disclaimer": "Surviving this gauntlet would lower the chance of catastrophic failure; it never promises profit. Outputs are informational, not financial advice. Markets risk total loss of capital."
+}

@@ -1,0 +1,229 @@
+{
+  "asof": "2026-06-03T02:48:35.812499+00:00",
+  "blocking_count": 15,
+  "data_quality_pass": true,
+  "finding_count": 20,
+  "findings": [
+    {
+      "attack_path": "Treat a blocked report as deployable because replay looks profitable.",
+      "blocks_live": true,
+      "evidence": "go-live verdict=BLOCKED; blockers=['4. Overfitting checks', '5. Paper matches backtest', '6. Risk controls + kill switch + data health', '7. Human approval']",
+      "expected_damage": "Capital allocated to an unproven edge.",
+      "fix": "Keep final verdict blocked until all gates clear.",
+      "id": "RT-LIVE-001",
+      "severity": "critical",
+      "test": "python -m lab.go_live --json",
+      "title": "Backtest overconfidence"
+    },
+    {
+      "attack_path": "Use replay or open paper positions as resolved paper evidence.",
+      "blocks_live": true,
+      "evidence": "resolved_forward_paper=0",
+      "expected_damage": "Live sizing before fill quality and drift are known.",
+      "fix": "Collect 200 resolved forward paper observations.",
+      "id": "RT-LIVE-002",
+      "severity": "critical",
+      "test": "python -m loops.forward_paper_runner --scorecard",
+      "title": "Insufficient paper evidence"
+    },
+    {
+      "attack_path": "Accept a surviving-name universe as live-like.",
+      "blocks_live": true,
+      "evidence": "delisted-inclusive point-in-time universe proof not present",
+      "expected_damage": "Inflated expectancy and understated drawdown.",
+      "fix": "Add delisted-inclusive PIT universe report.",
+      "id": "RT-LIVE-003",
+      "severity": "critical",
+      "test": "python -m scripts.validate_all",
+      "title": "Survivorship bias"
+    },
+    {
+      "attack_path": "Use future-available symbols or corporate actions in validation.",
+      "blocks_live": true,
+      "evidence": "PIT universe validation is not proven in live-readiness dossier",
+      "expected_damage": "Hidden lookahead and false deploy verdict.",
+      "fix": "Add PIT source provenance and tests.",
+      "id": "RT-LIVE-004",
+      "severity": "critical",
+      "test": "python -m lab.live_readiness_dossier",
+      "title": "Point-in-time data gap"
+    },
+    {
+      "attack_path": "Assume backtest fills match broker paper fills.",
+      "blocks_live": true,
+      "evidence": "resolved paper fills=0",
+      "expected_damage": "Slippage and partial fills erase edge.",
+      "fix": "Collect broker-sandbox/paper fill records.",
+      "id": "RT-LIVE-005",
+      "severity": "critical",
+      "test": "python -m loops.forward_paper_runner --once",
+      "title": "Unrealistic fills"
+    },
+    {
+      "attack_path": "Rely on validation without checking the report exists and passes.",
+      "blocks_live": false,
+      "evidence": "validate pass=True",
+      "expected_damage": "Future data leaks into strategy selection.",
+      "fix": "Keep no-lookahead validation in CI.",
+      "id": "RT-LIVE-006",
+      "severity": "low",
+      "test": "python -m lab.validate",
+      "title": "Hidden lookahead"
+    },
+    {
+      "attack_path": "Accept base costs but skip stressed costs.",
+      "blocks_live": true,
+      "evidence": "backtest realism score=70",
+      "expected_damage": "Edge vanishes once commissions/spread/slippage rise.",
+      "fix": "Keep cost stress in gauntlet.",
+      "id": "RT-LIVE-007",
+      "severity": "critical",
+      "test": "python -m lab.live_readiness_stress --all --write-reports",
+      "title": "Cost underestimation"
+    },
+    {
+      "attack_path": "Size up before observed slippage distribution exists.",
+      "blocks_live": true,
+      "evidence": "paper slippage sample is thin",
+      "expected_damage": "Stops and targets perform worse than expected.",
+      "fix": "Track slippage average and p95 in paper scorecard.",
+      "id": "RT-LIVE-008",
+      "severity": "critical",
+      "test": "python -m loops.forward_paper_runner --scorecard",
+      "title": "Slippage underestimation"
+    },
+    {
+      "attack_path": "Deploy a strategy with large IS/OOS gap.",
+      "blocks_live": true,
+      "evidence": "go-live blockers=['4. Overfitting checks', '5. Paper matches backtest', '6. Risk controls + kill switch + data health', '7. Human approval']",
+      "expected_damage": "Strategy fails outside fitted regime.",
+      "fix": "Reduce parameter fragility and rerun walk-forward.",
+      "id": "RT-LIVE-009",
+      "severity": "critical",
+      "test": "python -m pytest -q tests/test_gauntlet.py",
+      "title": "Regime overfitting"
+    },
+    {
+      "attack_path": "Replace true paper sample size with replay sample size.",
+      "blocks_live": true,
+      "evidence": "resolved_forward_paper=0; replay_resolved=1919",
+      "expected_damage": "Confidence is unsupported by live-like evidence.",
+      "fix": "Accumulate forward evidence across regimes.",
+      "id": "RT-LIVE-010",
+      "severity": "critical",
+      "test": "python -m safety.live_readiness",
+      "title": "Sample-size weakness"
+    },
+    {
+      "attack_path": "Ignore broker rejection, partial fill, or unknown-status cases.",
+      "blocks_live": false,
+      "evidence": "execution_score=100",
+      "expected_damage": "Duplicate orders or unprotected positions.",
+      "fix": "Keep broker chaos stress green.",
+      "id": "RT-LIVE-011",
+      "severity": "low",
+      "test": "python -m pytest -q tests/test_fake_broker_chaos.py",
+      "title": "Execution weakness"
+    },
+    {
+      "attack_path": "Assume sandbox behavior from in-memory simulation only.",
+      "blocks_live": true,
+      "evidence": "paper broker forward evidence is still thin",
+      "expected_damage": "Live broker state diverges from internal state.",
+      "fix": "Add sandbox adapter evidence before live review.",
+      "id": "RT-LIVE-012",
+      "severity": "critical",
+      "test": "python -m loops.forward_paper_runner --once",
+      "title": "Broker integration weakness"
+    },
+    {
+      "attack_path": "Trust internal state after broker mismatch.",
+      "blocks_live": true,
+      "evidence": "reconciliation_score=80",
+      "expected_damage": "Ghost/missing positions remain tradable.",
+      "fix": "Expand reconciliation chaos matrix.",
+      "id": "RT-LIVE-013",
+      "severity": "critical",
+      "test": "python -m pytest -q tests/test_reconciliation.py",
+      "title": "Reconciliation weakness"
+    },
+    {
+      "attack_path": "Allow an entry or fill without stop protection.",
+      "blocks_live": false,
+      "evidence": "protective-order tests and chaos incidents present",
+      "expected_damage": "Undefined downside and emergency manual repair.",
+      "fix": "Keep critical incident on stop attach failure.",
+      "id": "RT-LIVE-014",
+      "severity": "low",
+      "test": "python -m pytest -q tests/test_fake_broker_chaos.py",
+      "title": "Stop-loss weakness"
+    },
+    {
+      "attack_path": "Ignore unreadable or engaged kill switch.",
+      "blocks_live": false,
+      "evidence": "config_guard and risk_gate check kill switch",
+      "expected_damage": "Orders continue through emergency halt.",
+      "fix": "Keep fail-closed kill switch tests.",
+      "id": "RT-LIVE-015",
+      "severity": "low",
+      "test": "python -m pytest -q tests/test_safety.py",
+      "title": "Kill-switch weakness"
+    },
+    {
+      "attack_path": "Accept stale, anonymous, or hash-mismatched approval.",
+      "blocks_live": true,
+      "evidence": "approval_status=[{'gate': '7. Human approval', 'status': 'FAIL', 'detail': 'approved is not true; approved_by is empty (need a named human); date is empty; cannot approve a system with no real paper track record (gate 5 not passing); reviewed_pack_sha is empty \u2014 set it to the current pack hash (171c857ddaec) to bind approval to the reports you reviewed'}]",
+      "expected_damage": "Live trading starts without accountable review.",
+      "fix": "Require named approver and current pack hash.",
+      "id": "RT-LIVE-016",
+      "severity": "critical",
+      "test": "python -m lab.go_live --json",
+      "title": "Approval weakness"
+    },
+    {
+      "attack_path": "Incident or rejection occurs without durable audit trail.",
+      "blocks_live": true,
+      "evidence": "observability_score=60",
+      "expected_damage": "Cannot reconstruct fault or improve safely.",
+      "fix": "Add event-level observability tests.",
+      "id": "RT-LIVE-017",
+      "severity": "critical",
+      "test": "python -m lab.live_readiness_stress --all --write-reports",
+      "title": "Logging weakness"
+    },
+    {
+      "attack_path": "Show live-ready while the authority is blocked.",
+      "blocks_live": false,
+      "evidence": "dashboard verdict=RESEARCH_ONLY; go-live=BLOCKED",
+      "expected_damage": "Operator trusts a false green dashboard.",
+      "fix": "Dashboard must mirror live_readiness authority.",
+      "id": "RT-LIVE-018",
+      "severity": "low",
+      "test": "python -m monitoring.live_readiness_dashboard",
+      "title": "Dashboard overclaiming"
+    },
+    {
+      "attack_path": "Let an agent invent quote, earnings, or confidence evidence.",
+      "blocks_live": true,
+      "evidence": "AI proposal schema/source validation is not yet complete",
+      "expected_damage": "Risk gate receives false facts.",
+      "fix": "Add strict AI proposal schema and source checks.",
+      "id": "RT-LIVE-019",
+      "severity": "critical",
+      "test": "python -m pytest -q tests/test_agent_permissions.py",
+      "title": "AI hallucination"
+    },
+    {
+      "attack_path": "Summarize RESEARCH_ONLY as live-ready.",
+      "blocks_live": true,
+      "evidence": "go-live=BLOCKED; stress_final=RESEARCH_ONLY",
+      "expected_damage": "Premature real-money deployment.",
+      "fix": "Default final verdict to LIVE_BLOCKED.",
+      "id": "RT-LIVE-020",
+      "severity": "critical",
+      "test": "python -m lab.live_readiness_dossier",
+      "title": "Live-readiness overstatement"
+    }
+  ],
+  "verdict": "LIVE_BLOCKED"
+}

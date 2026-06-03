@@ -1,0 +1,287 @@
+{
+  "asof": "2026-06-02T23:57:04.313679+00:00",
+  "engine": "event_narrative_intelligence",
+  "events": [
+    {
+      "blockers": [],
+      "blocks_auto_trade": true,
+      "chase_risk_score": 9.6,
+      "confidence_score": 71.1,
+      "directness_score": 100.0,
+      "entities": {
+        "direct_tickers": [
+          "DELL"
+        ],
+        "related_tickers": [],
+        "themes": []
+      },
+      "event_hash": "83aa06ce160baad1",
+      "event_id": "EV-83aa06ce160baad1",
+      "event_summary": "The Department of War awarded Dell Federal Systems a five-year 9.7 billion dollar Core Enterprise Technology Agreement for Microsoft services, cloud subscriptions, on-premises licensing, CJADC2, AI and data analytics support.",
+      "event_time_utc": "2026-05-28T00:00:00+00:00",
+      "event_title": "Dell Federal Systems receives 9.7B Department of War software agreement",
+      "event_type": [
+        "government_contract",
+        "data_center_demand"
+      ],
+      "final_signal": "paper_candidate",
+      "financial_materiality_score": 100.0,
+      "novelty_score": 75.0,
+      "paper_trade_allowed_by_event_layer": true,
+      "price_reaction_score": 8.0,
+      "reversal_risk_score": 7.2,
+      "sentiment_score": 50.0,
+      "source_score": 94.0,
+      "sources": [
+        {
+          "original_quote": "five-year, $9.7 billion Core Enterprise Technology Agreement to Dell Federal Systems",
+          "quote_confidence": 0.99,
+          "reliability_score": 94,
+          "source_name": "Department of War News",
+          "source_type": "official_government_release",
+          "source_url": "https://www.war.gov/News/News-Stories/Article/Article/4502292/war-department-signs-97b-technology-deal-with-dell-for-microsoft-services/",
+          "tier": 1,
+          "timestamp_utc": "2026-05-28T00:00:00+00:00"
+        }
+      ],
+      "speaker": "Department of War",
+      "tags": [
+        "government_contract",
+        "defense",
+        "digital_infrastructure",
+        "dell"
+      ],
+      "ticker": "DELL"
+    },
+    {
+      "blockers": [
+        "already-priced/chase risk is high; require pullback or continuation setup"
+      ],
+      "blocks_auto_trade": true,
+      "chase_risk_score": 78.0,
+      "confidence_score": 71.2,
+      "directness_score": 100.0,
+      "entities": {
+        "direct_tickers": [
+          "MRVL",
+          "NVDA"
+        ],
+        "related_tickers": [
+          "AVGO",
+          "AMD",
+          "COHR",
+          "LITE"
+        ],
+        "themes": [
+          "custom xpu",
+          "custom xpus",
+          "nvlink fusion",
+          "silicon photonics",
+          "optical interconnect"
+        ]
+      },
+      "event_hash": "3a855ba4ed77c885",
+      "event_id": "EV-3a855ba4ed77c885",
+      "event_summary": "At Computex, Jensen Huang called Marvell the next trillion-dollar company. The quote is supported by the prior NVIDIA and Marvell NVLink Fusion strategic partnership, NVIDIA's 2 billion dollar Marvell investment, custom XPUs, AI-RAN, scale-up networking, optical interconnect and silicon photonics collaboration.",
+      "event_time_utc": "2026-06-02T00:00:00+00:00",
+      "event_title": "Jensen Huang calls Marvell the next trillion-dollar company",
+      "event_type": [
+        "ceo_praise",
+        "strategic_partnership",
+        "supply_chain_bottleneck"
+      ],
+      "final_signal": "watchlist_wait_for_pullback",
+      "financial_materiality_score": 100.0,
+      "novelty_score": 75.0,
+      "paper_trade_allowed_by_event_layer": false,
+      "price_reaction_score": 65.0,
+      "reversal_risk_score": 58.5,
+      "sentiment_score": 71.0,
+      "source_score": 98.7,
+      "sources": [
+        {
+          "original_quote": "next trillion-dollar company",
+          "quote_confidence": 0.92,
+          "reliability_score": 92,
+          "source_name": "Reuters via Investing.com",
+          "source_type": "reuters",
+          "source_url": "https://www.investing.com/news/stock-market-news/marvell-technology-surges-after-nvidias-huang-calls-it-next-trilliondollar-company-4721040",
+          "tier": 1,
+          "timestamp_utc": "2026-06-02T00:00:00+00:00"
+        },
+        {
+          "original_quote": "NVIDIA has invested $2 billion in Marvell.",
+          "quote_confidence": 0.99,
+          "reliability_score": 95,
+          "source_name": "NVIDIA Newsroom",
+          "source_type": "official_company_release",
+          "source_url": "https://nvidianews.nvidia.com/news/nvidia-ai-ecosystem-expands-as-marvell-joins-forces-through-nvlink-fusion",
+          "tier": 1,
+          "timestamp_utc": "2026-03-31T00:00:00+00:00"
+        },
+        {
+          "original_quote": "exceptional AI-related bookings",
+          "quote_confidence": 0.97,
+          "reliability_score": 95,
+          "source_name": "Marvell Q1 FY2027 results",
+          "source_type": "official_company_release",
+          "source_url": "https://investor.marvell.com/news-events/press-releases/detail/1023/marvell-technology-inc-reports-first-quarter-of-fiscal-year-2027-financial-results",
+          "tier": 1,
+          "timestamp_utc": "2026-05-27T00:00:00+00:00"
+        }
+      ],
+      "speaker": "Jensen Huang",
+      "tags": [
+        "jensen_huang",
+        "marvell",
+        "nvlink_fusion",
+        "ai_networking",
+        "silicon_photonics"
+      ],
+      "ticker": "MRVL"
+    },
+    {
+      "blockers": [],
+      "blocks_auto_trade": true,
+      "chase_risk_score": 28.8,
+      "confidence_score": 69.8,
+      "directness_score": 100.0,
+      "entities": {
+        "direct_tickers": [
+          "DELL"
+        ],
+        "related_tickers": [
+          "SMCI",
+          "HPE",
+          "NVDA",
+          "MRVL",
+          "AVGO",
+          "ANET"
+        ],
+        "themes": [
+          "data center"
+        ]
+      },
+      "event_hash": "4ee51128dd144b66",
+      "event_id": "EV-4ee51128dd144b66",
+      "event_summary": "President Donald Trump thanked Michael and Susan Dell, referenced Dell computer, told the audience to go out and buy a Dell computer, and linked the praise to their 6.25 billion dollar Trump Accounts pledge. Dell is also tied to the AI server and data center infrastructure theme.",
+      "event_time_utc": "2026-05-08T00:00:00+00:00",
+      "event_title": "Trump praises Dell after Dell family Trump Accounts pledge",
+      "event_type": [
+        "direct_stock_endorsement",
+        "ai_infrastructure",
+        "data_center_demand"
+      ],
+      "final_signal": "paper_watchlist",
+      "financial_materiality_score": 79.0,
+      "novelty_score": 75.0,
+      "paper_trade_allowed_by_event_layer": false,
+      "price_reaction_score": 24.0,
+      "reversal_risk_score": 24.7,
+      "sentiment_score": 57.0,
+      "source_score": 96.0,
+      "sources": [
+        {
+          "original_quote": "Go out and buy a Dell computer. They're great.",
+          "quote_confidence": 0.98,
+          "reliability_score": 96,
+          "source_name": "GovInfo Daily Compilation of Presidential Documents",
+          "source_type": "official_transcript",
+          "source_url": "https://www.govinfo.gov/content/pkg/DCPD-202600139/pdf/DCPD-202600139.pdf",
+          "tier": 1,
+          "timestamp_utc": "2026-05-08T00:00:00+00:00"
+        }
+      ],
+      "speaker": "President Donald Trump",
+      "tags": [
+        "trump",
+        "dell",
+        "direct_mention",
+        "ai_infrastructure"
+      ],
+      "ticker": "DELL"
+    },
+    {
+      "blockers": [],
+      "blocks_auto_trade": true,
+      "chase_risk_score": 19.2,
+      "confidence_score": 69.6,
+      "directness_score": 100.0,
+      "entities": {
+        "direct_tickers": [
+          "INTC"
+        ],
+        "related_tickers": [
+          "TSM",
+          "MU",
+          "TXN"
+        ],
+        "themes": [
+          "semiconductor manufacturing"
+        ]
+      },
+      "event_hash": "d1850e81f73ab6ef",
+      "event_id": "EV-d1850e81f73ab6ef",
+      "event_summary": "Trump posted that Intel stock continues to rise, said he was proud of Intel, and credited the United States government equity support for gains. This is a policy and semiconductor manufacturing catalyst, not a pure AI endorsement.",
+      "event_time_utc": "2026-04-29T22:20:00+00:00",
+      "event_title": "Trump praises Intel government stake and stock rise",
+      "event_type": [
+        "direct_stock_endorsement"
+      ],
+      "final_signal": "paper_watchlist",
+      "financial_materiality_score": 70.0,
+      "novelty_score": 75.0,
+      "paper_trade_allowed_by_event_layer": false,
+      "price_reaction_score": 16.0,
+      "reversal_risk_score": 18.9,
+      "sentiment_score": 57.0,
+      "source_score": 97.8,
+      "sources": [
+        {
+          "original_quote": "Intel Stock continues to rise.",
+          "quote_confidence": 0.93,
+          "reliability_score": 96,
+          "source_name": "Trump Archive",
+          "source_type": "official_transcript",
+          "source_url": "https://trump-archive.com/item/eed30ac1-2454-410f-af07-03ddeacc5dbd",
+          "tier": 1,
+          "timestamp_utc": "2026-04-29T22:20:00+00:00"
+        },
+        {
+          "original_quote": "Data Center and AI (DCAI) revenue was $5.1 billion, up 22%.",
+          "quote_confidence": 0.98,
+          "reliability_score": 95,
+          "source_name": "Intel Q1 2026 results",
+          "source_type": "official_company_release",
+          "source_url": "https://www.intc.com/news-events/press-releases/detail/1767/intel-reports-first-quarter-2026-financial-results",
+          "tier": 1,
+          "timestamp_utc": "2026-04-23T00:00:00+00:00"
+        }
+      ],
+      "speaker": "President Donald Trump",
+      "tags": [
+        "trump",
+        "intel",
+        "policy_tailwind",
+        "us_semiconductor_manufacturing"
+      ],
+      "ticker": "INTC"
+    }
+  ],
+  "hard_rule": "Celebrity, CEO, and political statements never create blind buy signals.",
+  "mode": "research_and_paper_watchlist_only",
+  "paper_candidate_top3": [
+    "DELL"
+  ],
+  "paper_or_live_orders_submitted": false,
+  "paper_watchlist_top3": [
+    "DELL",
+    "MRVL",
+    "INTC"
+  ],
+  "source_policy": {
+    "already_priced_high_chase_blocks_entry": true,
+    "tier_1_or_2_required_for_paper_signal": true,
+    "tier_4_or_5_alone_blocks_trade": true
+  }
+}

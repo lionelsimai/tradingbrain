@@ -1,0 +1,50 @@
+# Target credibility / live-quality confidence policy for TradingBrain research mode.
+# This is a skepticism layer: it prevents analyst/banker targets, hype headlines,
+# or single-source price objectives from being treated as reliable swing targets.
+
+freshness:
+  max_analyst_target_age_days: 120
+  stale_after_days: 60
+
+analyst_target_risk:
+  # A target much higher than spot without independent confirmation can be a pump/chase risk.
+  extreme_premium_to_spot_pct: 35
+  high_premium_to_spot_pct: 20
+  min_independent_brokers_for_confidence: 5
+  min_independent_brokers_for_high_confidence: 8
+  max_single_source_weight_pct: 35
+  downgrade_if_recent_cluster_days: 7
+  recent_cluster_min_updates: 3
+  recent_cluster_same_direction_pct: 80
+
+technical_target_quality:
+  min_reward_risk_for_research_candidate: 1.5
+  min_reward_risk_for_clean_candidate: 2.0
+  max_target_extension_atr: 4.0
+  require_target_below_extreme_52w_extension: true
+
+live_quality_confidence_gates:
+  # These gates describe what would be needed for live-quality confidence.
+  # They do NOT enable live trading.
+  required_for_live_quality:
+    - forward_paper_record
+    - point_in_time_backtest
+    - analyst_target_provenance
+    - target_independence_check
+    - abnormality_scan
+    - macro_event_scan
+    - sentiment_manipulation_scan
+    - liquidity_and_gap_risk
+    - catalyst_verification
+    - post_trade_reconciliation
+  minimum_forward_paper_trades: 50
+  minimum_forward_paper_weeks: 8
+  max_pbo_pct: 20
+  min_deflated_sharpe_prob: 0.95
+  min_worst_regime_expectancy_R: -0.10
+  require_no_hard_gauntlet_failures: true
+
+verdicts:
+  live_quality_blocked: "Research only: live-quality confidence blocked. Use watchlist/paper mode."
+  target_untrusted: "Target not independently trustworthy; treat as scenario only."
+  target_supported: "Target has enough independent support for research use, still not a prediction."

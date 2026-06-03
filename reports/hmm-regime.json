@@ -1,0 +1,23 @@
+{
+  "asof": "2026-05-29",
+  "raw_state": 4,
+  "raw_label": "Bull",
+  "raw_posterior": {
+    "Crash": 0.0005696015883031515,
+    "Bear": 3.977496923316856e-11,
+    "Neutral": 8.592029425295832e-12,
+    "Bull": 0.9994226973469805,
+    "Euphoria": 7.701019794051262e-06
+  },
+  "acted_state": 4,
+  "acted_label": "Bull",
+  "stability": "STABLE",
+  "volatile_warning": false,
+  "target_exposure": 0.9,
+  "features_today": {
+    "ret": 0.002491392716190699,
+    "vol20": 0.0976084998770826,
+    "dd60": 0.0,
+    "mom20z": 0.45739341962300767
+  }
+}

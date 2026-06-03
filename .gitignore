@@ -1,0 +1,24 @@
+# Secrets & local state — never commit
+.env
+reports/safety_state.json
+reports/FORCE_PAPER
+reports/journal/
+reports/logs/
+# Data & caches
+data/*.duckdb
+*.parquet
+__pycache__/
+.pytest_cache/
+*.pyc
+# Python venvs (created during Phase-0 — large, never commit)
+.venv/
+.venv311/
+.venv*/
+# Node / Next.js (app/)
+node_modules/
+.next/
+# Linters / OS / misc
+.ruff_cache/
+*.pid
+*.log
+.DS_Store

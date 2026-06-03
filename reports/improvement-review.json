@@ -1,0 +1,26 @@
+{
+  "cycle_id": "cyc_20260602",
+  "asof": "2026-06-02T13:55:42.838528+00:00",
+  "mode": "read_only",
+  "objective": "Earn a positive, risk-controlled edge while capping drawdown \u2014 survive every regime.",
+  "scored": {
+    "status": "INSUFFICIENT_DATA",
+    "live_n": 0,
+    "checks": [],
+    "note": "0 true live fills. Scorecard is replay/backtest only \u2014 not scored against the goal yet (would be dishonest)."
+  },
+  "goal_realism_warnings": [],
+  "proposed_change": {
+    "blocked_by_open_experiment": "exp_20260530143038",
+    "variable": "data_mode"
+  },
+  "replay_context": {
+    "n": 1919,
+    "win_rate": 68.4,
+    "expectancy_R": 0.314,
+    "avg_win_R": 0.91,
+    "avg_loss_R": -0.97,
+    "profit_factor": 2.03,
+    "avg_hold_days": 10.8
+  }
+}

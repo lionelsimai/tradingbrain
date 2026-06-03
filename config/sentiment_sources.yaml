@@ -1,0 +1,107 @@
+# Social-sentiment engine configuration.
+# Read by scripts/signals/social_sentiment.py. Every value has a safe default in
+# code; this file lets the operator tune the safety posture without touching code.
+#
+# PHILOSOPHY: sentiment is a weak CONFIRMATION / VETO overlay, not a primary
+# alpha source. The defaults are deliberately conservative. The single most
+# important job of this layer is to AVOID being fooled by coordinated pumps on
+# low-float AI names — so manipulation defence is tuned tight, not loose.
+
+recent_days: 7            # window that drives the live read
+baseline_days: 60         # trailing window for volume-spike baseline
+staleness_days: 4         # if the newest post is older than this -> no contribution
+min_authors: 3            # fewer distinct credible authors -> low confidence
+min_posts: 5
+decay_half_life_days: 3.0 # recency weighting inside the recent window
+
+# Base credibility per source kind (0-1). News / known finance media outrank
+# anonymous social. Tune as you learn which sources actually lead price.
+source_weights:
+  news: 1.0
+  reuters: 1.0
+  finviz: 0.9
+  yahoo: 0.8
+  stocktwits: 0.55
+  x: 0.60
+  reddit: 0.45
+  truthsocial: 0.50
+  facebook: 0.40
+  provider: 0.60          # licensed third-party aggregator
+  default: 0.50
+
+# Author-tier multipliers (applied on top of source weight). "trusted" = handles
+# you have vetted in config/fintwit_handles.yaml.
+author_tiers:
+  trusted: 1.6
+  known: 1.2
+  unknown: 1.0
+  suspect: 0.4
+
+# Manipulation gate — the core defence.
+manip_veto_threshold: 0.45     # >= -> sentiment contribution is VETOED (forced to 0)
+manip_dampen_threshold: 0.25   # >= -> contribution halved
+
+# Euphoria / crowded-long detection (extreme bullishness = chase risk, not buy).
+euphoria_sentiment: 0.55
+euphoria_volume_z: 1.5
+euphoria_max_dispersion: 0.35
+
+# Sentiment-vs-price divergence.
+divergence_lookback: 5
+
+# Hard cap on how many points sentiment can add/subtract from the 0-100
+# conviction score. Keep this SMALL — sentiment confirms, it does not lead.
+max_conviction_points: 8
+
+# ---------------------------------------------------------------------------
+# PLATFORM COMPLIANCE POSTURE  (read this before enabling anything)
+# ---------------------------------------------------------------------------
+# This engine consumes whatever is in the `documents` table. HOW documents get
+# there is the operator's responsibility and is gated by law + platform terms.
+#
+#   X / Twitter ........ ENABLE-ABLE. Official API is now pay-per-use
+#                        (~$0.005 per post read for new developers, no free
+#                        tier). Use scripts/ingest/xurl_sentiment.py with your
+#                        own configured credentials, or a licensed provider.
+#                        Real, valuable FinTwit signal. Watch the per-read cost.
+#
+#   StockTwits ......... ENABLE-ABLE. Finance-native, an actual API, and far
+#                        higher stock signal-to-noise than Facebook. This is the
+#                        right "third source", not Facebook. Needs a token.
+#
+#   Reddit ............. ENABLE-ABLE. Official OAuth API (free tier). r/wsb etc.
+#                        High noise, but breadth + the manipulation gate help.
+#
+#   TruthSocial ........ COMPLIANCE-GATED, OFF BY DEFAULT.
+#                        * No official developer API exists.
+#                        * Its Terms of Service explicitly forbid scrapers/bots.
+#                        * Only a few prominent accounts are publicly viewable;
+#                          most require auth. Broad stock sentiment is NOT
+#                          available, and stock-specific chatter is thin.
+#                        * Its real, narrow signal is EVENT-driven: specific
+#                          high-impact accounts (e.g. senior officials) posting
+#                          market-moving statements on tariffs/policy/companies.
+#                        DO NOT scrape it. If you want this signal, ingest it via
+#                        a LICENSED third-party provider (you accept their terms
+#                        and cost) into source='provider:truthsocial', or capture
+#                        the few designated accounts' market-moving posts as they
+#                        are reported by the news wires you already ingest.
+#
+#   Facebook / Meta .... NOT RECOMMENDED, OFF BY DEFAULT.
+#                        * CrowdTangle was shut down (Aug 2024).
+#                        * Its replacement (Meta Content Library) is restricted
+#                          to vetted ACADEMIC / NON-PROFIT researchers via an
+#                          ICPSR application — a for-profit trading entity does
+#                          not qualify.
+#                        * The Graph API does not allow public-post search.
+#                        * Stock discussion on Facebook lives in private groups
+#                          (inaccessible) and is low signal-to-noise anyway.
+#                        There is no compliant, accessible, worthwhile path here.
+#                        Spend the effort on X / StockTwits / Reddit instead.
+
+platforms:
+  x:           {enabled: true,  access: "official-api-payg or licensed provider"}
+  stocktwits:  {enabled: true,  access: "stocktwits api token"}
+  reddit:      {enabled: true,  access: "reddit oauth (free)"}
+  truthsocial: {enabled: false, access: "licensed provider only — NEVER scrape (ToS)"}
+  facebook:    {enabled: false, access: "no compliant for-profit access — not recommended"}

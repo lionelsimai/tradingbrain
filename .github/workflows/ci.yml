@@ -1,0 +1,80 @@
+name: tradingbrain-ci
+on: [push, pull_request]
+jobs:
+  safety:
+    runs-on: ubuntu-latest
+    env:
+      TB_MODE: paper
+      TB_ALLOW_LIVE: "0"
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: app/package-lock.json
+
+      - name: Install Python dependencies
+        run: python -m pip install -r requirements-dev.txt -c constraints.txt
+
+      - name: Install app dependencies
+        run: npm --prefix app ci
+
+      - name: Bootstrap source state
+        run: python -m scripts.db
+
+      - name: Python compile
+        run: python -m compileall -q safety execution journal data lab backtest scripts loops monitoring portfolio database
+
+      - name: Static safety scan
+        run: bash scripts/ci_static_safety.sh
+
+      - name: Forbidden live weakening scan
+        run: bash scripts/ci_forbidden_live_weakening.sh
+
+      - name: Risk policy validation
+        run: python -m safety.risk_policy
+
+      - name: Config guard
+        run: python -m safety.config_guard
+
+      - name: Unit tests
+        run: python -m pytest -q
+
+      - name: Safety tests
+        run: python -m pytest -q tests/test_safety.py tests/test_safety_invariants.py tests/test_red_team_safety.py tests/test_no_unsafe_wrappers.py tests/test_go_live_enforcement.py
+
+      - name: Broker and reconciliation tests
+        run: python -m pytest -q tests/test_broker_adapter_contract.py tests/test_order_manager.py tests/test_order_lifecycle.py tests/test_reconciliation.py tests/test_fake_broker_chaos.py
+
+      - name: Live-readiness stress smoke
+        run: |
+          set +e
+          python -m lab.live_readiness_stress --all --write-reports
+          rc=$?
+          set -e
+          test "$rc" -eq 0 -o "$rc" -eq 2
+
+      - name: Red-team live readiness
+        run: python -m scripts.red_team_live_readiness
+
+      - name: Forward paper scorecard smoke
+        run: python -m loops.forward_paper_runner --scorecard
+
+      - name: App build
+        run: npm --prefix app run build
+
+      - name: Validate all
+        run: python -m scripts.validate_all
+
+      - name: Upload report artifacts
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: tradingbrain-reports
+          path: reports/**

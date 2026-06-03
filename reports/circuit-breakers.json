@@ -1,0 +1,12 @@
+{
+  "asof": "2026-06-03",
+  "equity": 50000.0,
+  "peak_equity": 50000.0,
+  "today_realized_pct": 0.0,
+  "week_realized_pct": 0.0,
+  "total_drawdown_pct": 0.0,
+  "regime": "Bull",
+  "tripped": [],
+  "sizing_scalar": 1.0,
+  "reason": "no breaker tripped"
+}

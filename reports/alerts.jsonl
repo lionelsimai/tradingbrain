@@ -1,0 +1,919 @@
+{"ts": "2026-05-30T12:40:01.284319+00:00", "type": "order_rejected", "level": "critical", "detail": "ghost position"}
+{"ts": "2026-05-30T12:40:01.286246+00:00", "type": "broker_disconnected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T12:40:01.286572+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T12:40:01.286842+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-05-30T12:40:01.287110+00:00", "type": "stop_attach_failed", "level": "critical", "detail": "test"}
+{"ts": "2026-05-30T12:40:01.287380+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-05-30T12:40:01.287644+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T12:40:01.287907+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T12:40:01.288205+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T12:40:01.288500+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-05-30T12:40:01.288762+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T12:49:50.105989+00:00", "type": "order_rejected", "level": "critical", "detail": "ghost position"}
+{"ts": "2026-05-30T12:49:50.107939+00:00", "type": "broker_disconnected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T12:49:50.108309+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T12:49:50.108666+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-05-30T12:49:50.109018+00:00", "type": "stop_attach_failed", "level": "critical", "detail": "test"}
+{"ts": "2026-05-30T12:49:50.109371+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-05-30T12:49:50.109715+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T12:49:50.110055+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T12:49:50.110414+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T12:49:50.110761+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-05-30T12:49:50.111103+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T12:50:31.305265+00:00", "type": "order_rejected", "level": "critical", "detail": "ghost position"}
+{"ts": "2026-05-30T12:50:31.307533+00:00", "type": "broker_disconnected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T12:50:31.307927+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T12:50:31.308288+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-05-30T12:50:31.308653+00:00", "type": "stop_attach_failed", "level": "critical", "detail": "test"}
+{"ts": "2026-05-30T12:50:31.309006+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-05-30T12:50:31.309353+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T12:50:31.309708+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T12:50:31.310079+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T12:50:31.310457+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-05-30T12:50:31.310806+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T12:51:52.453309+00:00", "type": "order_rejected", "level": "critical", "detail": "ghost position"}
+{"ts": "2026-05-30T12:51:52.455267+00:00", "type": "broker_disconnected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T12:51:52.455729+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T12:51:52.456136+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-05-30T12:51:52.456557+00:00", "type": "stop_attach_failed", "level": "critical", "detail": "test"}
+{"ts": "2026-05-30T12:51:52.456970+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-05-30T12:51:52.457378+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T12:51:52.457778+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T12:51:52.458257+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T12:51:52.458697+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-05-30T12:51:52.459119+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T13:45:14.135796+00:00", "type": "order_rejected", "level": "critical", "detail": "ghost position"}
+{"ts": "2026-05-30T13:45:14.137780+00:00", "type": "broker_disconnected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T13:45:14.138115+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T13:45:14.138455+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-05-30T13:45:14.138755+00:00", "type": "stop_attach_failed", "level": "critical", "detail": "test"}
+{"ts": "2026-05-30T13:45:14.139045+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-05-30T13:45:14.139335+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T13:45:14.139647+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T13:45:14.139950+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T13:45:14.140248+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-05-30T13:45:14.140565+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T13:47:43.923262+00:00", "type": "order_rejected", "level": "critical", "detail": "ghost position"}
+{"ts": "2026-05-30T13:47:43.925098+00:00", "type": "broker_disconnected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T13:47:43.925443+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T13:47:43.925754+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-05-30T13:47:43.926063+00:00", "type": "stop_attach_failed", "level": "critical", "detail": "test"}
+{"ts": "2026-05-30T13:47:43.926381+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-05-30T13:47:43.926693+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T13:47:43.927018+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T13:47:43.927378+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T13:47:43.927689+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-05-30T13:47:43.927993+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T13:48:37.797894+00:00", "type": "order_rejected", "level": "critical", "detail": "ghost position"}
+{"ts": "2026-05-30T13:48:37.799962+00:00", "type": "broker_disconnected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T13:48:37.800358+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T13:48:37.800730+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-05-30T13:48:37.801082+00:00", "type": "stop_attach_failed", "level": "critical", "detail": "test"}
+{"ts": "2026-05-30T13:48:37.801459+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-05-30T13:48:37.801810+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T13:48:37.802159+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T13:48:37.802533+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T13:48:37.802918+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-05-30T13:48:37.803283+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T13:50:12.408469+00:00", "type": "order_rejected", "level": "critical", "detail": "ghost position"}
+{"ts": "2026-05-30T13:50:12.410512+00:00", "type": "broker_disconnected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T13:50:12.410959+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T13:50:12.411374+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-05-30T13:50:12.411785+00:00", "type": "stop_attach_failed", "level": "critical", "detail": "test"}
+{"ts": "2026-05-30T13:50:12.412203+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-05-30T13:50:12.412615+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T13:50:12.413030+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T13:50:12.413444+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T13:50:12.413858+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-05-30T13:50:12.414274+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T13:51:22.134079+00:00", "type": "order_rejected", "level": "critical", "detail": "ghost position"}
+{"ts": "2026-05-30T13:51:22.136510+00:00", "type": "broker_disconnected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T13:51:22.137004+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T13:51:22.137474+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-05-30T13:51:22.137927+00:00", "type": "stop_attach_failed", "level": "critical", "detail": "test"}
+{"ts": "2026-05-30T13:51:22.138390+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-05-30T13:51:22.138836+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T13:51:22.139276+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T13:51:22.139727+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T13:51:22.140168+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-05-30T13:51:22.140659+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T14:28:01.374120+00:00", "type": "order_rejected", "level": "critical", "detail": "ghost position"}
+{"ts": "2026-05-30T14:28:01.375860+00:00", "type": "broker_disconnected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T14:28:01.376040+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T14:28:01.376162+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-05-30T14:28:01.376311+00:00", "type": "stop_attach_failed", "level": "critical", "detail": "test"}
+{"ts": "2026-05-30T14:28:01.376431+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-05-30T14:28:01.376537+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T14:28:01.376653+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T14:28:01.376780+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T14:28:01.376886+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-05-30T14:28:01.376987+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T22:13:16.091814+00:00", "type": "order_rejected", "level": "critical", "detail": "ghost position"}
+{"ts": "2026-05-30T22:13:16.094324+00:00", "type": "broker_disconnected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T22:13:16.094596+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T22:13:16.094803+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-05-30T22:13:16.095014+00:00", "type": "stop_attach_failed", "level": "critical", "detail": "test"}
+{"ts": "2026-05-30T22:13:16.095271+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-05-30T22:13:16.095463+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T22:13:16.095665+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T22:13:16.095850+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T22:13:16.096038+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-05-30T22:13:16.096286+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T22:20:11.297604+00:00", "type": "order_rejected", "level": "critical", "detail": "ghost position"}
+{"ts": "2026-05-30T22:20:11.299787+00:00", "type": "broker_disconnected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T22:20:11.300147+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T22:20:11.300429+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-05-30T22:20:11.300698+00:00", "type": "stop_attach_failed", "level": "critical", "detail": "test"}
+{"ts": "2026-05-30T22:20:11.300994+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-05-30T22:20:11.301261+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T22:20:11.301498+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T22:20:11.301853+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T22:20:11.302146+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-05-30T22:20:11.302397+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T22:24:01.653379+00:00", "type": "order_rejected", "level": "critical", "detail": "ghost position"}
+{"ts": "2026-05-30T22:24:01.655564+00:00", "type": "broker_disconnected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T22:24:01.656010+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T22:24:01.656401+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-05-30T22:24:01.656739+00:00", "type": "stop_attach_failed", "level": "critical", "detail": "test"}
+{"ts": "2026-05-30T22:24:01.657035+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-05-30T22:24:01.657406+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T22:24:01.657785+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T22:24:01.658070+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T22:24:01.658358+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-05-30T22:24:01.658632+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T22:27:04.779841+00:00", "type": "order_rejected", "level": "critical", "detail": "ghost position"}
+{"ts": "2026-05-30T22:27:04.782095+00:00", "type": "broker_disconnected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T22:27:04.782550+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T22:27:04.782913+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-05-30T22:27:04.783286+00:00", "type": "stop_attach_failed", "level": "critical", "detail": "test"}
+{"ts": "2026-05-30T22:27:04.783777+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-05-30T22:27:04.784123+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T22:27:04.784491+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T22:27:04.784868+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T22:27:04.785201+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-05-30T22:27:04.785575+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T22:29:48.528896+00:00", "type": "order_rejected", "level": "critical", "detail": "ghost position"}
+{"ts": "2026-05-30T22:29:48.531663+00:00", "type": "broker_disconnected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T22:29:48.532208+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T22:29:48.532618+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-05-30T22:29:48.533067+00:00", "type": "stop_attach_failed", "level": "critical", "detail": "test"}
+{"ts": "2026-05-30T22:29:48.533473+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-05-30T22:29:48.533992+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T22:29:48.534430+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T22:29:48.534814+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T22:29:48.535360+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-05-30T22:29:48.535765+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T22:30:46.301770+00:00", "type": "order_rejected", "level": "critical", "detail": "ghost position"}
+{"ts": "2026-05-30T22:30:46.303998+00:00", "type": "broker_disconnected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T22:30:46.304650+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T22:30:46.305225+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-05-30T22:30:46.305765+00:00", "type": "stop_attach_failed", "level": "critical", "detail": "test"}
+{"ts": "2026-05-30T22:30:46.306251+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-05-30T22:30:46.306701+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T22:30:46.307126+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T22:30:46.307603+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T22:30:46.308043+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-05-30T22:30:46.308535+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T22:36:54.317612+00:00", "type": "order_rejected", "level": "critical", "detail": "ghost position"}
+{"ts": "2026-05-30T22:36:54.319963+00:00", "type": "broker_disconnected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T22:36:54.320571+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T22:36:54.321129+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-05-30T22:36:54.321677+00:00", "type": "stop_attach_failed", "level": "critical", "detail": "test"}
+{"ts": "2026-05-30T22:36:54.322294+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-05-30T22:36:54.322821+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T22:36:54.323306+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T22:36:54.323852+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T22:36:54.324346+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-05-30T22:36:54.324870+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T22:45:39.405562+00:00", "type": "order_rejected", "level": "critical", "detail": "ghost position"}
+{"ts": "2026-05-30T22:45:39.408157+00:00", "type": "broker_disconnected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T22:45:39.408967+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T22:45:39.409692+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-05-30T22:45:39.410340+00:00", "type": "stop_attach_failed", "level": "critical", "detail": "test"}
+{"ts": "2026-05-30T22:45:39.410975+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-05-30T22:45:39.411647+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T22:45:39.412314+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T22:45:39.412918+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T22:45:39.413623+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-05-30T22:45:39.414277+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T22:46:37.521892+00:00", "type": "order_rejected", "level": "critical", "detail": "ghost position"}
+{"ts": "2026-05-30T22:46:37.524462+00:00", "type": "broker_disconnected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T22:46:37.525145+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T22:46:37.525986+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-05-30T22:46:37.526816+00:00", "type": "stop_attach_failed", "level": "critical", "detail": "test"}
+{"ts": "2026-05-30T22:46:37.527490+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-05-30T22:46:37.528103+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T22:46:37.528746+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T22:46:37.529323+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T22:46:37.530130+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-05-30T22:46:37.530760+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T22:55:02.891216+00:00", "type": "order_rejected", "level": "critical", "detail": "ghost position"}
+{"ts": "2026-05-30T22:55:02.893846+00:00", "type": "broker_disconnected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T22:55:02.894651+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T22:55:02.895310+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-05-30T22:55:02.895961+00:00", "type": "stop_attach_failed", "level": "critical", "detail": "test"}
+{"ts": "2026-05-30T22:55:02.896574+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-05-30T22:55:02.897235+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T22:55:02.897943+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T22:55:02.898555+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T22:55:02.899256+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-05-30T22:55:02.899921+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T23:03:05.933444+00:00", "type": "order_rejected", "level": "critical", "detail": "ghost position"}
+{"ts": "2026-05-30T23:03:05.936053+00:00", "type": "broker_disconnected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T23:03:05.936886+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T23:03:05.937660+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-05-30T23:03:05.938343+00:00", "type": "stop_attach_failed", "level": "critical", "detail": "test"}
+{"ts": "2026-05-30T23:03:05.939051+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-05-30T23:03:05.939765+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T23:03:05.940435+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T23:03:05.941146+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T23:03:05.941907+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-05-30T23:03:05.942726+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T23:06:56.259890+00:00", "type": "order_rejected", "level": "critical", "detail": "ghost position"}
+{"ts": "2026-05-30T23:06:56.262607+00:00", "type": "broker_disconnected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T23:06:56.263601+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T23:06:56.264386+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-05-30T23:06:56.265160+00:00", "type": "stop_attach_failed", "level": "critical", "detail": "test"}
+{"ts": "2026-05-30T23:06:56.265991+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-05-30T23:06:56.266762+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T23:06:56.267474+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T23:06:56.268218+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T23:06:56.269038+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-05-30T23:06:56.269853+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T23:08:18.078008+00:00", "type": "order_rejected", "level": "critical", "detail": "ghost position"}
+{"ts": "2026-05-30T23:08:18.080642+00:00", "type": "broker_disconnected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T23:08:18.081646+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T23:08:18.082512+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-05-30T23:08:18.083312+00:00", "type": "stop_attach_failed", "level": "critical", "detail": "test"}
+{"ts": "2026-05-30T23:08:18.084126+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-05-30T23:08:18.084941+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T23:08:18.085799+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T23:08:18.086857+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T23:08:18.087726+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-05-30T23:08:18.088584+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T23:11:30.078632+00:00", "type": "order_rejected", "level": "critical", "detail": "ghost position"}
+{"ts": "2026-05-30T23:11:30.081620+00:00", "type": "broker_disconnected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T23:11:30.082647+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T23:11:30.083566+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-05-30T23:11:30.084446+00:00", "type": "stop_attach_failed", "level": "critical", "detail": "test"}
+{"ts": "2026-05-30T23:11:30.085303+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-05-30T23:11:30.086223+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T23:11:30.087137+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T23:11:30.088065+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-30T23:11:30.088913+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-05-30T23:11:30.089779+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-31T01:34:42.478011+00:00", "type": "order_rejected", "level": "critical", "detail": "ghost position"}
+{"ts": "2026-05-31T01:34:42.479479+00:00", "type": "broker_disconnected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-31T01:34:42.479959+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-31T01:34:42.480394+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-05-31T01:34:42.480798+00:00", "type": "stop_attach_failed", "level": "critical", "detail": "test"}
+{"ts": "2026-05-31T01:34:42.481228+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-05-31T01:34:42.481658+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-31T01:34:42.482085+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-31T01:34:42.482526+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-31T01:34:42.482933+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-05-31T01:34:42.483345+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-31T01:35:19.996355+00:00", "type": "order_rejected", "level": "critical", "detail": "ghost position"}
+{"ts": "2026-05-31T01:35:19.997340+00:00", "type": "broker_disconnected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-31T01:35:19.997795+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-31T01:35:19.998239+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-05-31T01:35:19.998671+00:00", "type": "stop_attach_failed", "level": "critical", "detail": "test"}
+{"ts": "2026-05-31T01:35:19.999110+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-05-31T01:35:19.999528+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-31T01:35:19.999972+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-31T01:35:20.000394+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-31T01:35:20.000833+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-05-31T01:35:20.001286+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-31T01:36:50.911758+00:00", "type": "order_rejected", "level": "critical", "detail": "ghost position"}
+{"ts": "2026-05-31T01:36:50.912845+00:00", "type": "broker_disconnected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-31T01:36:50.913341+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-31T01:36:50.913796+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-05-31T01:36:50.914241+00:00", "type": "stop_attach_failed", "level": "critical", "detail": "test"}
+{"ts": "2026-05-31T01:36:50.914691+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-05-31T01:36:50.915184+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-31T01:36:50.915636+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-31T01:36:50.916087+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-31T01:36:50.916618+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-05-31T01:36:50.917093+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-31T01:38:49.522525+00:00", "type": "order_rejected", "level": "critical", "detail": "ghost position"}
+{"ts": "2026-05-31T01:38:49.524117+00:00", "type": "broker_disconnected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-31T01:38:49.524731+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-31T01:38:49.525234+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-05-31T01:38:49.525697+00:00", "type": "stop_attach_failed", "level": "critical", "detail": "test"}
+{"ts": "2026-05-31T01:38:49.526175+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-05-31T01:38:49.526674+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-31T01:38:49.527134+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-31T01:38:49.527597+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-31T01:38:49.528070+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-05-31T01:38:49.528570+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-31T01:40:20.264794+00:00", "type": "order_rejected", "level": "critical", "detail": "ghost position"}
+{"ts": "2026-05-31T01:40:20.266493+00:00", "type": "broker_disconnected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-31T01:40:20.267257+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-31T01:40:20.267863+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-05-31T01:40:20.268411+00:00", "type": "stop_attach_failed", "level": "critical", "detail": "test"}
+{"ts": "2026-05-31T01:40:20.268939+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-05-31T01:40:20.269465+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-31T01:40:20.269976+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-31T01:40:20.270476+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-31T01:40:20.270993+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-05-31T01:40:20.271484+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-31T01:41:11.067511+00:00", "type": "order_rejected", "level": "critical", "detail": "ghost position"}
+{"ts": "2026-05-31T01:41:11.069036+00:00", "type": "broker_disconnected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-31T01:41:11.069665+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-31T01:41:11.070266+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-05-31T01:41:11.070843+00:00", "type": "stop_attach_failed", "level": "critical", "detail": "test"}
+{"ts": "2026-05-31T01:41:11.071420+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-05-31T01:41:11.072002+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-31T01:41:11.072579+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-31T01:41:11.073162+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-05-31T01:41:11.073741+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-05-31T01:41:11.074297+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T13:52:18.661022+00:00", "type": "order_rejected", "level": "critical", "detail": "ghost position"}
+{"ts": "2026-06-02T13:52:18.662643+00:00", "type": "broker_disconnected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T13:52:18.663262+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T13:52:18.663836+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-02T13:52:18.664323+00:00", "type": "stop_attach_failed", "level": "critical", "detail": "test"}
+{"ts": "2026-06-02T13:52:18.664849+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-02T13:52:18.665350+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T13:52:18.665859+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T13:52:18.666384+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T13:52:18.666902+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-02T13:52:18.667435+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T14:05:30.123717+00:00", "type": "order_rejected", "level": "critical", "detail": "ghost position"}
+{"ts": "2026-06-02T14:05:30.125446+00:00", "type": "broker_disconnected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T14:05:30.126167+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T14:05:30.126773+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-02T14:05:30.127386+00:00", "type": "stop_attach_failed", "level": "critical", "detail": "test"}
+{"ts": "2026-06-02T14:05:30.128005+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-02T14:05:30.129151+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T14:05:30.129858+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T14:05:30.130523+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T14:05:30.131282+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-02T14:05:30.132152+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T14:05:30.229381+00:00", "type": "order_rejected", "level": "critical", "detail": "ghost position"}
+{"ts": "2026-06-02T14:05:30.230726+00:00", "type": "broker_disconnected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T14:05:30.231384+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T14:05:30.232004+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-02T14:05:30.232814+00:00", "type": "stop_attach_failed", "level": "critical", "detail": "test"}
+{"ts": "2026-06-02T14:05:30.233483+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-02T14:05:30.234168+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T14:05:30.234803+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T14:05:30.235558+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T14:05:30.236679+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-02T14:05:30.237672+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T14:09:49.418460+00:00", "type": "order_rejected", "level": "critical", "detail": "stop_attach_failed: filled order lacks complete protection", "incident_id": "inc_52297f2fb861"}
+{"ts": "2026-06-02T14:10:05.800576+00:00", "type": "order_rejected", "level": "warning", "detail": "quantity mismatch", "incident_id": "inc_c7430228cb08"}
+{"ts": "2026-06-02T14:10:05.801940+00:00", "type": "order_rejected", "level": "critical", "detail": "filled without stop", "incident_id": "inc_c51cbed41b3d"}
+{"ts": "2026-06-02T14:10:05.803174+00:00", "type": "order_rejected", "level": "warning", "detail": "stale quote", "incident_id": "inc_86619223aad1"}
+{"ts": "2026-06-02T14:10:05.806402+00:00", "type": "order_rejected", "level": "critical", "detail": "stop_attach_failed: filled order lacks complete protection", "incident_id": "inc_f8da70ed63c4"}
+{"ts": "2026-06-02T14:10:06.192156+00:00", "type": "order_rejected", "level": "critical", "detail": "stop_attach_failed: filled order lacks complete protection", "incident_id": "inc_5c38e904c6df"}
+{"ts": "2026-06-02T14:10:06.304775+00:00", "type": "order_rejected", "level": "critical", "detail": "stop_attach_failed: filled order lacks complete protection", "incident_id": "inc_3b1cd707ec32"}
+{"ts": "2026-06-02T14:10:06.307240+00:00", "type": "order_rejected", "level": "critical", "detail": "stop_attach_failed: filled order lacks complete protection", "incident_id": "inc_ac30ef436879"}
+{"ts": "2026-06-02T14:10:06.757114+00:00", "type": "order_rejected", "level": "critical", "detail": "stop_attach_failed: filled order lacks complete protection", "incident_id": "inc_791e5f13b340"}
+{"ts": "2026-06-02T14:11:19.448537+00:00", "type": "order_rejected", "level": "warning", "detail": "quantity mismatch", "incident_id": "inc_bcafeef8a9c7"}
+{"ts": "2026-06-02T14:11:19.449363+00:00", "type": "order_rejected", "level": "critical", "detail": "filled without stop", "incident_id": "inc_12c532104797"}
+{"ts": "2026-06-02T14:11:19.450005+00:00", "type": "order_rejected", "level": "warning", "detail": "stale quote", "incident_id": "inc_500e9a42ecd2"}
+{"ts": "2026-06-02T14:11:19.451739+00:00", "type": "order_rejected", "level": "critical", "detail": "stop_attach_failed: filled order lacks complete protection", "incident_id": "inc_8efb4b8ed511"}
+{"ts": "2026-06-02T14:11:19.900026+00:00", "type": "order_rejected", "level": "critical", "detail": "stop_attach_failed: filled order lacks complete protection", "incident_id": "inc_6e49330e0b30"}
+{"ts": "2026-06-02T14:11:20.310700+00:00", "type": "order_rejected", "level": "critical", "detail": "stop_attach_failed: filled order lacks complete protection", "incident_id": "inc_9bc616c05f0c"}
+{"ts": "2026-06-02T14:11:46.029454+00:00", "type": "order_rejected", "level": "critical", "detail": "stop_attach_failed: filled order lacks complete protection", "incident_id": "inc_4ee5b5a04e15"}
+{"ts": "2026-06-02T14:11:47.777364+00:00", "type": "order_rejected", "level": "warning", "detail": "quantity mismatch", "incident_id": "inc_52d87767da76"}
+{"ts": "2026-06-02T14:11:47.778125+00:00", "type": "order_rejected", "level": "critical", "detail": "filled without stop", "incident_id": "inc_41f4cd4468f6"}
+{"ts": "2026-06-02T14:11:47.779209+00:00", "type": "order_rejected", "level": "warning", "detail": "stale quote", "incident_id": "inc_3a6789951da1"}
+{"ts": "2026-06-02T14:11:47.780179+00:00", "type": "order_rejected", "level": "critical", "detail": "ghost position"}
+{"ts": "2026-06-02T14:11:47.781470+00:00", "type": "broker_disconnected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T14:11:47.782098+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T14:11:47.782720+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-02T14:11:47.783322+00:00", "type": "stop_attach_failed", "level": "critical", "detail": "test"}
+{"ts": "2026-06-02T14:11:47.783939+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-02T14:11:47.784537+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T14:11:47.785138+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T14:11:47.785745+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T14:11:47.786377+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-02T14:11:47.787011+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T14:11:48.883184+00:00", "type": "order_rejected", "level": "critical", "detail": "stop_attach_failed: filled order lacks complete protection", "incident_id": "inc_aa7591011823"}
+{"ts": "2026-06-02T14:11:49.286193+00:00", "type": "order_rejected", "level": "critical", "detail": "stop_attach_failed: filled order lacks complete protection", "incident_id": "inc_0cc59a29cea9"}
+{"ts": "2026-06-02T14:12:23.166365+00:00", "type": "order_rejected", "level": "critical", "detail": "stop_attach_failed: filled order lacks complete protection", "incident_id": "inc_51be6e347263"}
+{"ts": "2026-06-02T14:12:23.779917+00:00", "type": "order_rejected", "level": "critical", "detail": "stop_attach_failed: filled order lacks complete protection", "incident_id": "inc_aedcf9b04d36"}
+{"ts": "2026-06-02T14:12:24.369127+00:00", "type": "order_rejected", "level": "critical", "detail": "stop_attach_failed: filled order lacks complete protection", "incident_id": "inc_2e82fc77b8ae"}
+{"ts": "2026-06-02T14:12:33.380732+00:00", "type": "order_rejected", "level": "critical", "detail": "stop_attach_failed: filled order lacks complete protection", "incident_id": "inc_02b9a4f7c109"}
+{"ts": "2026-06-02T14:12:35.144244+00:00", "type": "order_rejected", "level": "warning", "detail": "quantity mismatch", "incident_id": "inc_0533e72f0c1e"}
+{"ts": "2026-06-02T14:12:35.145033+00:00", "type": "order_rejected", "level": "critical", "detail": "filled without stop", "incident_id": "inc_46cb5a180ac3"}
+{"ts": "2026-06-02T14:12:35.146340+00:00", "type": "order_rejected", "level": "warning", "detail": "stale quote", "incident_id": "inc_f6990148a69a"}
+{"ts": "2026-06-02T14:12:35.147100+00:00", "type": "order_rejected", "level": "critical", "detail": "ghost position"}
+{"ts": "2026-06-02T14:12:35.148448+00:00", "type": "broker_disconnected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T14:12:35.149160+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T14:12:35.149839+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-02T14:12:35.150514+00:00", "type": "stop_attach_failed", "level": "critical", "detail": "test"}
+{"ts": "2026-06-02T14:12:35.151182+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-02T14:12:35.151853+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T14:12:35.152569+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T14:12:35.153285+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T14:12:35.153963+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-02T14:12:35.154647+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T14:12:36.442136+00:00", "type": "order_rejected", "level": "critical", "detail": "stop_attach_failed: filled order lacks complete protection", "incident_id": "inc_eb4f1c5ff782"}
+{"ts": "2026-06-02T14:12:37.097303+00:00", "type": "order_rejected", "level": "critical", "detail": "stop_attach_failed: filled order lacks complete protection", "incident_id": "inc_0ce911199a1a"}
+{"ts": "2026-06-02T14:12:54.727781+00:00", "type": "order_rejected", "level": "critical", "detail": "stop_attach_failed: filled order lacks complete protection", "incident_id": "inc_6cab8b17b477"}
+{"ts": "2026-06-02T14:12:54.788170+00:00", "type": "order_rejected", "level": "critical", "detail": "stop_attach_failed: filled order lacks complete protection", "incident_id": "inc_4f5cfebf190c"}
+{"ts": "2026-06-02T14:13:03.747146+00:00", "type": "order_rejected", "level": "critical", "detail": "stop_attach_failed: filled order lacks complete protection", "incident_id": "inc_adf2de4eb263"}
+{"ts": "2026-06-02T14:13:11.536787+00:00", "type": "order_rejected", "level": "critical", "detail": "stop_attach_failed: filled order lacks complete protection", "incident_id": "inc_5bd399c9e45c"}
+{"ts": "2026-06-02T14:13:21.861737+00:00", "type": "order_rejected", "level": "critical", "detail": "stop_attach_failed: filled order lacks complete protection", "incident_id": "inc_6438e096cab1"}
+{"ts": "2026-06-02T14:13:26.139446+00:00", "type": "order_rejected", "level": "critical", "detail": "stop_attach_failed: filled order lacks complete protection", "incident_id": "inc_1461a190c8e8"}
+{"ts": "2026-06-02T14:13:27.923063+00:00", "type": "order_rejected", "level": "warning", "detail": "quantity mismatch", "incident_id": "inc_b7cc21f33e4a"}
+{"ts": "2026-06-02T14:13:27.923915+00:00", "type": "order_rejected", "level": "critical", "detail": "filled without stop", "incident_id": "inc_0cef9449ed1d"}
+{"ts": "2026-06-02T14:13:27.924540+00:00", "type": "order_rejected", "level": "warning", "detail": "stale quote", "incident_id": "inc_0d372619b791"}
+{"ts": "2026-06-02T14:13:27.925177+00:00", "type": "order_rejected", "level": "critical", "detail": "ghost position"}
+{"ts": "2026-06-02T14:13:27.926660+00:00", "type": "broker_disconnected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T14:13:27.927480+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T14:13:27.928251+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-02T14:13:27.929015+00:00", "type": "stop_attach_failed", "level": "critical", "detail": "test"}
+{"ts": "2026-06-02T14:13:27.929772+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-02T14:13:27.930514+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T14:13:27.931264+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T14:13:27.932063+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T14:13:27.933186+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-02T14:13:27.934229+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T14:13:29.181965+00:00", "type": "order_rejected", "level": "critical", "detail": "stop_attach_failed: filled order lacks complete protection", "incident_id": "inc_640e7c69f730"}
+{"ts": "2026-06-02T14:13:29.825513+00:00", "type": "order_rejected", "level": "critical", "detail": "stop_attach_failed: filled order lacks complete protection", "incident_id": "inc_58e2f864491d"}
+{"ts": "2026-06-02T14:14:49.695811+00:00", "type": "order_rejected", "level": "critical", "detail": "stop_attach_failed: filled order lacks complete protection", "incident_id": "inc_9eeba89c9230"}
+{"ts": "2026-06-02T14:14:50.300301+00:00", "type": "order_rejected", "level": "critical", "detail": "stop_attach_failed: filled order lacks complete protection", "incident_id": "inc_b4dbf23c26d2"}
+{"ts": "2026-06-02T14:15:01.891951+00:00", "type": "order_rejected", "level": "critical", "detail": "stop_attach_failed: filled order lacks complete protection", "incident_id": "inc_803ea878652d"}
+{"ts": "2026-06-02T14:15:03.670822+00:00", "type": "order_rejected", "level": "warning", "detail": "quantity mismatch", "incident_id": "inc_d3b219d6a97b"}
+{"ts": "2026-06-02T14:15:03.671560+00:00", "type": "order_rejected", "level": "critical", "detail": "filled without stop", "incident_id": "inc_dd1573ef4b0a"}
+{"ts": "2026-06-02T14:15:03.672160+00:00", "type": "order_rejected", "level": "warning", "detail": "stale quote", "incident_id": "inc_f7ac1031e4c3"}
+{"ts": "2026-06-02T14:15:03.672839+00:00", "type": "order_rejected", "level": "critical", "detail": "ghost position"}
+{"ts": "2026-06-02T14:15:03.674328+00:00", "type": "broker_disconnected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T14:15:03.675221+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T14:15:03.676034+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-02T14:15:03.676832+00:00", "type": "stop_attach_failed", "level": "critical", "detail": "test"}
+{"ts": "2026-06-02T14:15:03.677649+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-02T14:15:03.678470+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T14:15:03.679271+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T14:15:03.680592+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T14:15:03.681553+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-02T14:15:03.682394+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T14:15:05.440875+00:00", "type": "order_rejected", "level": "critical", "detail": "stop_attach_failed: filled order lacks complete protection", "incident_id": "inc_5f1485e2a093"}
+{"ts": "2026-06-02T14:15:06.095582+00:00", "type": "order_rejected", "level": "critical", "detail": "stop_attach_failed: filled order lacks complete protection", "incident_id": "inc_ff297d9e2a1e"}
+{"ts": "2026-06-02T14:15:33.545870+00:00", "type": "order_rejected", "level": "critical", "detail": "stop_attach_failed: filled order lacks complete protection", "incident_id": "inc_056d6450ac36"}
+{"ts": "2026-06-02T14:15:35.340333+00:00", "type": "order_rejected", "level": "warning", "detail": "quantity mismatch", "incident_id": "inc_c54ee8376bc6"}
+{"ts": "2026-06-02T14:15:35.340983+00:00", "type": "order_rejected", "level": "critical", "detail": "filled without stop", "incident_id": "inc_6b5b075c9f1d"}
+{"ts": "2026-06-02T14:15:35.341526+00:00", "type": "order_rejected", "level": "warning", "detail": "stale quote", "incident_id": "inc_d5795e7590f2"}
+{"ts": "2026-06-02T14:15:35.342146+00:00", "type": "order_rejected", "level": "critical", "detail": "ghost position"}
+{"ts": "2026-06-02T14:15:35.343601+00:00", "type": "broker_disconnected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T14:15:35.344520+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T14:15:35.345425+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-02T14:15:35.346295+00:00", "type": "stop_attach_failed", "level": "critical", "detail": "test"}
+{"ts": "2026-06-02T14:15:35.347210+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-02T14:15:35.348343+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T14:15:35.349404+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T14:15:35.350317+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T14:15:35.351235+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-02T14:15:35.352191+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T14:15:37.144078+00:00", "type": "order_rejected", "level": "critical", "detail": "stop_attach_failed: filled order lacks complete protection", "incident_id": "inc_5372bb76f860"}
+{"ts": "2026-06-02T14:15:37.805883+00:00", "type": "order_rejected", "level": "critical", "detail": "stop_attach_failed: filled order lacks complete protection", "incident_id": "inc_e85ac94d4eac"}
+{"ts": "2026-06-02T14:30:33.423856+00:00", "type": "order_rejected", "level": "critical", "detail": "stop_attach_failed: filled order lacks complete protection", "incident_id": "inc_b380e06cc852"}
+{"ts": "2026-06-02T14:30:46.609666+00:00", "type": "order_rejected", "level": "critical", "detail": "stop_attach_failed: filled order lacks complete protection", "incident_id": "inc_f6aafba59d8a"}
+{"ts": "2026-06-02T14:30:47.206274+00:00", "type": "order_rejected", "level": "critical", "detail": "stop_attach_failed: filled order lacks complete protection", "incident_id": "inc_a0dd5a0294f8"}
+{"ts": "2026-06-02T14:30:59.061838+00:00", "type": "order_rejected", "level": "critical", "detail": "stop_attach_failed: filled order lacks complete protection", "incident_id": "inc_f93521f76a3d"}
+{"ts": "2026-06-02T14:31:00.843151+00:00", "type": "order_rejected", "level": "warning", "detail": "quantity mismatch", "incident_id": "inc_9fc672e2f532"}
+{"ts": "2026-06-02T14:31:00.843990+00:00", "type": "order_rejected", "level": "critical", "detail": "filled without stop", "incident_id": "inc_5291aca4fa9b"}
+{"ts": "2026-06-02T14:31:00.844554+00:00", "type": "order_rejected", "level": "warning", "detail": "stale quote", "incident_id": "inc_042b4c8f4b19"}
+{"ts": "2026-06-02T14:31:00.845236+00:00", "type": "order_rejected", "level": "critical", "detail": "ghost position"}
+{"ts": "2026-06-02T14:31:00.846927+00:00", "type": "broker_disconnected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T14:31:00.847930+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T14:31:00.848885+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-02T14:31:00.849825+00:00", "type": "stop_attach_failed", "level": "critical", "detail": "test"}
+{"ts": "2026-06-02T14:31:00.850811+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-02T14:31:00.851929+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T14:31:00.852980+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T14:31:00.854010+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T14:31:00.854995+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-02T14:31:00.855967+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T14:31:02.066770+00:00", "type": "order_rejected", "level": "critical", "detail": "stop_attach_failed: filled order lacks complete protection", "incident_id": "inc_838dde4b8c50"}
+{"ts": "2026-06-02T14:31:02.700567+00:00", "type": "order_rejected", "level": "critical", "detail": "stop_attach_failed: filled order lacks complete protection", "incident_id": "inc_c7a9a72c5731"}
+{"ts": "2026-06-02T14:32:17.139128+00:00", "type": "order_rejected", "level": "critical", "detail": "stop_attach_failed: filled order lacks complete protection", "incident_id": "inc_b7f99c828bfa"}
+{"ts": "2026-06-02T14:32:18.979533+00:00", "type": "order_rejected", "level": "warning", "detail": "quantity mismatch", "incident_id": "inc_64d8479d2b39"}
+{"ts": "2026-06-02T14:32:18.980236+00:00", "type": "order_rejected", "level": "critical", "detail": "filled without stop", "incident_id": "inc_59d4e6cb60f1"}
+{"ts": "2026-06-02T14:32:18.981179+00:00", "type": "order_rejected", "level": "warning", "detail": "stale quote", "incident_id": "inc_813294a783f5"}
+{"ts": "2026-06-02T14:32:18.982517+00:00", "type": "order_rejected", "level": "critical", "detail": "ghost position"}
+{"ts": "2026-06-02T14:32:18.984254+00:00", "type": "broker_disconnected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T14:32:18.985310+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T14:32:18.986330+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-02T14:32:18.987373+00:00", "type": "stop_attach_failed", "level": "critical", "detail": "test"}
+{"ts": "2026-06-02T14:32:18.988366+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-02T14:32:18.989375+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T14:32:18.990559+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T14:32:18.991920+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T14:32:18.993220+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-02T14:32:18.994267+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T14:32:20.783381+00:00", "type": "order_rejected", "level": "critical", "detail": "stop_attach_failed: filled order lacks complete protection", "incident_id": "inc_6d6664301f33"}
+{"ts": "2026-06-02T14:32:21.448151+00:00", "type": "order_rejected", "level": "critical", "detail": "stop_attach_failed: filled order lacks complete protection", "incident_id": "inc_b07df549caeb"}
+{"ts": "2026-06-02T14:32:38.209073+00:00", "type": "order_rejected", "level": "critical", "detail": "stop_attach_failed: filled order lacks complete protection", "incident_id": "inc_e3ba50d69153"}
+{"ts": "2026-06-02T14:32:39.721609+00:00", "type": "order_rejected", "level": "critical", "detail": "stop_attach_failed: filled order lacks complete protection", "incident_id": "inc_57418f20964f"}
+{"ts": "2026-06-02T14:32:50.734297+00:00", "type": "order_rejected", "level": "critical", "detail": "stop_attach_failed: filled order lacks complete protection", "incident_id": "inc_e03dc57e2016"}
+{"ts": "2026-06-02T14:32:52.598177+00:00", "type": "order_rejected", "level": "warning", "detail": "quantity mismatch", "incident_id": "inc_79aff7b3a89c"}
+{"ts": "2026-06-02T14:32:52.598832+00:00", "type": "order_rejected", "level": "critical", "detail": "filled without stop", "incident_id": "inc_a9b880e31610"}
+{"ts": "2026-06-02T14:32:52.599434+00:00", "type": "order_rejected", "level": "warning", "detail": "stale quote", "incident_id": "inc_38910f46bb78"}
+{"ts": "2026-06-02T14:32:52.600047+00:00", "type": "order_rejected", "level": "critical", "detail": "ghost position"}
+{"ts": "2026-06-02T14:32:52.601782+00:00", "type": "broker_disconnected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T14:32:52.602893+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T14:32:52.603982+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-02T14:32:52.605104+00:00", "type": "stop_attach_failed", "level": "critical", "detail": "test"}
+{"ts": "2026-06-02T14:32:52.606343+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-02T14:32:52.607570+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T14:32:52.608700+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T14:32:52.609800+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T14:32:52.610880+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-02T14:32:52.611960+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T14:32:53.859281+00:00", "type": "order_rejected", "level": "critical", "detail": "stop_attach_failed: filled order lacks complete protection", "incident_id": "inc_7415ce784281"}
+{"ts": "2026-06-02T14:32:54.526658+00:00", "type": "order_rejected", "level": "critical", "detail": "stop_attach_failed: filled order lacks complete protection", "incident_id": "inc_665ca2f2496b"}
+{"ts": "2026-06-02T14:33:16.019891+00:00", "type": "order_rejected", "level": "critical", "detail": "stop_attach_failed: filled order lacks complete protection", "incident_id": "inc_94d2e080ebc2"}
+{"ts": "2026-06-02T14:33:17.934454+00:00", "type": "order_rejected", "level": "warning", "detail": "quantity mismatch", "incident_id": "inc_1174e3815742"}
+{"ts": "2026-06-02T14:33:17.935276+00:00", "type": "order_rejected", "level": "critical", "detail": "filled without stop", "incident_id": "inc_a74ab5108f70"}
+{"ts": "2026-06-02T14:33:17.935902+00:00", "type": "order_rejected", "level": "warning", "detail": "stale quote", "incident_id": "inc_e150e07b72fe"}
+{"ts": "2026-06-02T14:33:17.936583+00:00", "type": "order_rejected", "level": "critical", "detail": "ghost position"}
+{"ts": "2026-06-02T14:33:17.938627+00:00", "type": "broker_disconnected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T14:33:17.940069+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T14:33:17.941411+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-02T14:33:17.942641+00:00", "type": "stop_attach_failed", "level": "critical", "detail": "test"}
+{"ts": "2026-06-02T14:33:17.943797+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-02T14:33:17.945222+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T14:33:17.946527+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T14:33:17.947845+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T14:33:17.949107+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-02T14:33:17.950338+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T14:33:19.552347+00:00", "type": "order_rejected", "level": "critical", "detail": "stop_attach_failed: filled order lacks complete protection", "incident_id": "inc_cf7118a22074"}
+{"ts": "2026-06-02T14:33:20.214461+00:00", "type": "order_rejected", "level": "critical", "detail": "stop_attach_failed: filled order lacks complete protection", "incident_id": "inc_ffa46c7f0d7f"}
+{"ts": "2026-06-02T14:47:02.835895+00:00", "type": "order_rejected", "level": "critical", "detail": "stop_attach_failed: filled order lacks complete protection", "incident_id": "inc_6bf4181568e1"}
+{"ts": "2026-06-02T14:47:04.704370+00:00", "type": "order_rejected", "level": "warning", "detail": "quantity mismatch", "incident_id": "inc_f569835a34f5"}
+{"ts": "2026-06-02T14:47:04.705172+00:00", "type": "order_rejected", "level": "critical", "detail": "filled without stop", "incident_id": "inc_d0e820482938"}
+{"ts": "2026-06-02T14:47:04.705764+00:00", "type": "order_rejected", "level": "warning", "detail": "stale quote", "incident_id": "inc_06803a340880"}
+{"ts": "2026-06-02T14:47:04.706413+00:00", "type": "order_rejected", "level": "critical", "detail": "ghost position"}
+{"ts": "2026-06-02T14:47:04.708304+00:00", "type": "broker_disconnected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T14:47:04.709600+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T14:47:04.710867+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-02T14:47:04.713017+00:00", "type": "stop_attach_failed", "level": "critical", "detail": "test"}
+{"ts": "2026-06-02T14:47:04.714391+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-02T14:47:04.715648+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T14:47:04.716871+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T14:47:04.718129+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T14:47:04.719363+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-02T14:47:04.720586+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T14:47:06.524152+00:00", "type": "order_rejected", "level": "critical", "detail": "stop_attach_failed: filled order lacks complete protection", "incident_id": "inc_772a050c6d9c"}
+{"ts": "2026-06-02T14:47:07.214348+00:00", "type": "order_rejected", "level": "critical", "detail": "stop_attach_failed: filled order lacks complete protection", "incident_id": "inc_bbcc73368d78"}
+{"ts": "2026-06-02T14:52:23.487461+00:00", "type": "order_rejected", "level": "critical", "detail": "stop_attach_failed: filled order lacks complete protection", "incident_id": "inc_707009a9cbf4"}
+{"ts": "2026-06-02T14:52:25.341310+00:00", "type": "order_rejected", "level": "warning", "detail": "quantity mismatch", "incident_id": "inc_136e966faaf0"}
+{"ts": "2026-06-02T14:52:25.341978+00:00", "type": "order_rejected", "level": "critical", "detail": "filled without stop", "incident_id": "inc_d859000a2b60"}
+{"ts": "2026-06-02T14:52:25.342592+00:00", "type": "order_rejected", "level": "warning", "detail": "stale quote", "incident_id": "inc_1c6fbec560e5"}
+{"ts": "2026-06-02T14:52:25.343566+00:00", "type": "order_rejected", "level": "critical", "detail": "ghost position"}
+{"ts": "2026-06-02T14:52:25.345683+00:00", "type": "broker_disconnected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T14:52:25.347141+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T14:52:25.348459+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-02T14:52:25.349741+00:00", "type": "stop_attach_failed", "level": "critical", "detail": "test"}
+{"ts": "2026-06-02T14:52:25.351030+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-02T14:52:25.352291+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T14:52:25.353590+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T14:52:25.355181+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T14:52:25.356772+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-02T14:52:25.358255+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T14:52:26.832158+00:00", "type": "order_rejected", "level": "critical", "detail": "stop_attach_failed: filled order lacks complete protection", "incident_id": "inc_8eb9ed685f3a"}
+{"ts": "2026-06-02T14:52:27.506860+00:00", "type": "order_rejected", "level": "critical", "detail": "stop_attach_failed: filled order lacks complete protection", "incident_id": "inc_47a85f6c18c7"}
+{"ts": "2026-06-02T14:52:46.740689+00:00", "type": "order_rejected", "level": "critical", "detail": "stop_attach_failed: filled order lacks complete protection", "incident_id": "inc_deec183a1ff8"}
+{"ts": "2026-06-02T14:53:29.839570+00:00", "type": "order_rejected", "level": "critical", "detail": "stop_attach_failed: filled order lacks complete protection", "incident_id": "inc_6a30bd3fb5c5"}
+{"ts": "2026-06-02T14:53:30.573227+00:00", "type": "order_rejected", "level": "critical", "detail": "stop_attach_failed: filled order lacks complete protection", "incident_id": "inc_83cca046e918"}
+{"ts": "2026-06-02T14:53:38.117646+00:00", "type": "order_rejected", "level": "critical", "detail": "stop_attach_failed: filled order lacks complete protection", "incident_id": "inc_df51807cbdc9"}
+{"ts": "2026-06-02T14:53:49.273001+00:00", "type": "order_rejected", "level": "critical", "detail": "stop_attach_failed: filled order lacks complete protection", "incident_id": "inc_f7fff1fe07fb"}
+{"ts": "2026-06-02T14:53:51.083119+00:00", "type": "order_rejected", "level": "warning", "detail": "quantity mismatch", "incident_id": "inc_ce03f5ab8829"}
+{"ts": "2026-06-02T14:53:51.084291+00:00", "type": "order_rejected", "level": "critical", "detail": "filled without stop", "incident_id": "inc_41f1142e3b03"}
+{"ts": "2026-06-02T14:53:51.084966+00:00", "type": "order_rejected", "level": "warning", "detail": "stale quote", "incident_id": "inc_75b42cc2e811"}
+{"ts": "2026-06-02T14:53:51.085661+00:00", "type": "order_rejected", "level": "critical", "detail": "ghost position"}
+{"ts": "2026-06-02T14:53:51.087909+00:00", "type": "broker_disconnected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T14:53:51.089450+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T14:53:51.090892+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-02T14:53:51.092315+00:00", "type": "stop_attach_failed", "level": "critical", "detail": "test"}
+{"ts": "2026-06-02T14:53:51.093914+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-02T14:53:51.095541+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T14:53:51.097126+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T14:53:51.098678+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T14:53:51.100153+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-02T14:53:51.101590+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T14:53:52.625906+00:00", "type": "order_rejected", "level": "critical", "detail": "stop_attach_failed: filled order lacks complete protection", "incident_id": "inc_f68fdc6142e7"}
+{"ts": "2026-06-02T14:53:53.453272+00:00", "type": "order_rejected", "level": "critical", "detail": "stop_attach_failed: filled order lacks complete protection", "incident_id": "inc_b7ab63633110"}
+{"ts": "2026-06-02T14:55:56.796412+00:00", "type": "order_rejected", "level": "critical", "detail": "stop_attach_failed: filled order lacks complete protection", "incident_id": "inc_eaff36723478"}
+{"ts": "2026-06-02T14:55:57.567420+00:00", "type": "order_rejected", "level": "critical", "detail": "stop_attach_failed: filled order lacks complete protection", "incident_id": "inc_38190ef75c60"}
+{"ts": "2026-06-02T14:56:58.285328+00:00", "type": "order_rejected", "level": "critical", "detail": "stop_attach_failed: filled order lacks complete protection", "incident_id": "inc_d6071f73e1c6"}
+{"ts": "2026-06-02T14:57:13.065043+00:00", "type": "order_rejected", "level": "critical", "detail": "stop_attach_failed: filled order lacks complete protection", "incident_id": "inc_8ceefb818c48"}
+{"ts": "2026-06-02T14:57:14.819051+00:00", "type": "order_rejected", "level": "warning", "detail": "quantity mismatch", "incident_id": "inc_7305d18cdf0c"}
+{"ts": "2026-06-02T14:57:14.819828+00:00", "type": "order_rejected", "level": "critical", "detail": "filled without stop", "incident_id": "inc_b676a56b5245"}
+{"ts": "2026-06-02T14:57:14.820534+00:00", "type": "order_rejected", "level": "warning", "detail": "stale quote", "incident_id": "inc_c8fb02be87b1"}
+{"ts": "2026-06-02T14:57:14.821400+00:00", "type": "order_rejected", "level": "critical", "detail": "ghost position"}
+{"ts": "2026-06-02T14:57:14.823746+00:00", "type": "broker_disconnected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T14:57:14.825283+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T14:57:14.827012+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-02T14:57:14.828687+00:00", "type": "stop_attach_failed", "level": "critical", "detail": "test"}
+{"ts": "2026-06-02T14:57:14.830246+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-02T14:57:14.831745+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T14:57:14.833297+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T14:57:14.834801+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T14:57:14.836404+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-02T14:57:14.837908+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T14:57:16.421274+00:00", "type": "order_rejected", "level": "critical", "detail": "stop_attach_failed: filled order lacks complete protection", "incident_id": "inc_6947412902dd"}
+{"ts": "2026-06-02T14:57:17.160124+00:00", "type": "order_rejected", "level": "critical", "detail": "stop_attach_failed: filled order lacks complete protection", "incident_id": "inc_379a4f518576"}
+{"ts": "2026-06-02T14:59:56.431240+00:00", "type": "order_rejected", "level": "critical", "detail": "stop_attach_failed: filled order lacks complete protection", "incident_id": "inc_1c4906e0c3c2"}
+{"ts": "2026-06-02T14:59:57.160511+00:00", "type": "order_rejected", "level": "critical", "detail": "stop_attach_failed: filled order lacks complete protection", "incident_id": "inc_2229afa7fbcf"}
+{"ts": "2026-06-02T15:00:06.164986+00:00", "type": "order_rejected", "level": "critical", "detail": "stop_attach_failed: filled order lacks complete protection", "incident_id": "inc_bec81f8bacb3"}
+{"ts": "2026-06-02T15:00:40.210933+00:00", "type": "order_rejected", "level": "critical", "detail": "stop_attach_failed: filled order lacks complete protection", "incident_id": "inc_e864457677ab"}
+{"ts": "2026-06-02T15:00:54.298000+00:00", "type": "order_rejected", "level": "critical", "detail": "stop_attach_failed: filled order lacks complete protection", "incident_id": "inc_23362bf9c5e4"}
+{"ts": "2026-06-02T15:00:56.117657+00:00", "type": "order_rejected", "level": "warning", "detail": "quantity mismatch", "incident_id": "inc_a5313cde15ad"}
+{"ts": "2026-06-02T15:00:56.118499+00:00", "type": "order_rejected", "level": "critical", "detail": "filled without stop", "incident_id": "inc_024a5b8e05e7"}
+{"ts": "2026-06-02T15:00:56.119630+00:00", "type": "order_rejected", "level": "warning", "detail": "stale quote", "incident_id": "inc_a280c13a8171"}
+{"ts": "2026-06-02T15:00:56.120711+00:00", "type": "order_rejected", "level": "critical", "detail": "ghost position"}
+{"ts": "2026-06-02T15:00:56.123658+00:00", "type": "broker_disconnected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T15:00:56.125394+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T15:00:56.126985+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-02T15:00:56.128567+00:00", "type": "stop_attach_failed", "level": "critical", "detail": "test"}
+{"ts": "2026-06-02T15:00:56.130238+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-02T15:00:56.131895+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T15:00:56.133494+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T15:00:56.135057+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T15:00:56.136603+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-02T15:00:56.138135+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T15:00:57.688841+00:00", "type": "order_rejected", "level": "critical", "detail": "stop_attach_failed: filled order lacks complete protection", "incident_id": "inc_4188c1cfbc2b"}
+{"ts": "2026-06-02T15:00:58.423482+00:00", "type": "order_rejected", "level": "critical", "detail": "stop_attach_failed: filled order lacks complete protection", "incident_id": "inc_d5e912e7486e"}
+{"ts": "2026-06-02T15:01:28.825199+00:00", "type": "order_rejected", "level": "critical", "detail": "stop_attach_failed: filled order lacks complete protection", "incident_id": "inc_4dc5926134e3"}
+{"ts": "2026-06-02T15:01:43.709764+00:00", "type": "order_rejected", "level": "critical", "detail": "stop_attach_failed: filled order lacks complete protection", "incident_id": "inc_ff084e0e446a"}
+{"ts": "2026-06-02T15:07:49.759657+00:00", "type": "order_rejected", "level": "critical", "detail": "stop_attach_failed: filled order lacks complete protection", "incident_id": "inc_4152b6efb23f"}
+{"ts": "2026-06-02T15:07:50.557493+00:00", "type": "order_rejected", "level": "critical", "detail": "stop_attach_failed: filled order lacks complete protection", "incident_id": "inc_5dfa921caa27"}
+{"ts": "2026-06-02T15:08:05.830489+00:00", "type": "order_rejected", "level": "critical", "detail": "stop_attach_failed: filled order lacks complete protection", "incident_id": "inc_0d8a2bb9cbc1"}
+{"ts": "2026-06-02T15:08:20.703591+00:00", "type": "order_rejected", "level": "critical", "detail": "stop_attach_failed: filled order lacks complete protection", "incident_id": "inc_b101aeea9403"}
+{"ts": "2026-06-02T15:08:37.074595+00:00", "type": "order_rejected", "level": "critical", "detail": "stop_attach_failed: filled order lacks complete protection", "incident_id": "inc_444b42990bf8"}
+{"ts": "2026-06-02T15:08:39.038530+00:00", "type": "order_rejected", "level": "warning", "detail": "quantity mismatch", "incident_id": "inc_145ac20e7030"}
+{"ts": "2026-06-02T15:08:39.039257+00:00", "type": "order_rejected", "level": "critical", "detail": "filled without stop", "incident_id": "inc_a0af7aac198b"}
+{"ts": "2026-06-02T15:08:39.039861+00:00", "type": "order_rejected", "level": "warning", "detail": "stale quote", "incident_id": "inc_38d7592769cf"}
+{"ts": "2026-06-02T15:08:39.040516+00:00", "type": "order_rejected", "level": "critical", "detail": "ghost position"}
+{"ts": "2026-06-02T15:08:39.043299+00:00", "type": "broker_disconnected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T15:08:39.045192+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T15:08:39.047057+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-02T15:08:39.048899+00:00", "type": "stop_attach_failed", "level": "critical", "detail": "test"}
+{"ts": "2026-06-02T15:08:39.050629+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-02T15:08:39.052591+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T15:08:39.054366+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T15:08:39.056086+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T15:08:39.057766+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-02T15:08:39.059441+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T15:08:41.161480+00:00", "type": "order_rejected", "level": "critical", "detail": "stop_attach_failed: filled order lacks complete protection", "incident_id": "inc_d8c609f8b372"}
+{"ts": "2026-06-02T15:08:41.945519+00:00", "type": "order_rejected", "level": "critical", "detail": "stop_attach_failed: filled order lacks complete protection", "incident_id": "inc_e69743486bbb"}
+{"ts": "2026-06-02T15:11:04.869415+00:00", "type": "order_rejected", "level": "critical", "detail": "stop_attach_failed: filled order lacks complete protection", "incident_id": "inc_e09e3e8633b8"}
+{"ts": "2026-06-02T15:11:06.830221+00:00", "type": "order_rejected", "level": "warning", "detail": "quantity mismatch", "incident_id": "inc_c37a0cb75a79"}
+{"ts": "2026-06-02T15:11:06.830940+00:00", "type": "order_rejected", "level": "critical", "detail": "filled without stop", "incident_id": "inc_e0f5b5e22a2e"}
+{"ts": "2026-06-02T15:11:06.831519+00:00", "type": "order_rejected", "level": "warning", "detail": "stale quote", "incident_id": "inc_172c3b3a2d4d"}
+{"ts": "2026-06-02T15:11:06.832776+00:00", "type": "order_rejected", "level": "critical", "detail": "ghost position"}
+{"ts": "2026-06-02T15:11:06.836118+00:00", "type": "broker_disconnected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T15:11:06.838246+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T15:11:06.840244+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-02T15:11:06.842494+00:00", "type": "stop_attach_failed", "level": "critical", "detail": "test"}
+{"ts": "2026-06-02T15:11:06.844752+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-02T15:11:06.846885+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T15:11:06.848808+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T15:11:06.850673+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T15:11:06.852531+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-02T15:11:06.854671+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T15:11:09.177538+00:00", "type": "order_rejected", "level": "critical", "detail": "stop_attach_failed: filled order lacks complete protection", "incident_id": "inc_926af0a90e89"}
+{"ts": "2026-06-02T15:11:09.946245+00:00", "type": "order_rejected", "level": "critical", "detail": "stop_attach_failed: filled order lacks complete protection", "incident_id": "inc_5ea93224278e"}
+{"ts": "2026-06-02T15:17:54.340837+00:00", "type": "order_rejected", "level": "critical", "detail": "stop_attach_failed: filled order lacks complete protection", "incident_id": "inc_87c47b8a1c4e"}
+{"ts": "2026-06-02T15:17:56.324658+00:00", "type": "order_rejected", "level": "warning", "detail": "quantity mismatch", "incident_id": "inc_511cd7985d2d"}
+{"ts": "2026-06-02T15:17:56.325335+00:00", "type": "order_rejected", "level": "critical", "detail": "filled without stop", "incident_id": "inc_e6af65351d02"}
+{"ts": "2026-06-02T15:17:56.325906+00:00", "type": "order_rejected", "level": "warning", "detail": "stale quote", "incident_id": "inc_0f5cff717a8c"}
+{"ts": "2026-06-02T15:17:56.326538+00:00", "type": "order_rejected", "level": "critical", "detail": "ghost position"}
+{"ts": "2026-06-02T15:17:56.329126+00:00", "type": "broker_disconnected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T15:17:56.330925+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T15:17:56.333012+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-02T15:17:56.334911+00:00", "type": "stop_attach_failed", "level": "critical", "detail": "test"}
+{"ts": "2026-06-02T15:17:56.336781+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-02T15:17:56.338695+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T15:17:56.340601+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T15:17:56.342594+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T15:17:56.344518+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-02T15:17:56.346339+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T15:17:58.170999+00:00", "type": "order_rejected", "level": "critical", "detail": "stop_attach_failed: filled order lacks complete protection", "incident_id": "inc_8c33a73bfc5a"}
+{"ts": "2026-06-02T15:17:58.989305+00:00", "type": "order_rejected", "level": "critical", "detail": "stop_attach_failed: filled order lacks complete protection", "incident_id": "inc_ce1afe2d5f9d"}
+{"ts": "2026-06-02T15:33:05.770750+00:00", "type": "order_rejected", "level": "critical", "detail": "ghost position"}
+{"ts": "2026-06-02T15:33:05.773575+00:00", "type": "broker_disconnected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T15:33:05.775589+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T15:33:05.777573+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-02T15:33:05.779707+00:00", "type": "stop_attach_failed", "level": "critical", "detail": "test"}
+{"ts": "2026-06-02T15:33:05.781750+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-02T15:33:05.783703+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T15:33:05.785652+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T15:33:05.787623+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T15:33:05.789784+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-02T15:33:05.791832+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T15:34:56.982614+00:00", "type": "order_rejected", "level": "critical", "detail": "ghost position"}
+{"ts": "2026-06-02T15:34:57.008247+00:00", "type": "broker_disconnected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T15:34:57.028100+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T15:34:57.038782+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-02T15:34:57.059430+00:00", "type": "stop_attach_failed", "level": "critical", "detail": "test"}
+{"ts": "2026-06-02T15:34:57.068151+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-02T15:34:57.095015+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T15:34:57.111310+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T15:34:57.119698+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T15:34:57.132542+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-02T15:34:57.145635+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T16:00:15.601447+00:00", "type": "order_rejected", "level": "critical", "detail": "ghost position"}
+{"ts": "2026-06-02T16:00:15.611201+00:00", "type": "broker_disconnected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T16:00:15.616451+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T16:00:15.622529+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-02T16:00:15.628487+00:00", "type": "stop_attach_failed", "level": "critical", "detail": "test"}
+{"ts": "2026-06-02T16:00:15.634346+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-02T16:00:15.644511+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T16:00:15.649678+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T16:00:15.655419+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-02T16:00:15.660399+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-02T16:00:15.666767+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-03T00:00:11.477326+00:00", "type": "order_rejected", "level": "critical", "detail": "ghost position"}
+{"ts": "2026-06-03T00:00:11.481176+00:00", "type": "broker_disconnected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-03T00:00:11.483773+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-03T00:00:11.486169+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-03T00:00:11.488426+00:00", "type": "stop_attach_failed", "level": "critical", "detail": "test"}
+{"ts": "2026-06-03T00:00:11.490562+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-03T00:00:11.492756+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-03T00:00:11.494996+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-03T00:00:11.497190+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-03T00:00:11.499369+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-03T00:00:11.501631+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-03T00:01:25.547337+00:00", "type": "order_rejected", "level": "critical", "detail": "ghost position"}
+{"ts": "2026-06-03T00:01:25.550542+00:00", "type": "broker_disconnected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-03T00:01:25.553899+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-03T00:01:25.556194+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-03T00:01:25.558409+00:00", "type": "stop_attach_failed", "level": "critical", "detail": "test"}
+{"ts": "2026-06-03T00:01:25.560654+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-03T00:01:25.562863+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-03T00:01:25.565456+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-03T00:01:25.567943+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-03T00:01:25.570281+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-03T00:01:25.572605+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-03T00:02:52.825305+00:00", "type": "order_rejected", "level": "critical", "detail": "ghost position"}
+{"ts": "2026-06-03T00:02:52.828823+00:00", "type": "broker_disconnected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-03T00:02:52.831445+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-03T00:02:52.834055+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-03T00:02:52.836813+00:00", "type": "stop_attach_failed", "level": "critical", "detail": "test"}
+{"ts": "2026-06-03T00:02:52.839356+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-03T00:02:52.841839+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-03T00:02:52.844511+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-03T00:02:52.847465+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-03T00:02:52.849928+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-03T00:02:52.852304+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-03T00:05:19.734066+00:00", "type": "order_rejected", "level": "critical", "detail": "ghost position"}
+{"ts": "2026-06-03T00:05:19.738304+00:00", "type": "broker_disconnected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-03T00:05:19.741260+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-03T00:05:19.743986+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-03T00:05:19.746834+00:00", "type": "stop_attach_failed", "level": "critical", "detail": "test"}
+{"ts": "2026-06-03T00:05:19.749892+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-03T00:05:19.752759+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-03T00:05:19.755287+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-03T00:05:19.757939+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-03T00:05:19.760621+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-03T00:05:19.763235+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-03T00:50:47.302503+00:00", "type": "order_rejected", "level": "critical", "detail": "ghost position"}
+{"ts": "2026-06-03T00:50:47.306406+00:00", "type": "broker_disconnected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-03T00:50:47.309065+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-03T00:50:47.311562+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-03T00:50:47.314436+00:00", "type": "stop_attach_failed", "level": "critical", "detail": "test"}
+{"ts": "2026-06-03T00:50:47.316980+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-03T00:50:47.319380+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-03T00:50:47.321931+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-03T00:50:47.324825+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-03T00:50:47.327550+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-03T00:50:47.330074+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-03T01:21:38.710864+00:00", "type": "order_rejected", "level": "critical", "detail": "ghost position"}
+{"ts": "2026-06-03T01:21:38.714461+00:00", "type": "broker_disconnected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-03T01:21:38.717057+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-03T01:21:38.719580+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-03T01:21:38.722404+00:00", "type": "stop_attach_failed", "level": "critical", "detail": "test"}
+{"ts": "2026-06-03T01:21:38.725240+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-03T01:21:38.728163+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-03T01:21:38.730777+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-03T01:21:38.733785+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-03T01:21:38.736446+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-03T01:21:38.739086+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-03T01:26:05.214570+00:00", "type": "order_rejected", "level": "critical", "detail": "ghost position"}
+{"ts": "2026-06-03T01:26:05.217927+00:00", "type": "broker_disconnected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-03T01:26:05.220490+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-03T01:26:05.223208+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-03T01:26:05.226121+00:00", "type": "stop_attach_failed", "level": "critical", "detail": "test"}
+{"ts": "2026-06-03T01:26:05.229146+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-03T01:26:05.231924+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-03T01:26:05.234537+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-03T01:26:05.237149+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-03T01:26:05.239958+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-03T01:26:05.242635+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-03T01:31:05.319793+00:00", "type": "order_rejected", "level": "critical", "detail": "ghost position"}
+{"ts": "2026-06-03T01:31:05.323953+00:00", "type": "broker_disconnected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-03T01:31:05.327967+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-03T01:31:05.330964+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-03T01:31:05.335882+00:00", "type": "stop_attach_failed", "level": "critical", "detail": "test"}
+{"ts": "2026-06-03T01:31:05.338959+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-03T01:31:05.342284+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-03T01:31:05.345278+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-03T01:31:05.348141+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-03T01:31:05.351122+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-03T01:31:05.353918+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-03T01:36:27.201345+00:00", "type": "order_rejected", "level": "critical", "detail": "ghost position"}
+{"ts": "2026-06-03T01:36:27.205881+00:00", "type": "broker_disconnected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-03T01:36:27.208943+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-03T01:36:27.211737+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-03T01:36:27.214448+00:00", "type": "stop_attach_failed", "level": "critical", "detail": "test"}
+{"ts": "2026-06-03T01:36:27.217388+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-03T01:36:27.220481+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-03T01:36:27.223256+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-03T01:36:27.225980+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-03T01:36:27.228610+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-03T01:36:27.231247+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-03T01:41:40.931913+00:00", "type": "order_rejected", "level": "critical", "detail": "ghost position"}
+{"ts": "2026-06-03T01:41:40.937680+00:00", "type": "broker_disconnected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-03T01:41:40.941970+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-03T01:41:40.945595+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-03T01:41:40.948699+00:00", "type": "stop_attach_failed", "level": "critical", "detail": "test"}
+{"ts": "2026-06-03T01:41:40.951719+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-03T01:41:40.954741+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-03T01:41:40.957577+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-03T01:41:40.960319+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-03T01:41:40.963037+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-03T01:41:40.966140+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-03T01:46:03.316831+00:00", "type": "order_rejected", "level": "critical", "detail": "ghost position"}
+{"ts": "2026-06-03T01:46:03.320982+00:00", "type": "broker_disconnected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-03T01:46:03.323882+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-03T01:46:03.326915+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-03T01:46:03.329948+00:00", "type": "stop_attach_failed", "level": "critical", "detail": "test"}
+{"ts": "2026-06-03T01:46:03.332827+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-03T01:46:03.336046+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-03T01:46:03.339046+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-03T01:46:03.341876+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-03T01:46:03.344962+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-03T01:46:03.348114+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-03T02:21:40.477515+00:00", "type": "order_rejected", "level": "critical", "detail": "ghost position"}
+{"ts": "2026-06-03T02:21:40.478558+00:00", "type": "broker_disconnected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-03T02:21:40.478714+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-03T02:21:40.478829+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-03T02:21:40.478946+00:00", "type": "stop_attach_failed", "level": "critical", "detail": "test"}
+{"ts": "2026-06-03T02:21:40.479067+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-03T02:21:40.479170+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-03T02:21:40.479333+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-03T02:21:40.479480+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-03T02:21:40.479590+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-03T02:21:40.479697+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-03T02:30:29.993042+00:00", "type": "order_rejected", "level": "critical", "detail": "ghost position"}
+{"ts": "2026-06-03T02:30:29.994037+00:00", "type": "broker_disconnected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-03T02:30:29.994276+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-03T02:30:29.994498+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-03T02:30:29.994699+00:00", "type": "stop_attach_failed", "level": "critical", "detail": "test"}
+{"ts": "2026-06-03T02:30:29.994906+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-03T02:30:29.995105+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-03T02:30:29.995414+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-03T02:30:29.995917+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-03T02:30:29.996163+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-03T02:30:29.996388+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-03T02:32:36.882838+00:00", "type": "order_rejected", "level": "critical", "detail": "ghost position"}
+{"ts": "2026-06-03T02:32:36.884028+00:00", "type": "broker_disconnected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-03T02:32:36.884377+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-03T02:32:36.884772+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-03T02:32:36.885091+00:00", "type": "stop_attach_failed", "level": "critical", "detail": "test"}
+{"ts": "2026-06-03T02:32:36.885373+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-03T02:32:36.885655+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-03T02:32:36.885978+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-03T02:32:36.886259+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-03T02:32:36.886533+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-03T02:32:36.886821+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-03T02:41:22.645913+00:00", "type": "order_rejected", "level": "critical", "detail": "ghost position"}
+{"ts": "2026-06-03T02:41:22.648073+00:00", "type": "broker_disconnected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-03T02:41:22.648548+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-03T02:41:22.648957+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-03T02:41:22.649367+00:00", "type": "stop_attach_failed", "level": "critical", "detail": "test"}
+{"ts": "2026-06-03T02:41:22.649775+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-03T02:41:22.650180+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-03T02:41:22.650576+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-03T02:41:22.650973+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-03T02:41:22.651366+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-03T02:41:22.651777+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-03T02:43:30.676970+00:00", "type": "order_rejected", "level": "critical", "detail": "ghost position"}
+{"ts": "2026-06-03T02:43:30.678794+00:00", "type": "broker_disconnected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-03T02:43:30.679509+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-03T02:43:30.680223+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-03T02:43:30.680847+00:00", "type": "stop_attach_failed", "level": "critical", "detail": "test"}
+{"ts": "2026-06-03T02:43:30.681407+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-03T02:43:30.681956+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-03T02:43:30.682507+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-03T02:43:30.683071+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-03T02:43:30.683630+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-03T02:43:30.684194+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-03T02:48:29.027507+00:00", "type": "order_rejected", "level": "critical", "detail": "ghost position"}
+{"ts": "2026-06-03T02:48:29.028909+00:00", "type": "broker_disconnected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-03T02:48:29.029612+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-03T02:48:29.030294+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-03T02:48:29.031527+00:00", "type": "stop_attach_failed", "level": "critical", "detail": "test"}
+{"ts": "2026-06-03T02:48:29.032202+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-03T02:48:29.032849+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-03T02:48:29.033471+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-03T02:48:29.034138+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-03T02:48:29.034800+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-03T02:48:29.035535+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}

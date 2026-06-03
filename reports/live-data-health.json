@@ -1,0 +1,46 @@
+{
+  "asof": "2026-06-02T14:56:45.353083+00:00",
+  "ok": false,
+  "status": "FAIL",
+  "hard_failures": [
+    "moomoo OpenD is not reachable at 127.0.0.1:11111",
+    "reports/moomoo-live-quotes.json is missing"
+  ],
+  "warnings": [
+    "intraday snapshot is not currently sourced from moomoo"
+  ],
+  "require_realtime": true,
+  "max_quote_age_seconds": 900,
+  "providers": {
+    "moomoo": {
+      "name": "moomoo",
+      "market": "US equities",
+      "market_data_only": true,
+      "host": "127.0.0.1",
+      "port": 11111,
+      "package_installed": true,
+      "module": "moomoo",
+      "opend_reachable": false,
+      "quote_report_exists": false,
+      "quote_report_asof": null,
+      "quote_report_returned": null
+    }
+  },
+  "intraday_snapshot": {
+    "exists": true,
+    "path": "/Users/lionel/Documents/New project/TradingBrain/data/intraday_snap.parquet",
+    "rows": 3,
+    "sources": [
+      "yfinance:1m"
+    ],
+    "latest_quote_ts": "2026-06-02T14:43:00+00:00",
+    "latest_fetch_ts": "2026-06-02T14:42:13.300300+00:00",
+    "quote_age_seconds": 872
+  },
+  "safety": {
+    "market_data_only": true,
+    "tb_mode": "paper",
+    "tb_allow_live": "0",
+    "live_trading_enabled": false
+  }
+}

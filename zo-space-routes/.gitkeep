@@ -1,0 +1,2 @@
+zo.space routes (not stored on disk in the live system — exported here for portability).
+Pages render via Bun+Hono+Vite; API routes are Hono handlers. See README.

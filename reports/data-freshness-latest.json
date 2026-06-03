@@ -1,0 +1,201 @@
+{
+  "available": true,
+  "mode": "candidate_data_freshness_scorecard_v1",
+  "asof_utc": "2026-06-03T01:45:35.442880+00:00",
+  "status": "stale_or_missing_critical",
+  "thresholds_days": {
+    "price": 5,
+    "fundamentals": 45,
+    "news": 14,
+    "social": 7,
+    "analyst_targets": 120
+  },
+  "coverage": {
+    "candidate_count": 4,
+    "price_fresh_pct": 100.0,
+    "fundamentals_fresh_pct": 0.0,
+    "news_fresh_pct": 25.0,
+    "social_fresh_pct": 0.0,
+    "analyst_target_any_recent_pct": 0.0,
+    "analyst_target_independent_present_pct": 0.0,
+    "analyst_target_aggregate_only_pct": 0.0,
+    "green_badge_pct": 0.0,
+    "yellow_badge_pct": 25.0,
+    "red_badge_pct": 75.0
+  },
+  "rows": [
+    {
+      "ticker": "MU",
+      "badge": "yellow",
+      "price_age_days": 5,
+      "fundamental_age_days": null,
+      "news_age_days": 1,
+      "recent_documents_14d": 10,
+      "social_signal_age_days": null,
+      "analyst_target_age_days": null,
+      "analyst_target_recent_rows": 0,
+      "analyst_target_independent_recent_rows": 0,
+      "analyst_target_aggregate_recent_rows": 0,
+      "analyst_target_independent_age_days": null,
+      "missing_or_stale": [
+        "fundamentals",
+        "social",
+        "analyst_target_independent_provenance"
+      ],
+      "action": "research_only_discount_for_missing_or_stale_pillars"
+    },
+    {
+      "ticker": "AAOI",
+      "badge": "red",
+      "price_age_days": 5,
+      "fundamental_age_days": null,
+      "news_age_days": null,
+      "recent_documents_14d": 0,
+      "social_signal_age_days": null,
+      "analyst_target_age_days": null,
+      "analyst_target_recent_rows": 0,
+      "analyst_target_independent_recent_rows": 0,
+      "analyst_target_aggregate_recent_rows": 0,
+      "analyst_target_independent_age_days": null,
+      "missing_or_stale": [
+        "fundamentals",
+        "news",
+        "social",
+        "analyst_target_independent_provenance"
+      ],
+      "action": "do_not_raise_confidence_until_price/news_refreshed"
+    },
+    {
+      "ticker": "MRVL",
+      "badge": "red",
+      "price_age_days": 5,
+      "fundamental_age_days": null,
+      "news_age_days": null,
+      "recent_documents_14d": 0,
+      "social_signal_age_days": null,
+      "analyst_target_age_days": null,
+      "analyst_target_recent_rows": 0,
+      "analyst_target_independent_recent_rows": 0,
+      "analyst_target_aggregate_recent_rows": 0,
+      "analyst_target_independent_age_days": null,
+      "missing_or_stale": [
+        "fundamentals",
+        "news",
+        "social",
+        "analyst_target_independent_provenance"
+      ],
+      "action": "do_not_raise_confidence_until_price/news_refreshed"
+    },
+    {
+      "ticker": "INTC",
+      "badge": "red",
+      "price_age_days": 5,
+      "fundamental_age_days": null,
+      "news_age_days": null,
+      "recent_documents_14d": 0,
+      "social_signal_age_days": null,
+      "analyst_target_age_days": null,
+      "analyst_target_recent_rows": 0,
+      "analyst_target_independent_recent_rows": 0,
+      "analyst_target_aggregate_recent_rows": 0,
+      "analyst_target_independent_age_days": null,
+      "missing_or_stale": [
+        "fundamentals",
+        "news",
+        "social",
+        "analyst_target_independent_provenance"
+      ],
+      "action": "do_not_raise_confidence_until_price/news_refreshed"
+    }
+  ],
+  "top_stale_or_missing": [
+    {
+      "ticker": "MU",
+      "badge": "yellow",
+      "price_age_days": 5,
+      "fundamental_age_days": null,
+      "news_age_days": 1,
+      "recent_documents_14d": 10,
+      "social_signal_age_days": null,
+      "analyst_target_age_days": null,
+      "analyst_target_recent_rows": 0,
+      "analyst_target_independent_recent_rows": 0,
+      "analyst_target_aggregate_recent_rows": 0,
+      "analyst_target_independent_age_days": null,
+      "missing_or_stale": [
+        "fundamentals",
+        "social",
+        "analyst_target_independent_provenance"
+      ],
+      "action": "research_only_discount_for_missing_or_stale_pillars"
+    },
+    {
+      "ticker": "AAOI",
+      "badge": "red",
+      "price_age_days": 5,
+      "fundamental_age_days": null,
+      "news_age_days": null,
+      "recent_documents_14d": 0,
+      "social_signal_age_days": null,
+      "analyst_target_age_days": null,
+      "analyst_target_recent_rows": 0,
+      "analyst_target_independent_recent_rows": 0,
+      "analyst_target_aggregate_recent_rows": 0,
+      "analyst_target_independent_age_days": null,
+      "missing_or_stale": [
+        "fundamentals",
+        "news",
+        "social",
+        "analyst_target_independent_provenance"
+      ],
+      "action": "do_not_raise_confidence_until_price/news_refreshed"
+    },
+    {
+      "ticker": "MRVL",
+      "badge": "red",
+      "price_age_days": 5,
+      "fundamental_age_days": null,
+      "news_age_days": null,
+      "recent_documents_14d": 0,
+      "social_signal_age_days": null,
+      "analyst_target_age_days": null,
+      "analyst_target_recent_rows": 0,
+      "analyst_target_independent_recent_rows": 0,
+      "analyst_target_aggregate_recent_rows": 0,
+      "analyst_target_independent_age_days": null,
+      "missing_or_stale": [
+        "fundamentals",
+        "news",
+        "social",
+        "analyst_target_independent_provenance"
+      ],
+      "action": "do_not_raise_confidence_until_price/news_refreshed"
+    },
+    {
+      "ticker": "INTC",
+      "badge": "red",
+      "price_age_days": 5,
+      "fundamental_age_days": null,
+      "news_age_days": null,
+      "recent_documents_14d": 0,
+      "social_signal_age_days": null,
+      "analyst_target_age_days": null,
+      "analyst_target_recent_rows": 0,
+      "analyst_target_independent_recent_rows": 0,
+      "analyst_target_aggregate_recent_rows": 0,
+      "analyst_target_independent_age_days": null,
+      "missing_or_stale": [
+        "fundamentals",
+        "news",
+        "social",
+        "analyst_target_independent_provenance"
+      ],
+      "action": "do_not_raise_confidence_until_price/news_refreshed"
+    }
+  ],
+  "report_paths": {
+    "json": "/Users/lionel/Documents/New project/TradingBrain/reports/data-freshness-latest.json",
+    "markdown": "/Users/lionel/Documents/New project/TradingBrain/reports/data-freshness-latest.md"
+  },
+  "disclaimer": "Data-freshness badges are a research integrity overlay only. A green badge means local feeds are recent enough for review; it is not a buy signal and does not solve PIT/survivorship or forward-proof blockers."
+}

@@ -1,0 +1,11 @@
+# Resolved/known-good versions (clean-install reproducibility).
+duckdb==1.4.2
+pandas==3.0.3
+numpy==2.4.6
+pyarrow==24.0.0
+PyYAML==6.0.3
+yfinance==1.4.1
+hmmlearn==0.3.3
+scikit-learn==1.8.0
+requests==2.32.3
+pytest==9.0.3

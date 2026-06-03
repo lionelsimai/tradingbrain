@@ -1,0 +1,52 @@
+{
+  "asof": "2026-06-03T02:48:34.249131+00:00",
+  "verdict": "BLOCKED",
+  "mode": "read_only",
+  "gates": [
+    {
+      "gate": "1. Walk-forward OOS",
+      "status": "PASS",
+      "detail": "median OOS Sharpe 0.82 (need >= 0.5); beats SPY in 6/6 windows. WARNING: in-sample beats OOS by 1.69 Sharpe \u2014 sizeable, a soft sign of overfitting; have a human review window stability."
+    },
+    {
+      "gate": "2. Monte Carlo worst-case drawdown",
+      "status": "NEEDS_HUMAN",
+      "detail": "Distribution survivable on replay data (99th-pct DD \u224819.1%, ceiling 20.0%), BUT it is resampled from replay (survivorship-biased). Re-run on live fills before trusting."
+    },
+    {
+      "gate": "3. Stress scenarios survived",
+      "status": "NEEDS_HUMAN",
+      "detail": "Worst window: 2020_covid_crash expectancy -0.593R, max consecutive losses 10. Circuit-breaker system wired. Crash windows are negative (expected for trend-following \u2014 the edge is being OUT, not long, in crashes). Automated stats cannot certify single-account survival through a compound crash, so this gate needs a human to confirm capital-intact + breakers fired."
+    },
+    {
+      "gate": "4. Overfitting checks",
+      "status": "FAIL",
+      "detail": "IS-vs-OOS Sharpe gap 1.69 exceeds hard limit 1.5 (overfitting risk \u2014 OOS must hold up closer to in-sample)"
+    },
+    {
+      "gate": "5. Paper matches backtest",
+      "status": "FAIL",
+      "detail": "live-like paper fills: 0; total paper resolved: 0. Synthetic or non-approved quote-source paper is excluded from this gate. Need >= 50. Replay/backtest evidence is excluded from this gate. Collect real forward paper fills."
+    },
+    {
+      "gate": "6. Risk controls + kill switch + data health",
+      "status": "FAIL",
+      "detail": "risk_policy_valid=ok, data_quality_pass=ok, live_data_health_pass=FAIL, circuit_breakers_present=ok, kill_switch_present=ok"
+    },
+    {
+      "gate": "7. Human approval",
+      "status": "FAIL",
+      "detail": "approved is not true; approved_by is empty (need a named human); date is empty; cannot approve a system with no real paper track record (gate 5 not passing); reviewed_pack_sha is empty \u2014 set it to the current pack hash (47eec968e3ba) to bind approval to the reports you reviewed"
+    }
+  ],
+  "blockers": [
+    "4. Overfitting checks",
+    "5. Paper matches backtest",
+    "6. Risk controls + kill switch + data health",
+    "7. Human approval"
+  ],
+  "needs_human": [
+    "2. Monte Carlo worst-case drawdown",
+    "3. Stress scenarios survived"
+  ]
+}

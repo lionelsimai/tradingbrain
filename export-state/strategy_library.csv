@@ -1,0 +1,6 @@
+setup,status,verdict,oos_expectancy_R,red_team_findings,risk_officer_verdict,updated_at,evidence
+BREAKOUT,Broken,Reject,-0.101,,,2026-05-30 00:41:46.16342,{}
+MEAN_REVERSION,Validated,Deploy,1.896,"","",2026-05-30 03:09:38.898384,{}
+PULLBACK,Validated,Deploy,1.049,"","",2026-05-30 03:09:38.962339,{}
+TREND_LEADER,Validated,Deploy,0.232,"","",2026-05-30 03:09:39.028842,{}
+VCP,Validated,Deploy,0.321,"","",2026-05-30 03:09:39.085953,{}

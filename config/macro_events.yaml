@@ -1,0 +1,101 @@
+# Macro/event context for TradingBrain research mode.
+# This is not an execution signal. It is a checklist + scoring layer that tells
+# the research agent when interest-rate and policy risk should reduce conviction.
+
+major_event_types:
+  - key: fomc_rate_decision
+    label: Fed/FOMC rate decision
+    importance: high
+    rate_pricing_channel: direct policy-rate repricing; affects discount rates, USD, yields, growth/AI duration multiples
+    risk_window_days_before: 3
+    risk_window_days_after: 1
+    watch_fields: [decision, dot_plot, sep, chair_press_conference, statement_language]
+  - key: cpi
+    label: CPI inflation
+    importance: high
+    rate_pricing_channel: changes expected Fed path via inflation surprise
+    risk_window_days_before: 1
+    risk_window_days_after: 1
+    watch_fields: [headline_yoy, core_yoy, core_mom, shelter, services_ex_shelter]
+  - key: pce
+    label: PCE inflation
+    importance: high
+    rate_pricing_channel: Fed-preferred inflation gauge; reprices cuts/hikes and real yields
+    risk_window_days_before: 1
+    risk_window_days_after: 1
+    watch_fields: [headline_pce, core_pce, supercore]
+  - key: payrolls
+    label: Nonfarm payrolls / unemployment / wages
+    importance: high
+    rate_pricing_channel: labor strength changes soft-landing and Fed reaction-function assumptions
+    risk_window_days_before: 1
+    risk_window_days_after: 1
+    watch_fields: [payrolls, unemployment_rate, average_hourly_earnings, participation]
+  - key: jobless_claims
+    label: Initial jobless claims
+    importance: medium
+    rate_pricing_channel: high-frequency labor weakness/strength read
+    risk_window_days_before: 0
+    risk_window_days_after: 0
+    watch_fields: [initial_claims, continuing_claims]
+  - key: ism
+    label: ISM manufacturing/services
+    importance: medium
+    rate_pricing_channel: growth/inflation mix affects yields and cyclicals
+    risk_window_days_before: 0
+    risk_window_days_after: 1
+    watch_fields: [headline, prices_paid, employment, new_orders]
+  - key: treasury_refunding
+    label: Treasury refunding / auction supply
+    importance: medium
+    rate_pricing_channel: term-premium and long-yield pressure affects growth multiples
+    risk_window_days_before: 1
+    risk_window_days_after: 1
+    watch_fields: [coupon_sizes, auction_tail, bid_to_cover, indirect_bid]
+  - key: fed_speaker
+    label: Fed speaker
+    importance: medium
+    rate_pricing_channel: guidance can move rate-cut/hike probabilities
+    risk_window_days_before: 0
+    risk_window_days_after: 0
+    watch_fields: [speaker, voter_status, hawkish_dovish_tone]
+  - key: trump_truth_social
+    label: Trump Truth Social / policy posts
+    importance: medium
+    rate_pricing_channel: tariff/fiscal/Fed-pressure/geopolitical comments can move inflation expectations, risk premia, USD, and sector multiples
+    risk_window_days_before: 0
+    risk_window_days_after: 1
+    watch_fields: [topic, tariff, china, fed_pressure, fiscal, geopolitics, target_company_or_sector]
+
+rate_sensitive_markets:
+  - symbol: DXY
+    label: US dollar
+  - symbol: TNX
+    label: 10Y Treasury yield
+  - symbol: FVX
+    label: 5Y Treasury yield
+  - symbol: QQQ
+    label: Nasdaq/growth proxy
+  - symbol: SMH
+    label: Semiconductor proxy
+
+risk_rules:
+  - name: fed_or_cpi_window
+    if: high_importance_event_within_1_day
+    action: lower confidence one notch; avoid pretending technical breakouts are independent of macro
+  - name: hawkish_rate_repricing
+    if: yields_up_and_cut_odds_down
+    action: penalize high-multiple AI/growth names; prefer smaller size/watchlist status
+  - name: dovish_rate_repricing
+    if: yields_down_and_cut_odds_up
+    action: supportive for duration/growth, but watch for recession interpretation
+  - name: trump_tariff_or_china_post
+    if: fresh_truth_social_policy_post_on_tariffs_china_export_controls
+    action: flag semiconductor/AI supply-chain event risk; reduce confidence until price confirms
+  - name: trump_fed_pressure_post
+    if: fresh_truth_social_post_about_fed_chair_rates_or_inflation
+    action: flag Fed-independence/rate-volatility risk; monitor USD/yields reaction
+
+default_disclaimer: >
+  Macro context is a research overlay only. It can veto or reduce confidence in equity swing ideas,
+  but it is not a stand-alone buy/sell signal and does not execute trades.
