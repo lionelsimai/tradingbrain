@@ -1,5 +1,5 @@
 {
-  "asof": "2026-06-03T02:48:31.074515+00:00",
+  "asof": "2026-06-03T12:18:51.577046+00:00",
   "status": "LIVE_BLOCKED",
   "verdict": "RESEARCH_ONLY",
   "posture": "RESEARCH_ONLY",
@@ -93,7 +93,7 @@
     "asof": "2026-06-02T15:37:26.365532+00:00"
   },
   "live_data_health": {
-    "asof": "2026-06-03T02:48:30.599881+00:00",
+    "asof": "2026-06-03T12:18:51.144499+00:00",
     "ok": false,
     "status": "FAIL",
     "hard_failures": [
@@ -158,13 +158,13 @@
     "replay_verdict": "REPLAY-BASED, NOT FORWARD (+0.314R over 1919 replay trades)."
   },
   "risk_policy_hash": "rp_c1b79487863d",
-  "report_pack_hash": "ae05e545c854",
-  "report_pack_sha": "ae05e545c854",
+  "report_pack_hash": "5137834ab920",
+  "report_pack_sha": "5137834ab920",
   "approval_status": [
     {
       "gate": "7. Human approval",
       "status": "FAIL",
-      "detail": "approved is not true; approved_by is empty (need a named human); date is empty; cannot approve a system with no real paper track record (gate 5 not passing); reviewed_pack_sha is empty \u2014 set it to the current pack hash (171c857ddaec) to bind approval to the reports you reviewed"
+      "detail": "approved is not true; approved_by is empty (need a named human); date is empty; cannot approve a system with no real paper track record (gate 5 not passing); reviewed_pack_sha is empty \u2014 set it to the current pack hash (47eec968e3ba) to bind approval to the reports you reviewed"
     }
   ],
   "human_approval": false,

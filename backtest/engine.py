@@ -2,10 +2,15 @@
 """Multi-asset backtest engine.
 
 Honest by design:
-  - No look-ahead (signals computed only from data up to T-1 for T's trade)
   - Real risk rails: stop-loss, take-profit, drawdown kill switch
   - Equal-weight position sizing capped by max_position_pct
-  - Trades at next-day open, marked-to-market at close
+  - Transaction costs applied on EVERY fill (commission + slippage + half-spread,
+    via backtest.costs.BASE) — the engine previously modeled ZERO cost (FIX-3).
+  - Marked-to-market at close.
+  KNOWN LIMITATION (stated honestly): the rebalance decides on bar T's close and
+  fills at that SAME close (optimistic same-bar fill). Next-bar fills are the
+  remaining FIX-3 sub-task (needs the price DB to verify end-to-end). Costs are
+  the larger correction and are landed here.
 
 Run a strategy by passing a `score_fn(prices_df, date) -> pd.Series` that returns
 a ticker -> score series for the given date. Top-N by score gets bought; positions
@@ -20,6 +25,11 @@ import duckdb, numpy as np, pandas as pd, yaml
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from scripts.db import PRICES_DB  # noqa: E402
+from backtest.costs import BASE as COST_MODEL  # noqa: E402
+
+# Per-side transaction cost fraction (commission + slippage + half-spread). FIX-3:
+# the engine previously applied ZERO cost. A BUY fills above mid, a SELL below it.
+_PS = COST_MODEL.per_side_bps() / 10_000.0
 
 ROOT = next((p for p in Path(__file__).resolve().parents if (p / "DOCTRINE.md").exists() and (p / "config").is_dir()), Path(__file__).resolve().parent)
 SOURCES = yaml.safe_load((ROOT / "config" / "sources.yaml").read_text())
@@ -172,10 +182,12 @@ def run_backtest(
             elif chg >= RULES["take_profit_pct"]:
                 reason = "TAKE"
             if reason:
-                cash += p.shares * price
+                fill = price * (1 - _PS)          # sell fills BELOW mid (costs)
+                cash += p.shares * fill
                 trade_rows.append({
                     "entry_date": p.entry_date, "exit_date": d, "ticker": t, "entry_price": p.entry_price,
-                    "exit_price": price, "shares": p.shares, "pnl_pct": chg * 100,
+                    "exit_price": fill, "shares": p.shares,
+                    "pnl_pct": (fill - p.entry_price) / p.entry_price * 100,
                     "reason": reason
                 })
                 del positions[t]
@@ -193,11 +205,12 @@ def run_backtest(
                     if t in today_prices.index:
                         price = float(today_prices[t])
                         p = positions[t]
-                        chg = (price - p.entry_price) / p.entry_price
-                        cash += p.shares * price
+                        fill = price * (1 - _PS)      # sell fills BELOW mid (costs)
+                        cash += p.shares * fill
                         trade_rows.append({
                             "entry_date": p.entry_date, "exit_date": d, "ticker": t, "entry_price": p.entry_price,
-                            "exit_price": price, "shares": p.shares, "pnl_pct": chg * 100,
+                            "exit_price": fill, "shares": p.shares,
+                            "pnl_pct": (fill - p.entry_price) / p.entry_price * 100,
                             "reason": "REBAL"
                         })
                         del positions[t]
@@ -216,19 +229,20 @@ def run_backtest(
                 for t in new_entries:
                     if cash < 100:
                         break
-                    price = float(today_prices[t])
-                    if price <= 0:
+                    mid = float(today_prices[t])
+                    if mid <= 0:
                         continue
-                    qty = (per_trade) / price
-                    if qty * price > cash:
-                        qty = cash / price
+                    fill = mid * (1 + _PS)           # buy fills ABOVE mid (costs)
+                    qty = (per_trade) / fill
+                    if qty * fill > cash:
+                        qty = cash / fill
                     # Sector cap: don't let any one category exceed max_sector_pct of equity.
                     sec = _SECTOR.get(t, t)
-                    if equity > 0 and (sector_val.get(sec, 0.0) + qty * price) / equity > max_sector:
+                    if equity > 0 and (sector_val.get(sec, 0.0) + qty * fill) / equity > max_sector:
                         continue
-                    cash -= qty * price
-                    positions[t] = Position(ticker=t, shares=qty, entry_price=price, entry_date=d)
-                    sector_val[sec] = sector_val.get(sec, 0.0) + qty * price
+                    cash -= qty * fill
+                    positions[t] = Position(ticker=t, shares=qty, entry_price=fill, entry_date=d)
+                    sector_val[sec] = sector_val.get(sec, 0.0) + qty * fill
         rebalance_counter = (rebalance_counter + 1) % rebalance_days
 
         equity_rows.append({"date": d, "equity": equity, "cash": cash, "n_positions": len(positions)})

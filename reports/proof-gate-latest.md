@@ -1,5 +1,5 @@
 # TradingBrain Proof Gate — NOT_YET_PROVEN
-_2026-06-03T02:48:35.660368+00:00 · max honest rating 4.9/10_
+_2026-06-03T12:18:56.076776+00:00 · max honest rating 4.9/10_
 
 PROVEN_8_OF_10: **NO**
 PROVEN_9_OF_10: **NO**
