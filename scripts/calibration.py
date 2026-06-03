@@ -12,6 +12,7 @@ from pathlib import Path
 ROOT = next((p for p in Path(__file__).resolve().parents if (p / "DOCTRINE.md").exists() and (p / "config").is_dir()), Path(__file__).resolve().parent)
 CALIB = ROOT / "reports" / "calibration.json"
 RESEARCH = ROOT / "reports" / "research-report.json"
+GAUNTLET = ROOT / "reports" / "gauntlet.json"
 
 # Regimes where LONG swing setups have historically negative expectancy.
 # From the 10y stress test: 2018/2020/2022 all bled. Hard-gate longs here.
@@ -37,7 +38,43 @@ def load() -> dict:
 def setup_stats(setup: str) -> dict:
     return load().get(_resolve(setup), {})
 
+def _find_pbo(obj):
+    """Locate the PBO verdict object (has both 'pass' and 'value_pct') wherever it
+    is nested. In the current gauntlet it lives at checks -> pbo."""
+    if isinstance(obj, dict):
+        if isinstance(obj.get("pass"), bool) and "value_pct" in obj:
+            return obj
+        for v in obj.values():
+            r = _find_pbo(v)
+            if r is not None:
+                return r
+    elif isinstance(obj, list):
+        for v in obj:
+            r = _find_pbo(v)
+            if r is not None:
+                return r
+    return None
+
+def portfolio_pbo_pass() -> bool | None:
+    """The gauntlet's PBO verdict (probability of backtest overfitting): True if it
+    PASSED (low PBO), False if it FAILED (high PBO => setup SELECTION is overfit,
+    worse than random), None if not computed yet. PBO lives at gauntlet.json ->
+    checks -> pbo (with a robust fallback search)."""
+    try:
+        d = json.loads(GAUNTLET.read_text())
+    except Exception:
+        return None
+    pbo = (d.get("checks") or {}).get("pbo") if isinstance(d, dict) else None
+    if not isinstance(pbo, dict):
+        pbo = _find_pbo(d)
+    return pbo["pass"] if isinstance(pbo, dict) and isinstance(pbo.get("pass"), bool) else None
+
 def is_enabled(setup: str) -> bool:
+    # FIX-4 (P0-2): a FAILING portfolio PBO means setup SELECTION is overfit
+    # (worse than random) — so gate EVERY setup off. The honest number must GATE,
+    # not just be computed and ignored. Fail-open only when PBO is absent.
+    if portfolio_pbo_pass() is False:
+        return False
     s = load().get(_resolve(setup))
     # default-enabled if no calibration yet (graceful before first stress test)
     return True if not s else bool(s.get("enabled", True))

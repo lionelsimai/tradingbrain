@@ -1,6 +1,6 @@
 # PIT Coverage - open
 
-Generated: 2026-06-03T12:44:02.504819+00:00
+Generated: 2026-06-03T13:13:42.157984+00:00
 Closed: False
 Universe rows: 0
 Delisted rows: 0 (0.0%)
