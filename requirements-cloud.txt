@@ -1,0 +1,13 @@
+# Installable dependency set, validated on Python 3.11 (Phase-0).
+# Use THIS in cloud environments — the canonical requirements.txt pins versions
+# that don't exist on PyPI (pandas==3.0.3, numpy==2.4.6, pytest==9.0.3, ...).
+pandas
+numpy
+scipy
+scikit-learn
+duckdb
+pyarrow
+hmmlearn
+PyYAML
+requests
+pytest
