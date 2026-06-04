@@ -1,5 +1,5 @@
 {
-  "asof": "2026-06-03T13:13:42.301714+00:00",
+  "asof": "2026-06-04T01:58:11.454429+00:00",
   "blocking_count": 15,
   "data_quality_pass": true,
   "finding_count": 20,
@@ -172,7 +172,7 @@
     {
       "attack_path": "Accept stale, anonymous, or hash-mismatched approval.",
       "blocks_live": true,
-      "evidence": "approval_status=[{'gate': '7. Human approval', 'status': 'FAIL', 'detail': 'approved is not true; approved_by is empty (need a named human); date is empty; cannot approve a system with no real paper track record (gate 5 not passing); reviewed_pack_sha is empty \u2014 set it to the current pack hash (812d592506f4) to bind approval to the reports you reviewed'}]",
+      "evidence": "approval_status=[{'gate': '7. Human approval', 'status': 'FAIL', 'detail': 'approved is not true; approved_by is empty (need a named human); date is empty; cannot approve a system with no real paper track record (gate 5 not passing); reviewed_pack_sha is empty \u2014 set it to the current pack hash (cad74a2162a6) to bind approval to the reports you reviewed'}]",
       "expected_damage": "Live trading starts without accountable review.",
       "fix": "Require named approver and current pack hash.",
       "id": "RT-LIVE-016",

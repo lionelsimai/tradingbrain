@@ -1,5 +1,5 @@
 {
-  "asof": "2026-06-03T13:27:22.586372+00:00",
+  "asof": "2026-06-04T01:58:03.766468+00:00",
   "verdict": "BLOCKED",
   "mode": "read_only",
   "gates": [
@@ -36,7 +36,7 @@
     {
       "gate": "7. Human approval",
       "status": "FAIL",
-      "detail": "approved is not true; approved_by is empty (need a named human); date is empty; cannot approve a system with no real paper track record (gate 5 not passing); reviewed_pack_sha is empty \u2014 set it to the current pack hash (cad74a2162a6) to bind approval to the reports you reviewed"
+      "detail": "approved is not true; approved_by is empty (need a named human); date is empty; cannot approve a system with no real paper track record (gate 5 not passing); reviewed_pack_sha is empty \u2014 set it to the current pack hash (2fbf8bd347b9) to bind approval to the reports you reviewed"
     }
   ],
   "blockers": [

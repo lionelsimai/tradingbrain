@@ -1,6 +1,6 @@
 # Forward Paper Horizon Scorecard - INSUFFICIENT_FORWARD_EVIDENCE
 
-Generated: 2026-06-03T13:13:42.128649+00:00
+Generated: 2026-06-04T01:58:10.464956+00:00
 Outcomes total: 0
 Decision useful: False
 Regimes: 0 | Weeks covered: 0

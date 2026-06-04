@@ -98,8 +98,19 @@ def plan_from_levels(px: float, atr14: float, swing_low_10: float, swing_high_20
     return Plan(entry=px, stop=stop, t1=t1, t2=t2)
 
 
+from backtest import costs as _costs  # FIX-14: real stop-width transaction costs
+
+
+def plan_costs_R(plan: "Plan", model=None) -> float:
+    """Round-trip cost as a fraction of 1R, from the plan's REAL stop width
+    (FIX-14). The flat costs_to_R(risk_frac_of_price=0.06) assumed every stop was
+    ~6% of price, so tight-stop trades looked far cheaper than they really are."""
+    return (model or _costs.BASE).cost_in_R(plan.entry, plan.stop)
+
+
 def simulate(fwd: pd.DataFrame, plan: Plan, timeout: int = 20,
-             costs_R: float = 0.0, scale_out: bool = True) -> dict:
+             costs_R: float | None = None, scale_out: bool = True,
+             cost_model=None) -> dict:
     """Walk `fwd` (bars strictly after the decision bar) to stop/target/timeout.
 
     scale_out=True  -> book 50% at T1, move remainder to breakeven, run to T2.
@@ -110,6 +121,8 @@ def simulate(fwd: pd.DataFrame, plan: Plan, timeout: int = 20,
     risk = plan.risk
     if risk <= 0:
         return {"r": 0.0, "hold": 0, "exit": "invalid"}
+    if costs_R is None:                       # FIX-14: real per-plan cost, not flat 0.06
+        costs_R = plan_costs_R(plan, cost_model)
     n = min(timeout, len(fwd))
     half = False
     cur_stop = plan.stop
@@ -140,11 +153,12 @@ def simulate(fwd: pd.DataFrame, plan: Plan, timeout: int = 20,
 
 def costs_to_R(commission_bps: float, slippage_bps: float, spread_bps: float,
                risk_frac_of_price: float = 0.06) -> float:
-    """Round-trip cost (both sides) as a fraction of 1R.
+    """Round-trip cost as a fraction of 1R — FIXED-ASSUMPTION version.
 
-    Assumes initial risk ~= risk_frac_of_price of price (2.5 ATR ~= 6%).
-    Keep this identical across calibration / research / replay so net edge is
-    comparable everywhere.
+    DEPRECATED for per-trade use (FIX-14): it assumes initial risk ~= 6% of price,
+    so tight-stop trades look far cheaper than they are. Prefer plan_costs_R(plan),
+    which uses the REAL stop width |entry - stop|. Kept only for a uniform
+    portfolio-level constant where a single number is genuinely wanted.
     """
     bps = (commission_bps + slippage_bps + spread_bps) * 2
     return (bps / 10000.0) / max(risk_frac_of_price, 1e-6)

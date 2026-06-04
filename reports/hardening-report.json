@@ -1,5 +1,5 @@
 {
-  "asof": "2026-06-03T13:13:39.457156+00:00",
+  "asof": "2026-06-04T01:57:58.709663+00:00",
   "iterations": 1,
   "converged": true,
   "aborted": null,
@@ -30,7 +30,7 @@
   ],
   "trace": [
     {
-      "asof": "2026-06-03T13:13:39.382931+00:00",
+      "asof": "2026-06-04T01:57:58.433362+00:00",
       "stress_verdict": "LIVE_BLOCKED",
       "overall_score": 0,
       "invariant_forbidden_scan_pass": true,

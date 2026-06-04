@@ -961,3 +961,14 @@
 {"ts": "2026-06-03T13:13:34.784497+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
 {"ts": "2026-06-03T13:13:34.785581+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
 {"ts": "2026-06-03T13:13:34.786658+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-04T01:57:37.684346+00:00", "type": "order_rejected", "level": "critical", "detail": "ghost position"}
+{"ts": "2026-06-04T01:57:37.691786+00:00", "type": "broker_disconnected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-04T01:57:37.696183+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-04T01:57:37.700647+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-04T01:57:37.704886+00:00", "type": "stop_attach_failed", "level": "critical", "detail": "test"}
+{"ts": "2026-06-04T01:57:37.710586+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-04T01:57:37.714153+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-04T01:57:37.718491+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-04T01:57:37.722054+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
+{"ts": "2026-06-04T01:57:37.726175+00:00", "type": "order_rejected", "level": "critical", "detail": "test"}
+{"ts": "2026-06-04T01:57:37.729571+00:00", "type": "order_rejected", "level": "warning", "detail": "test"}
